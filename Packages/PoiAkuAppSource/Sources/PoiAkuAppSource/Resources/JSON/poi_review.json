@@ -1,0 +1,166 @@
+{
+  "status": "OK",
+  "request_id": "14cfc2a4-3494-4407-970d-a116ce72ead3",
+  "parameters": {
+    "business_id": "0x89c259b5a9bd152b:0x31453e62a3be9f76",
+    "language": "en",
+    "region": "us",
+    "limit": 5,
+    "offset": 0,
+    "sort_by": "most_relevant",
+    "query": "a"
+  },
+  "data": [
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMta3JyT2JnEAE",
+      "review_text": "Friendly and helpful\npersonnel. Room was clean and nice but a little too small for my liking. Comfortable beds but pillows too hard. View was nice. Enjoyed museum of the New Yorker Hotel located downstairs from lobby. Quite informative. Good location but you can hear all the traffic outside and constant sirens!\nUnfortunately I won't be coming back to this hotel as I was very disappointed in room size, pillows and noise. I feel I didn't get what I paid for.",
+      "rating": 4,
+      "review_datetime_utc": "2022-10-31T02:16:24.397Z",
+      "review_timestamp": 1667182584,
+      "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMta3JyT2JnEAE!2m1!1s0x0:0x31453e62a3be9f76!3m1!1s2@1:CIHM0ogKEICAgIC-krrObg%7CCgwI-N_8mgYQsJ2rvQE%7C?hl=en-US",
+      "review_photos": null,
+      "review_language": "en",
+      "like_count": 1,
+      "author_id": "113837408874077031643",
+      "author_link": "https://www.google.com/maps/contrib/113837408874077031643?hl=en-US",
+      "author_name": "Maria Robles",
+      "author_photo_url": "https://lh3.googleusercontent.com/a/AGNmyxZcPh4vn3aUa1AtJQsxACx7TdBFY9QgiiHLAk70=s120-c-c0x00000000-cc-rp-mo-ba4-br100",
+      "author_review_count": 74,
+      "owner_response_datetime_utc": null,
+      "owner_response_timestamp": null,
+      "owner_response_text": null,
+      "owner_response_language": null,
+      "author_reviews_link": "https://www.google.com/maps/contrib/113837408874077031643/reviews?hl=en-US",
+      "author_local_guide_level": 6,
+      "service_quality": null,
+      "hotel_rating_breakdown": {
+        "Rooms": 4,
+        "Service": 5,
+        "Location": 5
+      },
+      "review_form": {
+        "What kind of trip was it?": "Vacation",
+        "Who did you travel with?": "Family"
+      }
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlenZpU013EAE",
+      "review_text": "One of the main issues with the hotel is that only 2 out of 5 lifts seem to actually be running for floors 20-40, despite no signs showing lifts out of order. The best tip is to just get in any lift, even if it is going up when you want to go down. Once you are in a lift and others have got out you can go down to the lobby area. The lobby area has an art deco vibe, and is quite grand and for those looking in, the hotel appears to be quite grand. Although Hotel Room floors gives Cecil hotel vibes.. But in New York very eerie, dark and dated.\n\nI have stayed at this Hotel twice,  once around 10 years ago and most recently on a group tour so kinda knew it would just be okay nothing great. We were at least given a twin room which they didn't offer last time we had visited, rooms had safes inside now also which was much better than the previous deposit box system. Hotel room was fine, a little dated but basics like a coffee machine and items included seemed limited especially for what is considered a 4 star hotel. Not sure how the rating system works.\n\nDidn't speak to many staff as on tour, however did have to show door key each time entering the lifts of the hotel, which suggests there are security issues. Also we were offered a welcome pack, whilst we were leaving the hotel. No idea what it included but would have been better to give it on arrival.",
+      "rating": 2,
+      "review_datetime_utc": "2022-10-10T12:42:25.108Z",
+      "review_timestamp": 1665405745,
+      "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlenZpU013EAE!2m1!1s0x0:0x31453e62a3be9f76!3m1!1s2@1:CIHM0ogKEICAgIDezviSMw%7CCgsIsaaQmgYQiI_pMw%7C?hl=en-US",
+      "review_photos": null,
+      "review_language": "en",
+      "like_count": 0,
+      "author_id": "116177307650681469510",
+      "author_link": "https://www.google.com/maps/contrib/116177307650681469510?hl=en-US",
+      "author_name": "Joe Stutter",
+      "author_photo_url": "https://lh3.googleusercontent.com/a-/ACB-R5SQkyESQB1ZIQQCQMx5abnUWhNfdg79lt2IaNtJfw=s120-c-c0x00000000-cc-rp-mo-ba3-br100",
+      "author_review_count": 33,
+      "owner_response_datetime_utc": null,
+      "owner_response_timestamp": null,
+      "owner_response_text": null,
+      "owner_response_language": null,
+      "author_reviews_link": "https://www.google.com/maps/contrib/116177307650681469510/reviews?hl=en-US",
+      "author_local_guide_level": 5,
+      "service_quality": null,
+      "hotel_rating_breakdown": {
+        "Rooms": 2,
+        "Service": 3,
+        "Location": 5
+      },
+      "review_form": {
+        "What kind of trip was it?": "Vacation"
+      }
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlNl9TWHBBRRAB",
+      "review_text": "Room freshly decorated and thoroughly cleaned daily. The bathroom fittings and bedroom fixtures and furniture are consistent with the age of the hotel. They look old fashioned - 1930s perhaps - but they work well and if you like retention of contemporary features, it is good.\nCorridors and carpets look dirty and detract from the interior which otherwise is also consistent with the period of the hotel.\nThe bed was only double - it is a small room by modern standards - but very comfortable.\nI would stay here again.",
+      "rating": 3,
+      "review_datetime_utc": "2022-09-24T08:39:24.610Z",
+      "review_timestamp": 1664008764,
+      "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlNl9TWHBBRRAB!2m1!1s0x0:0x31453e62a3be9f76!3m1!1s2@1:CIHM0ogKEICAgICe6_SXpAE%7CCgwIvIS7mQYQqPnxogI%7C?hl=en-US",
+      "review_photos": null,
+      "review_language": "en",
+      "like_count": 3,
+      "author_id": "103373671028587160085",
+      "author_link": "https://www.google.com/maps/contrib/103373671028587160085?hl=en-US",
+      "author_name": "Ken Holton",
+      "author_photo_url": "https://lh3.googleusercontent.com/a-/ACB-R5TrmdrMIzBGx2XSHAYWUrreoo-yoZq9HchUwa_D=s120-c-c0x00000000-cc-rp-mo-ba5-br100",
+      "author_review_count": 167,
+      "owner_response_datetime_utc": null,
+      "owner_response_timestamp": null,
+      "owner_response_text": null,
+      "owner_response_language": null,
+      "author_reviews_link": "https://www.google.com/maps/contrib/103373671028587160085/reviews?hl=en-US",
+      "author_local_guide_level": 7,
+      "service_quality": null,
+      "hotel_rating_breakdown": {
+        "Rooms": 3,
+        "Service": 3,
+        "Location": 4
+      },
+      "review_form": null
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlMWZ5bEh3EAE",
+      "review_text": "Not bad. For a hotel that’s 80 years old it wasn’t to bad. The walls were kind of thing the environment felt dated in the rooms but being in the heart of it all and a stones throw from Madison Square Garden made it worth what we paid. There are nicer hotels but you can not beat the hotels location. Also the staff was friendly having a restaurant that can deliver to your room 24/7 is something you do not get in very many hotels! View from our room was really cool especially at night!",
+      "rating": 4,
+      "review_datetime_utc": "2022-09-19T21:02:14.454Z",
+      "review_timestamp": 1663621334,
+      "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlMWZ5bEh3EAE!2m1!1s0x0:0x31453e62a3be9f76!3m1!1s2@1:CIHM0ogKEICAgICe1fylHw%7CCgwI1rGjmQYQwKbu2AE%7C?hl=en-US",
+      "review_photos": [
+        "https://lh5.googleusercontent.com/p/AF1QipND7od0aUSL3HiDqvD6nkN6KaXoelsMj7Kh7--u"
+      ],
+      "review_language": "en",
+      "like_count": 7,
+      "author_id": "113106688469790493488",
+      "author_link": "https://www.google.com/maps/contrib/113106688469790493488?hl=en-US",
+      "author_name": "Cass",
+      "author_photo_url": "https://lh3.googleusercontent.com/a-/ACB-R5SHVeplJOQ4ktq8mKjQn74yP09zZEPrTAQ8MmDAVw=s120-c-c0x00000000-cc-rp-mo-ba5-br100",
+      "author_review_count": 275,
+      "owner_response_datetime_utc": null,
+      "owner_response_timestamp": null,
+      "owner_response_text": null,
+      "owner_response_language": null,
+      "author_reviews_link": "https://www.google.com/maps/contrib/113106688469790493488/reviews?hl=en-US",
+      "author_local_guide_level": 7,
+      "service_quality": null,
+      "hotel_rating_breakdown": null,
+      "review_form": null
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNoaE5qVjB3RRAB",
+      "review_text": "I stay at this hotel every time I visit New York. It’s within walking distance of Times Square, Empire State Building, Madison Square Garden, but “away” enough that you get a little more peace when you’re done for the day. The rooms are small but you’ll find that at most every hotel in the area. Always clean though! The staff has always been super nice. I love the fitness center. It’s also nice that you have to show a hotel key to use the elevator, so you know it’s private/safe! I always recommend this place.",
+      "rating": 5,
+      "review_datetime_utc": "2023-02-08T19:06:56.675Z",
+      "review_timestamp": 1675883216,
+      "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNoaE5qVjB3RRAB!2m1!1s0x0:0x31453e62a3be9f76!3m1!1s2@1:CIHM0ogKEICAgIChhNjV0wE%7CCgwI0OWPnwYQyKeNwgI%7C?hl=en-US",
+      "review_photos": null,
+      "review_language": "en",
+      "like_count": 0,
+      "author_id": "102695265517658870795",
+      "author_link": "https://www.google.com/maps/contrib/102695265517658870795?hl=en-US",
+      "author_name": "Tina Bird",
+      "author_photo_url": "https://lh3.googleusercontent.com/a-/ACB-R5RePr821TJ1VUhJwEOE9yuUICejPPMzLGqmfHM=s120-c-c0x00000000-cc-rp-mo-br100",
+      "author_review_count": 4,
+      "owner_response_datetime_utc": null,
+      "owner_response_timestamp": null,
+      "owner_response_text": null,
+      "owner_response_language": null,
+      "author_reviews_link": "https://www.google.com/maps/contrib/102695265517658870795/reviews?hl=en-US",
+      "author_local_guide_level": null,
+      "service_quality": null,
+      "hotel_rating_breakdown": {
+        "Rooms": 5,
+        "Service": 5,
+        "Location": 5
+      },
+      "review_form": {
+        "What kind of trip was it?": "Vacation",
+        "Who did you travel with?": "Friends"
+      }
+    }
+  ]
+}

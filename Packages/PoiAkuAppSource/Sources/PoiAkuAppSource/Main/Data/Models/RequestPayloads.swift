@@ -11,6 +11,7 @@ public protocol RequestPayload {
 }
 
 
+// MARK: - ⌘ Poi Search
 extension PoiModule.Data.Payload {
 
   public struct SearchPoi: RequestPayload {
@@ -46,6 +47,7 @@ extension PoiModule.Data.Payload {
 }
 
 
+// MARK: - ⌘ Poi Detail
 extension PoiModule.Data.Payload {
 
   public struct PoiDetail: RequestPayload {
