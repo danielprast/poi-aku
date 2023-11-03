@@ -1,0 +1,2611 @@
+{
+  "status": "OK",
+  "request_id": "6b36b23b-43eb-4014-bfce-faba856bcac2",
+  "parameters": {
+    "query": "pizza",
+    "language": "en",
+    "region": "us",
+    "lat": 37.359428,
+    "lng": -121.925337,
+    "zoom": 13,
+    "limit": 20
+  },
+  "data": [
+    {
+      "business_id": "0x808fcd16e319c885:0x79144a94bee58347",
+      "google_id": "0x808fcd16e319c885:0x79144a94bee58347",
+      "place_id": "ChIJhcgZ4xbNj4ARR4PlvpRKFHk",
+      "phone_number": "+14082729333",
+      "name": "The Pizza Box",
+      "latitude": 37.3565621,
+      "longitude": -121.8408934,
+      "full_address": "The Pizza Box, 148 S Jackson Ave, San Jose, CA 95116",
+      "review_count": 534,
+      "rating": 4.6,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "11 AM–9 PM"
+        ],
+        "Sunday": [
+          "11 AM–9 PM"
+        ],
+        "Monday": [
+          "11 AM–9 PM"
+        ],
+        "Tuesday": [
+          "11 AM–9 PM"
+        ],
+        "Wednesday": [
+          "11 AM–9 PM"
+        ],
+        "Thursday": [
+          "11 AM–9 PM"
+        ],
+        "Friday": [
+          "11 AM–9 PM"
+        ]
+      },
+      "website": "http://thepizzaboxsanjose.com",
+      "verified": true,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcd16e319c885:0x79144a94bee58347",
+      "cid": "8724680380841820999",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJhcgZ4xbNj4ARR4PlvpRKFHk&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "105835070318147441447",
+      "owner_link": "https://maps.google.com/maps/contrib/105835070318147441447",
+      "owner_name": "The Pizza Box",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipPXwUn-Bz91hmCzh7gdMkdvG20QYAzsAEGj5YXr",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipPXwUn-Bz91hmCzh7gdMkdvG20QYAzsAEGj5YXr",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipPXwUn-Bz91hmCzh7gdMkdvG20QYAzsAEGj5YXr=w3264-h2448-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.3564813,
+          "longitude": -121.8410468,
+          "type": "photo",
+          "photo_datetime_utc": "2017-05-11T00:00:00.000Z",
+          "photo_timestamp": 1494460800
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 15,
+        "2": 3,
+        "3": 30,
+        "4": 68,
+        "5": 418
+      },
+      "photo_count": 113,
+      "about": {
+        "summary": "Unfussy, nondescript strip-mall pizzeria firing up personal pizzas & massive pies for groups.",
+        "details": {
+          "Service options": {
+            "Takeout": true,
+            "Dine-in": true
+          },
+          "Highlights": {
+            "Fast service": true
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true,
+            "Solo dining": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true,
+            "Wheelchair accessible restroom": true,
+            "Wheelchair accessible seating": true
+          },
+          "Offerings": {
+            "Alcohol": true,
+            "Beer": true,
+            "Comfort food": true,
+            "Quick bite": true,
+            "Small plates": true
+          },
+          "Dining options": {
+            "Lunch": true,
+            "Dinner": true,
+            "Seating": true
+          },
+          "Amenities": {
+            "Good for kids": true,
+            "High chairs": true,
+            "Restroom": true
+          },
+          "Atmosphere": {
+            "Casual": true,
+            "Cozy": true
+          },
+          "Crowd": {
+            "College students": true,
+            "Groups": true,
+            "Tourists": true
+          },
+          "Payments": {
+            "Debit cards": true,
+            "NFC mobile payments": true,
+            "Credit cards": true
+          }
+        }
+      },
+      "address": "148 S Jackson Ave, San Jose, CA 95116",
+      "order_link": null,
+      "price_level": "$",
+      "district": "Alum Rock",
+      "street_address": "148 S Jackson Ave",
+      "city": "San Jose",
+      "zipcode": "95116",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fcc0920af4877:0x4d887f7b0db51309",
+      "google_id": "0x808fcc0920af4877:0x4d887f7b0db51309",
+      "place_id": "ChIJd0ivIAnMj4ARCRO1DXt_iE0",
+      "phone_number": "+16692428805",
+      "name": "MOD Pizza",
+      "latitude": 37.3824701,
+      "longitude": -121.897009,
+      "full_address": "MOD Pizza, 1068 E Brokaw Rd #70, San Jose, CA 95131",
+      "review_count": 1120,
+      "rating": 4.4,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "10:30 AM–11 PM"
+        ],
+        "Sunday": [
+          "10:30 AM–10 PM"
+        ],
+        "Monday": [
+          "10:30 AM–10 PM"
+        ],
+        "Tuesday": [
+          "10:30 AM–10 PM"
+        ],
+        "Wednesday": [
+          "10:30 AM–10 PM"
+        ],
+        "Thursday": [
+          "10:30 AM–11 PM"
+        ],
+        "Friday": [
+          "10:30 AM–11 PM"
+        ]
+      },
+      "website": "https://modpizza.com/locations/brokaw-plaza",
+      "verified": true,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcc0920af4877:0x4d887f7b0db51309",
+      "cid": "5586855504240775945",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJd0ivIAnMj4ARCRO1DXt_iE0&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "117248321735436068647",
+      "owner_link": "https://maps.google.com/maps/contrib/117248321735436068647",
+      "owner_name": "MOD Pizza",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant",
+        "Restaurant"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipPY1FhC8zj_0eXkvczMOqcnwdtgtWRbh381Wkqt",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipPY1FhC8zj_0eXkvczMOqcnwdtgtWRbh381Wkqt",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipPY1FhC8zj_0eXkvczMOqcnwdtgtWRbh381Wkqt=w720-h720-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.3823052,
+          "longitude": -121.896987,
+          "type": "photo",
+          "photo_datetime_utc": "2021-06-05T00:00:00.000Z",
+          "photo_timestamp": 1622851200
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 41,
+        "2": 21,
+        "3": 87,
+        "4": 316,
+        "5": 655
+      },
+      "photo_count": 460,
+      "about": {
+        "summary": "Counter-serve, industrial-chic chain restaurant known for build-your-own pizzas.",
+        "details": {
+          "Service options": {
+            "Outdoor seating": true,
+            "Curbside pickup": true,
+            "Delivery": true,
+            "Takeout": true,
+            "Dine-in": true
+          },
+          "Highlights": {
+            "Fast service": true
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true,
+            "Solo dining": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true,
+            "Wheelchair accessible restroom": true,
+            "Wheelchair accessible seating": true
+          },
+          "Offerings": {
+            "Alcohol": true,
+            "Beer": true,
+            "Comfort food": true,
+            "Healthy options": true,
+            "Quick bite": true,
+            "Small plates": true,
+            "Vegetarian options": true
+          },
+          "Dining options": {
+            "Lunch": true,
+            "Dinner": true,
+            "Dessert": true,
+            "Seating": true
+          },
+          "Amenities": {
+            "Good for kids": true,
+            "High chairs": true,
+            "Restroom": true
+          },
+          "Atmosphere": {
+            "Casual": true
+          },
+          "Crowd": {
+            "College students": true,
+            "Groups": true,
+            "LGBTQ+ friendly": true,
+            "Tourists": true
+          },
+          "Payments": {
+            "Debit cards": true,
+            "NFC mobile payments": true,
+            "Credit cards": true
+          }
+        }
+      },
+      "address": "1068 E Brokaw Rd #70, San Jose, CA 95131",
+      "order_link": "https://food.google.com/chooseprovider?restaurantId=%2Fg%2F11dx8htxq3&g2lbs=ALIxsqotQUiQva8h8oWvzUshREMY1ROfLmLORkokBCr-T4yJ7xm-HqePJkCm1-LKCv4Mg1XIQ0c-757jr2quc3SQcAlmWHHH5g%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=43P6Y-_rL8ut5NoP3sOl0AU&ei=43P6Y-_rL8ut5NoP3sOl0AU&fo_s=OA%2CAH%2CSOE&orderType=2",
+      "price_level": "$",
+      "district": "North San Jose",
+      "street_address": "1068 E Brokaw Rd #70",
+      "city": "San Jose",
+      "zipcode": "95131",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fcc0e53c56af5:0xfb528bb114954917",
+      "google_id": "0x808fcc0e53c56af5:0xfb528bb114954917",
+      "place_id": "ChIJ9WrFUw7Mj4ARF0mVFLGLUvs",
+      "phone_number": "+14085737373",
+      "name": "Pizza California",
+      "latitude": 37.3835817,
+      "longitude": -121.8940705,
+      "full_address": "Pizza California, 1708 Old Oakland Rd, San Jose, CA 95131",
+      "review_count": 578,
+      "rating": 4.4,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "11 AM–10 PM"
+        ],
+        "Sunday": [
+          "12–9 PM"
+        ],
+        "Monday": [
+          "4–9 PM"
+        ],
+        "Tuesday": [
+          "11 AM–9 PM"
+        ],
+        "Wednesday": [
+          "11 AM–9 PM"
+        ],
+        "Thursday": [
+          "11 AM–9 PM"
+        ],
+        "Friday": [
+          "11 AM–10 PM"
+        ]
+      },
+      "website": "http://pizzacalifornia.com",
+      "verified": true,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcc0e53c56af5:0xfb528bb114954917",
+      "cid": "18109690644280985879",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ9WrFUw7Mj4ARF0mVFLGLUvs&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "103644812968631812146",
+      "owner_link": "https://maps.google.com/maps/contrib/103644812968631812146",
+      "owner_name": "Pizza California",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant",
+        "Italian restaurant",
+        "Pizza delivery",
+        "Restaurant",
+        "Pizza Takeout",
+        "Salad shop"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipPBA-Mn2hv9MvdZLAEW3m-c_rIjFgm6tdUfeWBN",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipPBA-Mn2hv9MvdZLAEW3m-c_rIjFgm6tdUfeWBN",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipPBA-Mn2hv9MvdZLAEW3m-c_rIjFgm6tdUfeWBN=w2048-h1360-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.383314999999996,
+          "longitude": -121.89402109999999,
+          "type": "photo",
+          "photo_datetime_utc": "2020-11-23T00:00:00.000Z",
+          "photo_timestamp": 1606089600
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 31,
+        "2": 9,
+        "3": 24,
+        "4": 125,
+        "5": 389
+      },
+      "photo_count": 207,
+      "about": {
+        "summary": "Pizza with sourdough crust & inventive toppings, by the pie or the slice, plus salads & wings.",
+        "details": {
+          "Service options": {
+            "Outdoor seating": true,
+            "Curbside pickup": true,
+            "No-contact delivery": true,
+            "Delivery": true,
+            "Takeout": true,
+            "Dine-in": true
+          },
+          "Highlights": {
+            "Fast service": true,
+            "Great beer selection": true,
+            "Sports": true
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true,
+            "Solo dining": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true,
+            "Wheelchair accessible restroom": true,
+            "Wheelchair accessible seating": true
+          },
+          "Offerings": {
+            "Alcohol": true,
+            "Beer": true,
+            "Comfort food": true,
+            "Happy hour drinks": true,
+            "Happy hour food": true,
+            "Kids' menu": true,
+            "Late-night food": true,
+            "Quick bite": true,
+            "Salad bar": true,
+            "Vegetarian options": true,
+            "Wine": true
+          },
+          "Dining options": {
+            "Lunch": true,
+            "Dinner": true,
+            "Catering": true,
+            "Dessert": true,
+            "Seating": true
+          },
+          "Amenities": {
+            "Good for kids": true,
+            "High chairs": true,
+            "Restroom": true
+          },
+          "Atmosphere": {
+            "Casual": true,
+            "Cozy": true
+          },
+          "Crowd": {
+            "College students": true,
+            "Groups": true
+          },
+          "Payments": {
+            "Debit cards": true,
+            "NFC mobile payments": true,
+            "Credit cards": true
+          }
+        }
+      },
+      "address": "1708 Old Oakland Rd, San Jose, CA 95131",
+      "order_link": null,
+      "price_level": "$$",
+      "district": "McKay - Ringwood",
+      "street_address": "1708 Old Oakland Rd",
+      "city": "San Jose",
+      "zipcode": "95131",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fccc708a5688d:0x3065e7d923a7c91f",
+      "google_id": "0x808fccc708a5688d:0x3065e7d923a7c91f",
+      "place_id": "ChIJjWilCMfMj4ARH8mnI9nnZTA",
+      "phone_number": "+14089770605",
+      "name": "San Carlos Italian Pizza",
+      "latitude": 37.3361862,
+      "longitude": -121.8769095,
+      "full_address": "San Carlos Italian Pizza, 484 E San Carlos St, San Jose, CA 95112",
+      "review_count": 199,
+      "rating": 4.2,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "11 AM–10 PM"
+        ],
+        "Sunday": [
+          "11 AM–10 PM"
+        ],
+        "Monday": [
+          "11 AM–10 PM"
+        ],
+        "Tuesday": [
+          "11 AM–10 PM"
+        ],
+        "Wednesday": [
+          "11 AM–10 PM"
+        ],
+        "Thursday": [
+          "11 AM–10 PM"
+        ],
+        "Friday": [
+          "11 AM–10 PM"
+        ]
+      },
+      "website": null,
+      "verified": false,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fccc708a5688d:0x3065e7d923a7c91f",
+      "cid": "3487448406260435231",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJjWilCMfMj4ARH8mnI9nnZTA&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "109793356911696357290",
+      "owner_link": "https://maps.google.com/maps/contrib/109793356911696357290",
+      "owner_name": "San Carlos Italian Pizza",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant",
+        "Italian restaurant"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipPR00fDsklYAiEGq9IFXPCUnahXui078Hj23oMv",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipPR00fDsklYAiEGq9IFXPCUnahXui078Hj23oMv",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipPR00fDsklYAiEGq9IFXPCUnahXui078Hj23oMv=w4032-h3024-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.336272699999995,
+          "longitude": -121.8769763,
+          "type": "photo",
+          "photo_datetime_utc": "2019-10-25T00:00:00.000Z",
+          "photo_timestamp": 1571961600
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 16,
+        "2": 7,
+        "3": 14,
+        "4": 50,
+        "5": 112
+      },
+      "photo_count": 47,
+      "about": {
+        "summary": null,
+        "details": {
+          "Service options": {
+            "Outdoor seating": true,
+            "Delivery": true,
+            "Takeout": true,
+            "Dine-in": true
+          },
+          "Highlights": {
+            "Fast service": true
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true,
+            "Solo dining": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true,
+            "Wheelchair accessible restroom": true,
+            "Wheelchair accessible seating": true
+          },
+          "Offerings": {
+            "Alcohol": true,
+            "Beer": true,
+            "Comfort food": true,
+            "Quick bite": true
+          },
+          "Dining options": {
+            "Lunch": true,
+            "Dinner": true,
+            "Dessert": true,
+            "Seating": true
+          },
+          "Amenities": {
+            "Good for kids": true,
+            "Restroom": true
+          },
+          "Atmosphere": {
+            "Casual": true
+          },
+          "Crowd": {
+            "College students": true,
+            "Groups": true
+          },
+          "Payments": {
+            "Debit cards": true,
+            "NFC mobile payments": true,
+            "Credit cards": true
+          }
+        }
+      },
+      "address": "484 E San Carlos St, San Jose, CA 95112",
+      "order_link": "https://food.google.com/chooseprovider?restaurantId=%2Fg%2F1tg5zwj_&g2lbs=ALIxsqqU7jnlUj3jwsDDL0nIboTKy6DKZpb82OaIkZajcoybQNiWDjF0PF26kZ3caxlGuhErodIepyiQhvcqKfHkue5gdaSsOg%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=43P6Y-_rL8ut5NoP3sOl0AU&ei=43P6Y-_rL8ut5NoP3sOl0AU&fo_s=OA%2CAH%2CSOE",
+      "price_level": null,
+      "district": "Central San Jose",
+      "street_address": "484 E San Carlos St",
+      "city": "San Jose",
+      "zipcode": "95112",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fcb653a9e64dd:0xd079972484158f59",
+      "google_id": "0x808fcb653a9e64dd:0xd079972484158f59",
+      "place_id": "ChIJ3WSeOmXLj4ARWY8VhCSXedA",
+      "phone_number": "+14082737186",
+      "name": "Blaze Pizza",
+      "latitude": 37.341811,
+      "longitude": -121.91120099999999,
+      "full_address": "Blaze Pizza, 685 Coleman Ave, San Jose, CA 95110",
+      "review_count": 692,
+      "rating": 4.3,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "10:30 AM–9 PM"
+        ],
+        "Sunday": [
+          "10:30 AM–9 PM"
+        ],
+        "Monday": [
+          "10:30 AM–9 PM"
+        ],
+        "Tuesday": [
+          "10:30 AM–9 PM"
+        ],
+        "Wednesday": [
+          "10:30 AM–9 PM"
+        ],
+        "Thursday": [
+          "10:30 AM–9 PM"
+        ],
+        "Friday": [
+          "10:30 AM–9 PM"
+        ]
+      },
+      "website": "https://www.blazepizza.com",
+      "verified": true,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcb653a9e64dd:0xd079972484158f59",
+      "cid": "15022204215161622361",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ3WSeOmXLj4ARWY8VhCSXedA&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "106418323865041987945",
+      "owner_link": "https://maps.google.com/maps/contrib/106418323865041987945",
+      "owner_name": "Blaze Pizza",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipOTDEqfMWfBjOSv_CcIKltpmg4XnQ6IDuu2qNbh",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipOTDEqfMWfBjOSv_CcIKltpmg4XnQ6IDuu2qNbh",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipOTDEqfMWfBjOSv_CcIKltpmg4XnQ6IDuu2qNbh=w1684-h1114-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.3416711,
+          "longitude": -121.91101169999999,
+          "type": "photo",
+          "photo_datetime_utc": "2019-11-06T00:00:00.000Z",
+          "photo_timestamp": 1572998400
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 37,
+        "2": 17,
+        "3": 58,
+        "4": 169,
+        "5": 411
+      },
+      "photo_count": 323,
+      "about": {
+        "summary": "Hip counter-serve pizzeria dishing up crispy, thin-crust pies made with creative toppings & sauces.",
+        "details": {
+          "Service options": {
+            "Outdoor seating": true,
+            "Curbside pickup": true,
+            "No-contact delivery": true,
+            "Delivery": true,
+            "Takeout": true,
+            "Dine-in": true
+          },
+          "Highlights": {
+            "Fast service": true
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true,
+            "Solo dining": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true,
+            "Wheelchair accessible restroom": true,
+            "Wheelchair accessible seating": true
+          },
+          "Offerings": {
+            "Alcohol": true,
+            "Beer": true,
+            "Comfort food": true,
+            "Quick bite": true,
+            "Vegetarian options": true,
+            "Wine": true
+          },
+          "Dining options": {
+            "Lunch": true,
+            "Dinner": true,
+            "Dessert": true,
+            "Seating": true
+          },
+          "Amenities": {
+            "Good for kids": true,
+            "High chairs": true,
+            "Restroom": true,
+            "Wi-Fi": true
+          },
+          "Atmosphere": {
+            "Casual": true
+          },
+          "Crowd": {
+            "College students": true,
+            "Groups": true
+          },
+          "Payments": {
+            "Debit cards": true,
+            "NFC mobile payments": true,
+            "Credit cards": true
+          }
+        }
+      },
+      "address": "685 Coleman Ave, San Jose, CA 95110",
+      "order_link": "https://food.google.com/chooseprovider?restaurantId=%2Fg%2F11d_8qsw3d&g2lbs=ALIxsqpNV9aJ-zyBNq1rHyZGbgSw6p4Vh9NKaUKlj3O9gt_Cludi5N1fW5LTjcl8VLiqNg2Q60PzaR0OcUcNqhexZ641XBCykg%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=43P6Y-_rL8ut5NoP3sOl0AU&ei=43P6Y-_rL8ut5NoP3sOl0AU&fo_s=OA%2CAH%2CSOE",
+      "price_level": "$",
+      "district": "Central San Jose",
+      "street_address": "685 Coleman Ave",
+      "city": "San Jose",
+      "zipcode": "95110",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fcbecc2ff30e3:0x936cbb4dc1a1b075",
+      "google_id": "0x808fcbecc2ff30e3:0x936cbb4dc1a1b075",
+      "place_id": "ChIJ4zD_wuzLj4ARdbChwU27bJM",
+      "phone_number": "+14083525372",
+      "name": "iSlice Pizza",
+      "latitude": 37.3706947,
+      "longitude": -121.9169027,
+      "full_address": "iSlice Pizza, 1751 N First St #20, San Jose, CA 95112",
+      "review_count": 18,
+      "rating": 5,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "11 AM–10 PM"
+        ],
+        "Sunday": [
+          "12–9 PM"
+        ],
+        "Monday": [
+          "11 AM–10 PM"
+        ],
+        "Tuesday": [
+          "11 AM–10 PM"
+        ],
+        "Wednesday": [
+          "11 AM–10 PM"
+        ],
+        "Thursday": [
+          "11 AM–10 PM"
+        ],
+        "Friday": [
+          "11 AM–10 PM"
+        ]
+      },
+      "website": "https://www.isliceonline.com/index.html",
+      "verified": true,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcbecc2ff30e3:0x936cbb4dc1a1b075",
+      "cid": "10623071563695632501",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ4zD_wuzLj4ARdbChwU27bJM&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "113768315218125668385",
+      "owner_link": "https://maps.google.com/maps/contrib/113768315218125668385",
+      "owner_name": "iSlice Pizza",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipMhw9AXPBeq9cs0UM6D7y8WoU2LqqPv4uo6ZaZv",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipMhw9AXPBeq9cs0UM6D7y8WoU2LqqPv4uo6ZaZv",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipMhw9AXPBeq9cs0UM6D7y8WoU2LqqPv4uo6ZaZv=w2207-h1800-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.370622399999995,
+          "longitude": -121.91700709999999,
+          "type": "photo",
+          "photo_datetime_utc": "2023-02-03T00:00:00.000Z",
+          "photo_timestamp": 1675382400
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 18
+      },
+      "photo_count": 37,
+      "about": {
+        "summary": null,
+        "details": {
+          "Service options": {
+            "Outdoor seating": true,
+            "Curbside pickup": true,
+            "No-contact delivery": true,
+            "Delivery": true,
+            "Takeout": true,
+            "Dine-in": true
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true,
+            "Solo dining": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true,
+            "Wheelchair accessible restroom": true
+          },
+          "Offerings": {
+            "Comfort food": true,
+            "Quick bite": true,
+            "Vegetarian options": true
+          },
+          "Dining options": {
+            "Lunch": true,
+            "Dinner": true,
+            "Seating": true
+          },
+          "Amenities": {
+            "Good for kids": true,
+            "Restroom": true
+          },
+          "Atmosphere": {
+            "Casual": true
+          },
+          "Payments": {
+            "Debit cards": true,
+            "NFC mobile payments": true,
+            "Credit cards": true
+          }
+        }
+      },
+      "address": "1751 N First St #20, San Jose, CA 95112",
+      "order_link": "https://food.google.com/chooseprovider?restaurantId=%2Fg%2F11t97fzwlp&g2lbs=ALIxsqrEtD3Vi824uAZglN8Qdht4c3Kj6vy9r0XmAU3cYQCdviZr65IgwYprh9ftgJ_5bsZO79F6n-4ZRljCsmSwifm_D3Edbg%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=43P6Y-_rL8ut5NoP3sOl0AU&ei=43P6Y-_rL8ut5NoP3sOl0AU&fo_s=OA%2CAH%2CSOE",
+      "price_level": null,
+      "district": "North San Jose",
+      "street_address": "1751 N First St #20",
+      "city": "San Jose",
+      "zipcode": "95112",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fcd069b9db9b5:0x4da65bb2846d079e",
+      "google_id": "0x808fcd069b9db9b5:0x4da65bb2846d079e",
+      "place_id": "ChIJtbmdmwbNj4ARngdthLJbpk0",
+      "phone_number": "+14082593940",
+      "name": "Round Table Pizza",
+      "latitude": 37.3676575,
+      "longitude": -121.84890929999999,
+      "full_address": "Round Table Pizza, 2351 McKee Rd, San Jose, CA 95116",
+      "review_count": 273,
+      "rating": 4.2,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "11 AM–11 PM"
+        ],
+        "Sunday": [
+          "11 AM–10 PM"
+        ],
+        "Monday": [
+          "11 AM–10 PM"
+        ],
+        "Tuesday": [
+          "11 AM–10 PM"
+        ],
+        "Wednesday": [
+          "11 AM–10 PM"
+        ],
+        "Thursday": [
+          "11 AM–10 PM"
+        ],
+        "Friday": [
+          "11 AM–11 PM"
+        ]
+      },
+      "website": "https://ordering.roundtablepizza.com/site/rtp41",
+      "verified": true,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcd069b9db9b5:0x4da65bb2846d079e",
+      "cid": "5595260409338464158",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJtbmdmwbNj4ARngdthLJbpk0&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "114950277490117774147",
+      "owner_link": "https://maps.google.com/maps/contrib/114950277490117774147",
+      "owner_name": "Round Table Pizza",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant",
+        "Caterer",
+        "Italian restaurant",
+        "Pizza delivery",
+        "Pizza Takeout"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipM31r-1qqJbKnuXC05skZHFwjaGjo-ElIcTWUbv",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipM31r-1qqJbKnuXC05skZHFwjaGjo-ElIcTWUbv",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipM31r-1qqJbKnuXC05skZHFwjaGjo-ElIcTWUbv=w4032-h3024-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.3676094,
+          "longitude": -121.84879780000001,
+          "type": "photo",
+          "photo_datetime_utc": "2017-04-26T00:00:00.000Z",
+          "photo_timestamp": 1493164800
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 16,
+        "2": 9,
+        "3": 35,
+        "4": 65,
+        "5": 148
+      },
+      "photo_count": 57,
+      "about": {
+        "summary": "Long-running chain serving pizzas with customizable toppings & sauces in a simple space.",
+        "details": {
+          "Service options": {
+            "Curbside pickup": true,
+            "No-contact delivery": true,
+            "Delivery": true,
+            "Takeout": true,
+            "Dine-in": false
+          },
+          "Highlights": {
+            "Fast service": true
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true,
+            "Solo dining": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true,
+            "Wheelchair accessible restroom": true,
+            "Wheelchair accessible seating": true
+          },
+          "Offerings": {
+            "Alcohol": true,
+            "Beer": true,
+            "Comfort food": true,
+            "Kids' menu": true,
+            "Quick bite": true,
+            "Salad bar": true,
+            "Vegetarian options": true
+          },
+          "Dining options": {
+            "Lunch": true,
+            "Dinner": true,
+            "Catering": true,
+            "Seating": true
+          },
+          "Amenities": {
+            "Good for kids": true,
+            "High chairs": true,
+            "Restroom": true
+          },
+          "Atmosphere": {
+            "Casual": true
+          },
+          "Crowd": {
+            "Family-friendly": true,
+            "Groups": true,
+            "Tourists": true
+          },
+          "Payments": {
+            "Debit cards": true,
+            "NFC mobile payments": true,
+            "Credit cards": true
+          }
+        }
+      },
+      "address": "2351 McKee Rd, San Jose, CA 95116",
+      "order_link": "https://food.google.com/chooseprovider?restaurantId=%2Fg%2F1tgq6w_7&g2lbs=ALIxsqp8OiscA-csTNWrnuecgsJTByZASvW4uBPEdzVH_dR4ijNHojCs4rRMN77pORnRDjwDbJPK1K3EFhqRrgkH3DGFYjiU0w%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=43P6Y-_rL8ut5NoP3sOl0AU&ei=43P6Y-_rL8ut5NoP3sOl0AU&fo_s=OA%2CAH%2CSOE",
+      "price_level": "$$",
+      "district": "Alum Rock",
+      "street_address": "2351 McKee Rd",
+      "city": "San Jose",
+      "zipcode": "95116",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fcea1f24f6833:0x97a34abaa96215d4",
+      "google_id": "0x808fcea1f24f6833:0x97a34abaa96215d4",
+      "place_id": "ChIJM2hP8qHOj4AR1BViqbpKo5c",
+      "phone_number": "+14089345934",
+      "name": "Fast Express Pizza & Pasta",
+      "latitude": 37.403774899999995,
+      "longitude": -121.8798511,
+      "full_address": "Fast Express Pizza & Pasta, 2688 Cropley Ave, San Jose, CA 95132",
+      "review_count": 91,
+      "rating": 4.7,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "11 AM–8 PM"
+        ],
+        "Sunday": [
+          "11 AM–8 PM"
+        ],
+        "Monday": [
+          "Closed"
+        ],
+        "Tuesday": [
+          "Closed"
+        ],
+        "Wednesday": [
+          "4–8 PM"
+        ],
+        "Thursday": [
+          "11 AM–8 PM"
+        ],
+        "Friday": [
+          "11 AM–8 PM"
+        ]
+      },
+      "website": null,
+      "verified": true,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcea1f24f6833:0x97a34abaa96215d4",
+      "cid": "10926659286497105364",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJM2hP8qHOj4AR1BViqbpKo5c&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "104487262817063567716",
+      "owner_link": "https://maps.google.com/maps/contrib/104487262817063567716",
+      "owner_name": "Fast Express Pizza & Pasta",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant",
+        "Pizza delivery"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipNcXZcDA5NELM5ZglTiAXK87nRl6UJOkcoHEffJ",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipNcXZcDA5NELM5ZglTiAXK87nRl6UJOkcoHEffJ",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipNcXZcDA5NELM5ZglTiAXK87nRl6UJOkcoHEffJ=w12000-h9000-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.4038751,
+          "longitude": -121.8799728,
+          "type": "photo",
+          "photo_datetime_utc": "2022-11-06T00:00:00.000Z",
+          "photo_timestamp": 1667692800
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 1,
+        "2": 0,
+        "3": 5,
+        "4": 12,
+        "5": 73
+      },
+      "photo_count": 60,
+      "about": {
+        "summary": null,
+        "details": {
+          "Service options": {
+            "Delivery": true,
+            "Takeout": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true
+          }
+        }
+      },
+      "address": "2688 Cropley Ave, San Jose, CA 95132",
+      "order_link": null,
+      "price_level": "$$",
+      "district": "North San Jose",
+      "street_address": "2688 Cropley Ave",
+      "city": "San Jose",
+      "zipcode": "95132",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fcc62ab368aa7:0xb37ef00c291c2b00",
+      "google_id": "0x808fcc62ab368aa7:0xb37ef00c291c2b00",
+      "place_id": "ChIJp4o2q2LMj4ARACscKQzwfrM",
+      "phone_number": "+14082954141",
+      "name": "Giovanni's Pizza",
+      "latitude": 37.3587219,
+      "longitude": -121.8902653,
+      "full_address": "Giovanni's Pizza, 862 N 13th St, San Jose, CA 95112",
+      "review_count": 97,
+      "rating": 4.4,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "2–9 PM"
+        ],
+        "Sunday": [
+          "2–9 PM"
+        ],
+        "Monday": [
+          "Closed"
+        ],
+        "Tuesday": [
+          "4–9 PM"
+        ],
+        "Wednesday": [
+          "4–9 PM"
+        ],
+        "Thursday": [
+          "2–9 PM"
+        ],
+        "Friday": [
+          "2–9 PM"
+        ]
+      },
+      "website": "http://www.giovannispizzaorder.com",
+      "verified": true,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcc62ab368aa7:0xb37ef00c291c2b00",
+      "cid": "12934039114874628864",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJp4o2q2LMj4ARACscKQzwfrM&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "112092075795744773489",
+      "owner_link": "https://maps.google.com/maps/contrib/112092075795744773489",
+      "owner_name": "Giovanni's Pizza",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza delivery",
+      "subtypes": [
+        "Pizza delivery",
+        "Takeout Restaurant"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipO-7luoCpBg0ufHy0J7N8DuRniS-7CkSPqT_1g1",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipO-7luoCpBg0ufHy0J7N8DuRniS-7CkSPqT_1g1",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipO-7luoCpBg0ufHy0J7N8DuRniS-7CkSPqT_1g1=w1051-h788-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.358615199999996,
+          "longitude": -121.89044679999999,
+          "type": "photo",
+          "photo_datetime_utc": "2016-05-29T00:00:00.000Z",
+          "photo_timestamp": 1464480000
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 5,
+        "2": 2,
+        "3": 8,
+        "4": 17,
+        "5": 65
+      },
+      "photo_count": 33,
+      "about": {
+        "summary": "Cozy family-run Italian bistro featuring brick-oven pies & pasta in a traditional atmosphere.",
+        "details": {
+          "Service options": {
+            "Curbside pickup": true,
+            "No-contact delivery": true,
+            "Delivery": true,
+            "Takeout": true,
+            "Dine-in": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true
+          }
+        }
+      },
+      "address": "862 N 13th St, San Jose, CA 95112",
+      "order_link": "https://food.google.com/chooseprovider?restaurantId=%2Fg%2F1tgzblk0&g2lbs=ALIxsqqBV8-YJjR4veB3IDlaDtOviM7OJBGbT--hbOmzH9GTl9EX9zDN7lqA22DPkb-Q2GKKNFyyOTjwjzQIdudXHy4Wkam-yg%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=43P6Y-_rL8ut5NoP3sOl0AU&ei=43P6Y-_rL8ut5NoP3sOl0AU&fo_s=OA%2CAH%2CSOE",
+      "price_level": "$",
+      "district": "Central San Jose",
+      "street_address": "862 N 13th St",
+      "city": "San Jose",
+      "zipcode": "95112",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fcdadd40e4c75:0x1111efb084febe14",
+      "google_id": "0x808fcdadd40e4c75:0x1111efb084febe14",
+      "place_id": "ChIJdUwO1K3Nj4ARFL7-hLDvERE",
+      "phone_number": "+14082628633",
+      "name": "Colosseum New York Pizza",
+      "latitude": 37.407952099999996,
+      "longitude": -121.8889442,
+      "full_address": "Colosseum New York Pizza, 761 E Capitol Ave, Milpitas, CA 95035",
+      "review_count": 690,
+      "rating": 4.4,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "11 AM–10 PM"
+        ],
+        "Sunday": [
+          "2–10 PM"
+        ],
+        "Monday": [
+          "11 AM–10 PM"
+        ],
+        "Tuesday": [
+          "11 AM–10 PM"
+        ],
+        "Wednesday": [
+          "11 AM–10 PM"
+        ],
+        "Thursday": [
+          "11 AM–10 PM"
+        ],
+        "Friday": [
+          "11 AM–10 PM"
+        ]
+      },
+      "website": null,
+      "verified": false,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcdadd40e4c75:0x1111efb084febe14",
+      "cid": "1230027714673425940",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJdUwO1K3Nj4ARFL7-hLDvERE&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "100122868495488118212",
+      "owner_link": "https://maps.google.com/maps/contrib/100122868495488118212",
+      "owner_name": "Colosseum New York Pizza",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipON6kAyh8bsuQMZJqdCekjz4ZCIBdZU8SPznt1y",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipON6kAyh8bsuQMZJqdCekjz4ZCIBdZU8SPznt1y",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipON6kAyh8bsuQMZJqdCekjz4ZCIBdZU8SPznt1y=w4032-h3024-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.40803032700356,
+          "longitude": -121.88894410290753,
+          "type": "photo",
+          "photo_datetime_utc": "2019-05-05T00:00:00.000Z",
+          "photo_timestamp": 1557014400
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 27,
+        "2": 21,
+        "3": 55,
+        "4": 153,
+        "5": 434
+      },
+      "photo_count": 261,
+      "about": {
+        "summary": "Late-night pizzeria offers New York-style slices & comfort eats at the counter in a simple interior.",
+        "details": {
+          "Service options": {
+            "No-contact delivery": true,
+            "Delivery": true,
+            "Takeout": true,
+            "Dine-in": true
+          },
+          "Highlights": {
+            "Fast service": true
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true,
+            "Solo dining": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true,
+            "Wheelchair accessible seating": true
+          },
+          "Offerings": {
+            "Alcohol": true,
+            "Beer": true,
+            "Comfort food": true,
+            "Quick bite": true
+          },
+          "Dining options": {
+            "Lunch": true,
+            "Dinner": true,
+            "Dessert": true,
+            "Seating": true
+          },
+          "Amenities": {
+            "Good for kids": true,
+            "High chairs": true,
+            "Restroom": true
+          },
+          "Atmosphere": {
+            "Casual": true
+          },
+          "Crowd": {
+            "College students": true,
+            "Groups": true
+          },
+          "Payments": {
+            "Debit cards": true,
+            "NFC mobile payments": true,
+            "Credit cards": true
+          }
+        }
+      },
+      "address": "761 E Capitol Ave, Milpitas, CA 95035",
+      "order_link": "https://food.google.com/chooseprovider?restaurantId=%2Fg%2F1v3lq5n4&g2lbs=ALIxsqqpeozeNrw45ab8_ujmM8KPFBZkhrxyA5yZVj7-Ab3YjUTXXgWeuJpLaGsDti9YMytnTlVegozHmS99KPIFdNzODCYYtQ%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=43P6Y-_rL8ut5NoP3sOl0AU&ei=43P6Y-_rL8ut5NoP3sOl0AU&fo_s=OA%2CAH%2CSOE",
+      "price_level": "$$",
+      "district": null,
+      "street_address": "761 E Capitol Ave",
+      "city": "Milpitas",
+      "zipcode": "95035",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fcd070781e0b5:0x16d06fd4bfff2f3",
+      "google_id": "0x808fcd070781e0b5:0x16d06fd4bfff2f3",
+      "place_id": "ChIJteCBBwfNj4AR8_L_S_0GbQE",
+      "phone_number": "+14083262910",
+      "name": "Jtown Pizza Co.",
+      "latitude": 37.3498145,
+      "longitude": -121.8938594,
+      "full_address": "Jtown Pizza Co., 625 N 6th St, San Jose, CA 95112",
+      "review_count": 311,
+      "rating": 4.5,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "9 AM–12 AM"
+        ],
+        "Sunday": [
+          "9 AM–10 PM"
+        ],
+        "Monday": [
+          "11 AM–10 PM"
+        ],
+        "Tuesday": [
+          "11 AM–10 PM"
+        ],
+        "Wednesday": [
+          "11 AM–10 PM"
+        ],
+        "Thursday": [
+          "11 AM–12 AM"
+        ],
+        "Friday": [
+          "11 AM–12 AM"
+        ]
+      },
+      "website": "https://www.jtownpizza.com",
+      "verified": true,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcd070781e0b5:0x16d06fd4bfff2f3",
+      "cid": "102746051470947059",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJteCBBwfNj4AR8_L_S_0GbQE&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "104342842017214830168",
+      "owner_link": "https://maps.google.com/maps/contrib/104342842017214830168",
+      "owner_name": "Jtown Pizza Co.",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant",
+        "Bar",
+        "Bar & grill",
+        "Beer garden",
+        "Hamburger restaurant",
+        "Pizza delivery",
+        "Pizza Takeout",
+        "Sandwich shop"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipPPa736JSfHlcVYewPM_Zru_yNIpVkAy3OqDJZw",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipPPa736JSfHlcVYewPM_Zru_yNIpVkAy3OqDJZw",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipPPa736JSfHlcVYewPM_Zru_yNIpVkAy3OqDJZw=w1500-h763-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.349930199999996,
+          "longitude": -121.89363329999998,
+          "type": "photo",
+          "photo_datetime_utc": "2020-07-08T00:00:00.000Z",
+          "photo_timestamp": 1594166400
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 12,
+        "2": 7,
+        "3": 19,
+        "4": 62,
+        "5": 211
+      },
+      "photo_count": 299,
+      "about": {
+        "summary": null,
+        "details": {
+          "From the business": {
+            "Identifies as women-owned": true
+          },
+          "Service options": {
+            "Outdoor seating": true,
+            "Curbside pickup": true,
+            "No-contact delivery": true,
+            "Delivery": true,
+            "Takeout": true,
+            "Dine-in": true
+          },
+          "Highlights": {
+            "Fast service": true,
+            "Rooftop seating": true,
+            "Sports": true
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true,
+            "Solo dining": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible elevator": true,
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true,
+            "Wheelchair accessible restroom": true,
+            "Wheelchair accessible seating": true
+          },
+          "Offerings": {
+            "Alcohol": true,
+            "Beer": true,
+            "Cocktails": true,
+            "Comfort food": true,
+            "Hard liquor": true,
+            "Late-night food": true,
+            "Quick bite": true,
+            "Small plates": true,
+            "Vegetarian options": true,
+            "Wine": true
+          },
+          "Dining options": {
+            "Breakfast": true,
+            "Brunch": true,
+            "Lunch": true,
+            "Dinner": true,
+            "Catering": true,
+            "Counter service": true,
+            "Seating": true
+          },
+          "Amenities": {
+            "Bar onsite": true,
+            "Gender-neutral restroom": true,
+            "Good for kids": true,
+            "High chairs": true,
+            "Restroom": true,
+            "Wi-Fi": true
+          },
+          "Atmosphere": {
+            "Casual": true,
+            "Cozy": true
+          },
+          "Crowd": {
+            "College students": true,
+            "Family-friendly": true,
+            "Groups": true,
+            "LGBTQ+ friendly": true,
+            "Transgender safespace": true
+          },
+          "Payments": {
+            "Debit cards": true,
+            "NFC mobile payments": true,
+            "Credit cards": true
+          }
+        }
+      },
+      "address": "625 N 6th St, San Jose, CA 95112",
+      "order_link": "https://food.google.com/chooseprovider?restaurantId=%2Fg%2F11fgm65bj5&g2lbs=ALIxsqrP933ENXoU70OsQ9FNGncMid_8Ett8R6WEA7MUvLgDjZNBlfwF0PIaehWCS7uQzi47pT8Q6FPa3rHT6VkI140hmcOYzQ%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=43P6Y-_rL8ut5NoP3sOl0AU&ei=43P6Y-_rL8ut5NoP3sOl0AU&fo_s=OA%2CAH%2CSOE",
+      "price_level": null,
+      "district": "Central San Jose",
+      "street_address": "625 N 6th St",
+      "city": "San Jose",
+      "zipcode": "95112",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fcd1b87c6025f:0x1a17d4ad8a766f6e",
+      "google_id": "0x808fcd1b87c6025f:0x1a17d4ad8a766f6e",
+      "place_id": "ChIJXwLGhxvNj4ARbm92iq3UFxo",
+      "phone_number": "+14086773151",
+      "name": "Pizza Wings El Buen Sabor",
+      "latitude": 37.3656637,
+      "longitude": -121.8517244,
+      "full_address": "Pizza Wings El Buen Sabor, 301 N Jackson Ave #6, San Jose, CA 95133",
+      "review_count": 67,
+      "rating": 5,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "10 AM–10 PM"
+        ],
+        "Sunday": [
+          "10 AM–9 PM"
+        ],
+        "Monday": [
+          "10 AM–9 PM"
+        ],
+        "Tuesday": [
+          "10 AM–9 PM"
+        ],
+        "Wednesday": [
+          "10 AM–9 PM"
+        ],
+        "Thursday": [
+          "10 AM–9 PM"
+        ],
+        "Friday": [
+          "10 AM–10 PM"
+        ]
+      },
+      "website": "https://pastasanjose.com",
+      "verified": true,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcd1b87c6025f:0x1a17d4ad8a766f6e",
+      "cid": "1880205211267919726",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJXwLGhxvNj4ARbm92iq3UFxo&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "114398603941212773785",
+      "owner_link": "https://maps.google.com/maps/contrib/114398603941212773785",
+      "owner_name": "Pizza Wings El Buen Sabor",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant",
+        "American restaurant",
+        "Restaurant"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipPoRte2Q1w4Y1Wd2LzsWNT_Q6iWLh6XBLNMciK2",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipPoRte2Q1w4Y1Wd2LzsWNT_Q6iWLh6XBLNMciK2",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipPoRte2Q1w4Y1Wd2LzsWNT_Q6iWLh6XBLNMciK2=w4032-h2268-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.3656019,
+          "longitude": -121.8515133,
+          "type": "photo",
+          "photo_datetime_utc": "2022-07-24T00:00:00.000Z",
+          "photo_timestamp": 1658620800
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 2,
+        "5": 65
+      },
+      "photo_count": 53,
+      "about": {
+        "summary": null,
+        "details": {
+          "Service options": {
+            "Curbside pickup": true,
+            "No-contact delivery": true,
+            "Delivery": true,
+            "Takeout": true,
+            "Dine-in": true
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true,
+            "Solo dining": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true
+          },
+          "Offerings": {
+            "Comfort food": true,
+            "Quick bite": true
+          },
+          "Dining options": {
+            "Lunch": true,
+            "Dinner": true
+          },
+          "Amenities": {
+            "Good for kids": true
+          },
+          "Atmosphere": {
+            "Casual": true
+          },
+          "Payments": {
+            "Debit cards": true,
+            "NFC mobile payments": true,
+            "Credit cards": true
+          }
+        }
+      },
+      "address": "301 N Jackson Ave #6, San Jose, CA 95133",
+      "order_link": "https://food.google.com/chooseprovider?restaurantId=%2Fg%2F11q9s7cl99&g2lbs=ALIxsqrD8gHHvsVtCWXWmGAuAmxb2hv09RKWCdUau2JmvUPOnwMguk0Fyug6YAeQf8jgacXCHOtgbBIaRb4AyBR1wXMPCTGNJw%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=43P6Y-_rL8ut5NoP3sOl0AU&ei=43P6Y-_rL8ut5NoP3sOl0AU&fo_s=OA%2CAH%2CSOE",
+      "price_level": null,
+      "district": "Alum Rock",
+      "street_address": "301 N Jackson Ave #6",
+      "city": "San Jose",
+      "zipcode": "95133",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fccfc95987603:0x564bb31e5e5c7ee2",
+      "google_id": "0x808fccfc95987603:0x564bb31e5e5c7ee2",
+      "place_id": "ChIJA3aYlfzMj4AR4n5cXh6zS1Y",
+      "phone_number": "+14082596870",
+      "name": "Renato King of the Pizza",
+      "latitude": 37.359065,
+      "longitude": -121.8605752,
+      "full_address": "Renato King of the Pizza, 1711 McKee Rd H, San Jose, CA 95116",
+      "review_count": 327,
+      "rating": 4.4,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "11 AM–9 PM"
+        ],
+        "Sunday": [
+          "11 AM–9 PM"
+        ],
+        "Monday": [
+          "11 AM–9 PM"
+        ],
+        "Tuesday": [
+          "Closed"
+        ],
+        "Wednesday": [
+          "11 AM–9 PM"
+        ],
+        "Thursday": [
+          "11 AM–9 PM"
+        ],
+        "Friday": [
+          "11 AM–9 PM"
+        ]
+      },
+      "website": "http://www.facebook.com/pages/Renato-King-of-The-Pizza/115191055166965",
+      "verified": false,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fccfc95987603:0x564bb31e5e5c7ee2",
+      "cid": "6218260653528612578",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJA3aYlfzMj4AR4n5cXh6zS1Y&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "116936442893026515257",
+      "owner_link": "https://maps.google.com/maps/contrib/116936442893026515257",
+      "owner_name": "Renato King of the Pizza",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipMaAqKhOny2RyGzMZcosfShjyjhjVZ-jHxqELD3",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipMaAqKhOny2RyGzMZcosfShjyjhjVZ-jHxqELD3",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipMaAqKhOny2RyGzMZcosfShjyjhjVZ-jHxqELD3=w4032-h3024-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.358908299999996,
+          "longitude": -121.86050519999999,
+          "type": "photo",
+          "photo_datetime_utc": "2017-02-21T00:00:00.000Z",
+          "photo_timestamp": 1487635200
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 18,
+        "2": 13,
+        "3": 17,
+        "4": 44,
+        "5": 235
+      },
+      "photo_count": 54,
+      "about": {
+        "summary": null,
+        "details": {
+          "Service options": {
+            "Delivery": true,
+            "Takeout": true,
+            "Dine-in": true
+          },
+          "Highlights": {
+            "Fast service": true
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true,
+            "Solo dining": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true,
+            "Wheelchair accessible restroom": true,
+            "Wheelchair accessible seating": true
+          },
+          "Offerings": {
+            "Alcohol": true,
+            "Beer": true,
+            "Comfort food": true,
+            "Quick bite": true,
+            "Small plates": true
+          },
+          "Dining options": {
+            "Lunch": true,
+            "Dinner": true,
+            "Seating": true
+          },
+          "Amenities": {
+            "Good for kids": true,
+            "High chairs": true,
+            "Restroom": true
+          },
+          "Atmosphere": {
+            "Casual": true,
+            "Cozy": true,
+            "Historic": true
+          },
+          "Crowd": {
+            "Groups": true
+          },
+          "Payments": {
+            "Debit cards": true,
+            "NFC mobile payments": true,
+            "Credit cards": true
+          }
+        }
+      },
+      "address": "1711 McKee Rd H, San Jose, CA 95116",
+      "order_link": null,
+      "price_level": "$$",
+      "district": "Alum Rock",
+      "street_address": "1711 McKee Rd H",
+      "city": "San Jose",
+      "zipcode": "95116",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fcc4a75cac61d:0x4519ba02e529002f",
+      "google_id": "0x808fcc4a75cac61d:0x4519ba02e529002f",
+      "place_id": "ChIJHcbKdUrMj4ARLwAp5QK6GUU",
+      "phone_number": "+14082588505",
+      "name": "Round Table Pizza",
+      "latitude": 37.3878458,
+      "longitude": -121.8577052,
+      "full_address": "Round Table Pizza, 2550 Berryessa Rd, San Jose, CA 95132",
+      "review_count": 162,
+      "rating": 3.8,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "11 AM–9:30 PM"
+        ],
+        "Sunday": [
+          "11 AM–9 PM"
+        ],
+        "Monday": [
+          "11 AM–9 PM"
+        ],
+        "Tuesday": [
+          "11 AM–9 PM"
+        ],
+        "Wednesday": [
+          "11 AM–9 PM"
+        ],
+        "Thursday": [
+          "11 AM–9 PM"
+        ],
+        "Friday": [
+          "11 AM–9:30 PM"
+        ]
+      },
+      "website": "https://ordering.roundtablepizza.com/site/rtp106",
+      "verified": true,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcc4a75cac61d:0x4519ba02e529002f",
+      "cid": "4979215384632164399",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJHcbKdUrMj4ARLwAp5QK6GUU&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "114813899796474130632",
+      "owner_link": "https://maps.google.com/maps/contrib/114813899796474130632",
+      "owner_name": "Round Table Pizza",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipNcxABOOG1R8REobnIPzWdeifJ6ePQSozp1uYKh",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipNcxABOOG1R8REobnIPzWdeifJ6ePQSozp1uYKh",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipNcxABOOG1R8REobnIPzWdeifJ6ePQSozp1uYKh=w1280-h677-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.3877507,
+          "longitude": -121.85794449999997,
+          "type": "photo",
+          "photo_datetime_utc": "2016-12-26T00:00:00.000Z",
+          "photo_timestamp": 1482710400
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 21,
+        "2": 11,
+        "3": 24,
+        "4": 34,
+        "5": 72
+      },
+      "photo_count": 46,
+      "about": {
+        "summary": "Long-running chain serving pizzas with customizable toppings & sauces in a simple space.",
+        "details": {
+          "Service options": {
+            "No-contact delivery": true,
+            "Delivery": true,
+            "Takeout": true,
+            "Dine-in": false
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true,
+            "Solo dining": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true,
+            "Wheelchair accessible restroom": true,
+            "Wheelchair accessible seating": true
+          },
+          "Offerings": {
+            "Beer": true,
+            "Comfort food": true,
+            "Quick bite": true,
+            "Salad bar": true,
+            "Vegetarian options": true,
+            "Wine": true
+          },
+          "Dining options": {
+            "Lunch": true,
+            "Dinner": true,
+            "Catering": true,
+            "Seating": true
+          },
+          "Amenities": {
+            "Good for kids": true,
+            "High chairs": true,
+            "Restroom": true
+          },
+          "Atmosphere": {
+            "Casual": true,
+            "Cozy": true
+          },
+          "Crowd": {
+            "Family-friendly": true,
+            "Groups": true
+          },
+          "Payments": {
+            "Debit cards": true,
+            "NFC mobile payments": true,
+            "Credit cards": true
+          }
+        }
+      },
+      "address": "2550 Berryessa Rd, San Jose, CA 95132",
+      "order_link": "https://food.google.com/chooseprovider?restaurantId=%2Fg%2F1thcm_yn&g2lbs=ALIxsqqx6TXUj1HcK9EHMRCh7kLjoRl0am4N2SAAGoaOSRNs-9gGgjcMXEOUs3KQqFcueAJLvn1bmiEI755Re1ZD2_TfI0iSeA%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=43P6Y-_rL8ut5NoP3sOl0AU&ei=43P6Y-_rL8ut5NoP3sOl0AU&fo_s=OA%2CAH%2CSOE",
+      "price_level": "$$",
+      "district": "North San Jose",
+      "street_address": "2550 Berryessa Rd",
+      "city": "San Jose",
+      "zipcode": "95132",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fcdb0f8030837:0x7e1a922ec27a814a",
+      "google_id": "0x808fcdb0f8030837:0x7e1a922ec27a814a",
+      "place_id": "ChIJNwgD-LDNj4ARSoF6wi6SGn4",
+      "phone_number": "+16692024040",
+      "name": "Domino's Pizza",
+      "latitude": 37.3574401,
+      "longitude": -121.8452128,
+      "full_address": "Domino's Pizza, 2232 Alum Rock Ave Ste 10, San Jose, CA 95116",
+      "review_count": 84,
+      "rating": 4.1,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "10 AM–1 AM"
+        ],
+        "Sunday": [
+          "10 AM–12 AM"
+        ],
+        "Monday": [
+          "10 AM–12 AM"
+        ],
+        "Tuesday": [
+          "10 AM–12 AM"
+        ],
+        "Wednesday": [
+          "10 AM–12 AM"
+        ],
+        "Thursday": [
+          "10 AM–12 AM"
+        ],
+        "Friday": [
+          "10 AM–1 AM"
+        ]
+      },
+      "website": "https://www.dominos.com/en/?redirect=homepage",
+      "verified": true,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcdb0f8030837:0x7e1a922ec27a814a",
+      "cid": "9086735927702356298",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJNwgD-LDNj4ARSoF6wi6SGn4&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "104822090823165179334",
+      "owner_link": "https://maps.google.com/maps/contrib/104822090823165179334",
+      "owner_name": "Domino's Pizza",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant",
+        "Chicken wings restaurant",
+        "Pizza delivery",
+        "Pizza Takeout"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipM_5_UHCjUhTfVDi2NY2bNsU5EgpYwQvV8bvJvp",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipM_5_UHCjUhTfVDi2NY2bNsU5EgpYwQvV8bvJvp",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipM_5_UHCjUhTfVDi2NY2bNsU5EgpYwQvV8bvJvp=w1080-h1253-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.3573218,
+          "longitude": -121.84507989999999,
+          "type": "photo",
+          "photo_datetime_utc": "2022-02-21T00:00:00.000Z",
+          "photo_timestamp": 1645401600
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 10,
+        "2": 4,
+        "3": 6,
+        "4": 15,
+        "5": 49
+      },
+      "photo_count": 33,
+      "about": {
+        "summary": "Delivery/carryout chain offering a wide range of pizzas & a variety of other dishes & sides.",
+        "details": {
+          "Service options": {
+            "Curbside pickup": true,
+            "No-contact delivery": true,
+            "Delivery": true,
+            "Takeout": true,
+            "Dine-in": false
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true
+          }
+        }
+      },
+      "address": "2232 Alum Rock Ave Ste 10, San Jose, CA 95116",
+      "order_link": "https://food.google.com/chooseprovider?restaurantId=%2Fg%2F11j34f5tkg&g2lbs=ALIxsqrWvnzEwddZLGctLJD4RhBfD6ysPjirHCaDSuuTjB54O2Z6Wp2W45_HP0dVUl7hweM4Pd18lQF2dYQSVhRqkgQNC2vNQg%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=43P6Y-_rL8ut5NoP3sOl0AU&ei=43P6Y-_rL8ut5NoP3sOl0AU&fo_s=OA%2CAH%2CSOE",
+      "price_level": "$",
+      "district": "Alum Rock",
+      "street_address": "2232 Alum Rock Ave Ste 10",
+      "city": "San Jose",
+      "zipcode": "95116",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fcd3159417c99:0xcf1977a47916599a",
+      "google_id": "0x808fcd3159417c99:0xcf1977a47916599a",
+      "place_id": "ChIJmXxBWTHNj4ARmlkWeaR3Gc8",
+      "phone_number": null,
+      "name": "Pizza Hut Express",
+      "latitude": 37.340061,
+      "longitude": -121.840176,
+      "full_address": "Pizza Hut Express, 1750 Story Rd, San Jose, CA 95122",
+      "review_count": 85,
+      "rating": 4,
+      "timezone": "America/Los_Angeles",
+      "working_hours": null,
+      "website": "https://locations.pizzahut.com/ca/san-jose/1750-story-road",
+      "verified": true,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcd3159417c99:0xcf1977a47916599a",
+      "cid": "14923090388558698906",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJmXxBWTHNj4ARmlkWeaR3Gc8&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "102477395070441096501",
+      "owner_link": "https://maps.google.com/maps/contrib/102477395070441096501",
+      "owner_name": "Pizza Hut Express",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant",
+        "Pizza Takeout"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipPoFmY2fggxVqZBG21WObsiCadEyPEj4B96o-5q",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipPoFmY2fggxVqZBG21WObsiCadEyPEj4B96o-5q",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipPoFmY2fggxVqZBG21WObsiCadEyPEj4B96o-5q=w1600-h900-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.3397576,
+          "longitude": -121.84067329999999,
+          "type": "photo",
+          "photo_datetime_utc": "2018-05-16T00:00:00.000Z",
+          "photo_timestamp": 1526428800
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 8,
+        "2": 6,
+        "3": 10,
+        "4": 17,
+        "5": 44
+      },
+      "photo_count": 8,
+      "about": {
+        "summary": "Popular delivery, carry-out & dine-in chain known for pizza, wings & pasta, plus sides & desserts.",
+        "details": {
+          "Service options": {
+            "Curbside pickup": true,
+            "Delivery": false,
+            "Takeout": false,
+            "Dine-in": false
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true,
+            "Solo dining": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true,
+            "Wheelchair accessible restroom": true
+          },
+          "Offerings": {
+            "Comfort food": true,
+            "Quick bite": true
+          },
+          "Dining options": {
+            "Lunch": true,
+            "Dinner": true,
+            "Dessert": true
+          },
+          "Amenities": {
+            "Good for kids": true,
+            "Restroom": true
+          },
+          "Atmosphere": {
+            "Casual": true
+          },
+          "Payments": {
+            "Debit cards": true
+          }
+        }
+      },
+      "address": "1750 Story Rd, San Jose, CA 95122",
+      "order_link": "https://food.google.com/chooseprovider?restaurantId=%2Fg%2F11g6xqvwhl&g2lbs=ALIxsqrvbrTyJFLnAYSN_Nx2Std1YeR-ObDZi9Bv84fiBpboxBq2r5ygUhUDUiC_1nRoFRq_zjAK2dHj1oD1nVytVYTIKBMeWg%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=43P6Y-_rL8ut5NoP3sOl0AU&ei=43P6Y-_rL8ut5NoP3sOl0AU&fo_s=OA%2CAH%2CSOE",
+      "price_level": "$",
+      "district": "Dorsa - Miller",
+      "street_address": "1750 Story Rd",
+      "city": "San Jose",
+      "zipcode": "95122",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fcdd4ca98445f:0xcdb59d4408f9de2c",
+      "google_id": "0x808fcdd4ca98445f:0xcdb59d4408f9de2c",
+      "place_id": "ChIJX0SYytTNj4ARLN75CESdtc0",
+      "phone_number": "+14082517272",
+      "name": "Papa Johns Pizza",
+      "latitude": 37.375321,
+      "longitude": -121.872948,
+      "full_address": "Papa Johns Pizza, 1737 Berryessa Rd B, San Jose, CA 95133",
+      "review_count": 27,
+      "rating": 3.6,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "10 AM–1 AM"
+        ],
+        "Sunday": [
+          "10 AM–12 AM"
+        ],
+        "Monday": [
+          "10 AM–12 AM"
+        ],
+        "Tuesday": [
+          "10 AM–12 AM"
+        ],
+        "Wednesday": [
+          "10 AM–12 AM"
+        ],
+        "Thursday": [
+          "10 AM–12 AM"
+        ],
+        "Friday": [
+          "10 AM–12 AM"
+        ]
+      },
+      "website": "https://locations.papajohns.com/united-states/ca/95133/san-jose/1737-berryessa-road",
+      "verified": true,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcdd4ca98445f:0xcdb59d4408f9de2c",
+      "cid": "14822926664093785644",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJX0SYytTNj4ARLN75CESdtc0&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "107138546584907876256",
+      "owner_link": "https://maps.google.com/maps/contrib/107138546584907876256",
+      "owner_name": "Papa Johns Pizza",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipMOTuQP_-MNmMSy-fJ3I76m1H1ePy4RBrTWdgZB",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipMOTuQP_-MNmMSy-fJ3I76m1H1ePy4RBrTWdgZB",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipMOTuQP_-MNmMSy-fJ3I76m1H1ePy4RBrTWdgZB=w600-h350-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.3751518,
+          "longitude": -121.87308019999999,
+          "type": "photo",
+          "photo_datetime_utc": "2023-01-25T00:00:00.000Z",
+          "photo_timestamp": 1674604800
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 5,
+        "2": 2,
+        "3": 4,
+        "4": 4,
+        "5": 12
+      },
+      "photo_count": 53,
+      "about": {
+        "summary": "Pizza take-out & delivery chain offering classic & specialty pizzas, plus wings, sides & desserts.",
+        "details": {
+          "Service options": {
+            "No-contact delivery": true,
+            "Delivery": true,
+            "Takeout": true,
+            "Dine-in": true
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true
+          },
+          "Offerings": {
+            "Comfort food": true,
+            "Late-night food": true,
+            "Vegetarian options": true
+          },
+          "Dining options": {
+            "Lunch": true,
+            "Dinner": true,
+            "Catering": true,
+            "Dessert": true
+          },
+          "Amenities": {
+            "Good for kids": true
+          },
+          "Atmosphere": {
+            "Casual": true
+          },
+          "Payments": {
+            "Debit cards": true,
+            "Credit cards": true
+          }
+        }
+      },
+      "address": "1737 Berryessa Rd B, San Jose, CA 95133",
+      "order_link": "https://food.google.com/chooseprovider?restaurantId=%2Fg%2F11s0t8djl1&g2lbs=ALIxsqrO0kodGRif4yc2e_YbcPYbh3oojIiXSXzjFoA9qBBauqNikP37KaHZZCwpusS0uujIs7ldkm9enBARKkVLQHxjOAZ92Q%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=43P6Y-_rL8ut5NoP3sOl0AU&ei=43P6Y-_rL8ut5NoP3sOl0AU&fo_s=OA%2CAH%2CSOE",
+      "price_level": "$",
+      "district": "North San Jose",
+      "street_address": "1737 Berryessa Rd B",
+      "city": "San Jose",
+      "zipcode": "95133",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fce95ed883b0b:0x7e3f817ef181933e",
+      "google_id": "0x808fce95ed883b0b:0x7e3f817ef181933e",
+      "place_id": "ChIJCzuI7ZXOj4ARPpOB8X6BP34",
+      "phone_number": "+14082624343",
+      "name": "Stuft Pizza",
+      "latitude": 37.416319099999996,
+      "longitude": -121.8785733,
+      "full_address": "Stuft Pizza, 1426 Dempsey Rd, Milpitas, CA 95035",
+      "review_count": 482,
+      "rating": 4.5,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "11 AM–8:15 PM"
+        ],
+        "Sunday": [
+          "11 AM–8:15 PM"
+        ],
+        "Monday": [
+          "9 AM–8:15 PM"
+        ],
+        "Tuesday": [
+          "9 AM–8:15 PM"
+        ],
+        "Wednesday": [
+          "9 AM–8:15 PM"
+        ],
+        "Thursday": [
+          "9 AM–8:15 PM"
+        ],
+        "Friday": [
+          "9 AM–8:15 PM"
+        ]
+      },
+      "website": "http://stuftpizzamilpitas.com",
+      "verified": true,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fce95ed883b0b:0x7e3f817ef181933e",
+      "cid": "9097132154529354558",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJCzuI7ZXOj4ARPpOB8X6BP34&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "118346644419224951579",
+      "owner_link": "https://maps.google.com/maps/contrib/118346644419224951579",
+      "owner_name": "Stuft Pizza",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant",
+        "Beer store",
+        "Delivery Restaurant",
+        "Takeout Restaurant",
+        "Pizza Takeout"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipMSPoRqZ5SkrYmEeGZtP-4kGWxZ97F5llI11K1Z",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipMSPoRqZ5SkrYmEeGZtP-4kGWxZ97F5llI11K1Z",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipMSPoRqZ5SkrYmEeGZtP-4kGWxZ97F5llI11K1Z=w1600-h1067-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.4162117,
+          "longitude": -121.87851029999999,
+          "type": "photo",
+          "photo_datetime_utc": "2016-03-01T00:00:00.000Z",
+          "photo_timestamp": 1456790400
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 21,
+        "2": 7,
+        "3": 24,
+        "4": 101,
+        "5": 329
+      },
+      "photo_count": 307,
+      "about": {
+        "summary": "Casual local pizzeria chain serving classic & creative pies, plus spaghetti, sandwiches & beer.",
+        "details": {
+          "Service options": {
+            "No-contact delivery": true,
+            "Delivery": true,
+            "Takeout": true,
+            "Dine-in": true
+          },
+          "Highlights": {
+            "Fast service": true,
+            "Sports": true
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true,
+            "Solo dining": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true,
+            "Wheelchair accessible restroom": true,
+            "Wheelchair accessible seating": true,
+            "Assistive hearing loop": false
+          },
+          "Offerings": {
+            "Alcohol": true,
+            "Beer": true,
+            "Comfort food": true,
+            "Quick bite": true,
+            "Vegetarian options": true,
+            "Wine": true
+          },
+          "Dining options": {
+            "Lunch": true,
+            "Dinner": true,
+            "Catering": true,
+            "Dessert": true,
+            "Seating": true
+          },
+          "Amenities": {
+            "Bar onsite": true,
+            "Gender-neutral restroom": true,
+            "High chairs": true,
+            "Restroom": true,
+            "Wi-Fi": true
+          },
+          "Atmosphere": {
+            "Casual": true,
+            "Cozy": true
+          },
+          "Crowd": {
+            "College students": true,
+            "Family-friendly": true,
+            "Groups": true
+          },
+          "Payments": {
+            "Debit cards": true,
+            "NFC mobile payments": true,
+            "Credit cards": true
+          }
+        }
+      },
+      "address": "1426 Dempsey Rd, Milpitas, CA 95035",
+      "order_link": null,
+      "price_level": "$$",
+      "district": null,
+      "street_address": "1426 Dempsey Rd",
+      "city": "Milpitas",
+      "zipcode": "95035",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fcceca34b876d:0x10aa83f698064f89",
+      "google_id": "0x808fcceca34b876d:0x10aa83f698064f89",
+      "place_id": "ChIJbYdLo-zMj4ARiU8GmPaDqhA",
+      "phone_number": "+14089750234",
+      "name": "Fast Pizza",
+      "latitude": 37.348260599999996,
+      "longitude": -121.8778964,
+      "full_address": "Fast Pizza, 797 E Julian St, San Jose, CA 95112",
+      "review_count": 174,
+      "rating": 4.3,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "11 AM–10:30 PM"
+        ],
+        "Sunday": [
+          "11 AM–10:30 PM"
+        ],
+        "Monday": [
+          "11 AM–9:30 PM"
+        ],
+        "Tuesday": [
+          "11 AM–9:30 PM"
+        ],
+        "Wednesday": [
+          "11 AM–9:30 PM"
+        ],
+        "Thursday": [
+          "11 AM–9:30 PM"
+        ],
+        "Friday": [
+          "11 AM–9:30 PM"
+        ]
+      },
+      "website": "http://fastpizzajulian.cuteorder.com",
+      "verified": false,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcceca34b876d:0x10aa83f698064f89",
+      "cid": "1200917345783402377",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJbYdLo-zMj4ARiU8GmPaDqhA&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "108792716315907729297",
+      "owner_link": "https://maps.google.com/maps/contrib/108792716315907729297",
+      "owner_name": "Fast Pizza",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza Takeout",
+      "subtypes": [
+        "Pizza Takeout",
+        "Pizza delivery"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "8IOhcknvGHW32K9VO62L7g",
+          "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=8IOhcknvGHW32K9VO62L7g&cb_client=search.gws-prod.gps&w=86&h=86&yaw=219.99574&pitch=0&thumbfov=100",
+          "photo_url_large": null,
+          "video_thumbnail_url": null,
+          "latitude": 37.34837848519622,
+          "longitude": -121.87777198840736,
+          "type": "street_view",
+          "photo_datetime_utc": "2023-03-18T00:00:00.000Z",
+          "photo_timestamp": 1679097600
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 15,
+        "2": 5,
+        "3": 13,
+        "4": 25,
+        "5": 116
+      },
+      "photo_count": 2,
+      "about": {
+        "summary": null,
+        "details": {
+          "Service options": {
+            "Delivery": true,
+            "Takeout": true,
+            "Dine-in": true
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true
+          },
+          "Offerings": {
+            "Comfort food": true,
+            "Quick bite": true
+          },
+          "Dining options": {
+            "Lunch": true,
+            "Dinner": true
+          },
+          "Atmosphere": {
+            "Casual": true
+          },
+          "Crowd": {
+            "College students": true
+          },
+          "Payments": {
+            "Debit cards": true,
+            "NFC mobile payments": true,
+            "Credit cards": true
+          }
+        }
+      },
+      "address": "797 E Julian St, San Jose, CA 95112",
+      "order_link": "https://food.google.com/chooseprovider?restaurantId=%2Fg%2F11b6g6dzym&g2lbs=ALIxsqq7L2VSHLVe8IJ2obpmudzua9o_i-doyLJ5NPcC9Cb4IQAqh0ec5B-hGet1lHtFCCctgFxwoNCb15h9B4PmRXhPtVfoOg%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=43P6Y-_rL8ut5NoP3sOl0AU&ei=43P6Y-_rL8ut5NoP3sOl0AU&fo_s=OA%2CAH%2CSOE&orderType=1",
+      "price_level": "$",
+      "district": "Central San Jose",
+      "street_address": "797 E Julian St",
+      "city": "San Jose",
+      "zipcode": "95112",
+      "state": "California",
+      "country": "US"
+    },
+    {
+      "business_id": "0x808fcca24255efc5:0x93001e377e2a64eb",
+      "google_id": "0x808fcca24255efc5:0x93001e377e2a64eb",
+      "place_id": "ChIJxe9VQqLMj4AR62QqfjceAJM",
+      "phone_number": null,
+      "name": "Pizza Bocca Lupo",
+      "latitude": 37.3364949,
+      "longitude": -121.8945165,
+      "full_address": "Pizza Bocca Lupo, 87 N San Pedro St, San Jose, CA 95110",
+      "review_count": 277,
+      "rating": 4.4,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Saturday": [
+          "11 AM–10:30 PM"
+        ],
+        "Sunday": [
+          "11 AM–9 PM"
+        ],
+        "Monday": [
+          "11 AM–8:30 PM"
+        ],
+        "Tuesday": [
+          "11 AM–8:30 PM"
+        ],
+        "Wednesday": [
+          "11 AM–9 PM"
+        ],
+        "Thursday": [
+          "11 AM–9 PM"
+        ],
+        "Friday": [
+          "11 AM–10:30 PM"
+        ]
+      },
+      "website": "http://www.pizzaboccalupo.com",
+      "verified": true,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcca24255efc5:0x93001e377e2a64eb",
+      "cid": "10592499547264148715",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJxe9VQqLMj4AR62QqfjceAJM&q=pizza&authuser=0&hl=en&gl=US",
+      "owner_id": "104779833358488023125",
+      "owner_link": "https://maps.google.com/maps/contrib/104779833358488023125",
+      "owner_name": "Pizza Bocca Lupo",
+      "booking_link": null,
+      "reservations_link": null,
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant",
+        "European restaurant",
+        "Italian restaurant"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipPrpE-hYgzP1dYbWr6Jm36hxnOlGQ_TgMJJQRKx",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipPrpE-hYgzP1dYbWr6Jm36hxnOlGQ_TgMJJQRKx",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipPrpE-hYgzP1dYbWr6Jm36hxnOlGQ_TgMJJQRKx=w3456-h2304-k-no",
+          "video_thumbnail_url": null,
+          "latitude": 37.3367024,
+          "longitude": -121.89406760000001,
+          "type": "photo",
+          "photo_datetime_utc": "2016-11-16T00:00:00.000Z",
+          "photo_timestamp": 1479254400
+        }
+      ],
+      "reviews_per_rating": {
+        "1": 18,
+        "2": 9,
+        "3": 12,
+        "4": 57,
+        "5": 181
+      },
+      "photo_count": 209,
+      "about": {
+        "summary": "Creative & traditional wood-fired Neapolitan pizzas turned out in cozy environs with exposed brick.",
+        "details": {
+          "Service options": {
+            "Outdoor seating": true,
+            "No-contact delivery": true,
+            "Delivery": true,
+            "Takeout": true,
+            "Dine-in": true
+          },
+          "Highlights": {
+            "Fast service": true,
+            "Live music": true,
+            "Sports": true
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true,
+            "Solo dining": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true,
+            "Wheelchair accessible restroom": true,
+            "Wheelchair accessible seating": true
+          },
+          "Offerings": {
+            "Alcohol": true,
+            "Beer": true,
+            "Coffee": true,
+            "Comfort food": true,
+            "Healthy options": true,
+            "Late-night food": true,
+            "Quick bite": true,
+            "Small plates": true,
+            "Vegetarian options": true,
+            "Wine": true
+          },
+          "Dining options": {
+            "Lunch": true,
+            "Dinner": true,
+            "Dessert": true,
+            "Seating": true
+          },
+          "Amenities": {
+            "Bar onsite": true,
+            "Good for kids": true,
+            "High chairs": true,
+            "Restroom": true,
+            "Wi-Fi": true
+          },
+          "Atmosphere": {
+            "Casual": true,
+            "Cozy": true
+          },
+          "Crowd": {
+            "College students": true,
+            "Family-friendly": true,
+            "Groups": true
+          },
+          "Payments": {
+            "Debit cards": true,
+            "NFC mobile payments": true,
+            "Credit cards": true
+          }
+        }
+      },
+      "address": "87 N San Pedro St, San Jose, CA 95110",
+      "order_link": "https://food.google.com/chooseprovider?restaurantId=%2Fg%2F1tgdj6z8&g2lbs=ALIxsqrF5h7LIde3JCnMvtkyqU0CPDzjqZsvCHiVqJ2oXnMV6xqbEyv1sn3KovcgPsikvBDy-gicgfuk0O5NAiUPTMkB-z0oTQ%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=43P6Y-_rL8ut5NoP3sOl0AU&ei=43P6Y-_rL8ut5NoP3sOl0AU&fo_s=OA%2CAH%2CSOE",
+      "price_level": "$$",
+      "district": "Central San Jose",
+      "street_address": "87 N San Pedro St",
+      "city": "San Jose",
+      "zipcode": "95110",
+      "state": "California",
+      "country": "US"
+    }
+  ]
+}
