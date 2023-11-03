@@ -85,3 +85,34 @@ extension PoiModule.Data.Model {
   }
 
 }
+
+
+// MARK: - ⌘ Poi List Entity
+
+public typealias PoiListEntity = PoiModule.Data.Model.PoiList
+
+
+extension PoiModule.Data.Model {
+
+  public struct PoiList {
+    let poiList: [PoiDetailEntity]
+
+    public init(poiList: [PoiDetailEntity]) {
+      self.poiList = poiList
+    }
+
+    public init(response: PoiRootListModel<PoiSearchNearbyResponseModel>) {
+      self.nearbyResponse = response.data
+      self.poiList = []
+    }
+
+    public init(response: PoiRootListModel<PoiSearchInAreaResponseModel>) {
+      self.areaResponse = response.data
+      self.poiList = []
+    }
+
+    var areaResponse: [PoiSearchInAreaResponseModel] = []
+    var nearbyResponse: [PoiSearchNearbyResponseModel] = []
+  }
+
+}

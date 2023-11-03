@@ -88,7 +88,7 @@ extension PoiModule.Data.Response {
       self.country = try container.decodeIfPresent(String.self, forKey: PoiModule.Data.Response.PoiSearchInArea.CodingKeys.country) ?? ""
     }
 
-    public static func createEmpty() -> PoiSearchInArea {
+    public static func createEmpty() -> PoiSearchNearby {
       .init(
         businessID: "String",
         googleID: "String",

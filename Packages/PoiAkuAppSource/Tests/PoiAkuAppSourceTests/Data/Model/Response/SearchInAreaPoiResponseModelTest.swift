@@ -13,7 +13,7 @@ final class SearchInAreaPoiResponseModelTest: XCTestCase {
     let jsonData = JsonResolver.loadJsonFromFile(with: "poi_search_in_area")
     let result = JsonResolver.decodeJson(
       from: jsonData,
-      outputType: PoiModule.Data.Response.JArray<PoiModule.Data.Response.PoiSearchInArea>.self
+      outputType: PoiModule.Data.Response.JArray<PoiDetailResponseModel>.self
     )
     XCTAssertNotNil(result)
   }

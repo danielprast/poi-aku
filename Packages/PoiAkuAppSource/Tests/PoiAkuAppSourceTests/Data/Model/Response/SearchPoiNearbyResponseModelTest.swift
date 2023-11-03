@@ -13,7 +13,7 @@ final class SearchPoiNearbyResponseModelTest: XCTestCase {
     let jsonData = JsonResolver.loadJsonFromFile(with: "poi_search_nearby")
     let result = JsonResolver.decodeJson(
       from: jsonData,
-      outputType: PoiRootListModel<PoiSearchNearbyResponseModel>.self
+      outputType: PoiRootListModel<PoiDetailResponseModel>.self
     )
     XCTAssertNotNil(result)
   }

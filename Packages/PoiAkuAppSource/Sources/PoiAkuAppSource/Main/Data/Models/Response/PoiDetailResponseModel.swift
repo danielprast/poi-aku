@@ -587,6 +587,13 @@ extension PoiModule.Data.Response {
       self.dinner = dinner
       self.soloDining = soloDining
     }
+
+    public init(from decoder: Decoder) throws {
+      let container: KeyedDecodingContainer<PoiModule.Data.Response.PopularFor.CodingKeys> = try decoder.container(keyedBy: PoiModule.Data.Response.PopularFor.CodingKeys.self)
+      self.lunch = try container.decodeIfPresent(Bool.self, forKey: PoiModule.Data.Response.PopularFor.CodingKeys.lunch) ?? false
+      self.dinner = try container.decodeIfPresent(Bool.self, forKey: PoiModule.Data.Response.PopularFor.CodingKeys.dinner) ?? false
+      self.soloDining = try container.decodeIfPresent(Bool.self, forKey: PoiModule.Data.Response.PopularFor.CodingKeys.soloDining) ?? false
+    }
   }
 
   // MARK: - ServiceOptions
