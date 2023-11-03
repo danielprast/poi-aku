@@ -117,7 +117,48 @@ extension PoiModule.Data.Response {
       self.emailsAndContacts = try container.decodeIfPresent(PoiModule.Data.Response.EmailsAndContacts.self, forKey: PoiModule.Data.Response.PoiDetail.CodingKeys.emailsAndContacts) ?? .init()
     }
 
-    public init(businessID: String, googleID: String, placeID: String, googleMid: String, phoneNumber: String, name: String, latitude: Double, longitude: Double, fullAddress: String, reviewCount: Int, rating: Double, timezone: String, workingHours: WorkingHours, website: String, verified: Bool, placeLink: String, cid: String, reviewsLink: String, ownerID: String, ownerLink: String, ownerName: String, businessStatus: String, type: String, subtypes: [String], photosSample: [PhotosSample], globalPlusCode: String, compoundPlusCode: String, reviewsPerRating: [String : Int], photoCount: Int, about: About, address: String, priceLevel: String, district: String, streetAddress: String, city: String, zipcode: String, state: String, country: String, reviewsSample: [ReviewsSample], emailsAndContacts: EmailsAndContacts) {
+    public init(
+      businessID: String = "",
+      googleID: String = "",
+      placeID: String = "",
+      googleMid: String = "",
+      phoneNumber: String = "",
+      name: String = "",
+      latitude: Double = 0.0,
+      longitude: Double = 0.0,
+      fullAddress: String = "",
+      reviewCount: Int = 0,
+      rating: Double = 0.0,
+      timezone: String = "",
+      workingHours: WorkingHours = .init(),
+      website: String = "",
+      verified: Bool = false,
+      placeLink: String = "",
+      cid: String = "",
+      reviewsLink: String = "",
+      ownerID: String = "",
+      ownerLink: String = "",
+      ownerName: String = "",
+      businessStatus: String = "",
+      type: String = "",
+      subtypes: [String] = [],
+      photosSample: [PhotosSample] = [],
+      globalPlusCode: String = "",
+      compoundPlusCode: String = "",
+      reviewsPerRating: [String : Int] = [:],
+      photoCount: Int = 0,
+      about: About = .init(),
+      address: String = "",
+      priceLevel: String = "",
+      district: String = "",
+      streetAddress: String = "",
+      city: String = "",
+      zipcode: String = "",
+      state: String = "",
+      country: String = "",
+      reviewsSample: [ReviewsSample] = [],
+      emailsAndContacts: EmailsAndContacts = .init()
+    ) {
       self.businessID = businessID
       self.googleID = googleID
       self.placeID = placeID

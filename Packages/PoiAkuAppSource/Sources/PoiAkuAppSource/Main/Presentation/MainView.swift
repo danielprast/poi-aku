@@ -36,7 +36,8 @@ public class MainViewModel: ObservableObject {
     let repo = PoiRepositoryImpl(
       networkConnectionChecker: networkChecker,
       poiPhotoApi: remoteApi,
-      poiReviewsApi: remoteApi
+      poiReviewsApi: remoteApi,
+      poiDetailApi: remoteApi
     )
     let businessId = "0x89c259b5a9bd152b:0x31453e62a3be9f76"
     //let param = PoiModule.Data.Payload.SearchPoi(keyword: "plumbers", lat: 37.359428, lng: -121.925337, zoom: 13)
@@ -45,7 +46,8 @@ public class MainViewModel: ObservableObject {
     //task = remote.fetchPoiDetail(params: param.requestParams)
     //task = remote.fetchPoiPhoto(params: param.requestParams)
     //task = repo.getPoiPhotos(payload: PoiModule.Data.Payload.PoiPhoto(businessId: businessId))
-    task = repo.getPoiReviews(payload: PoiModule.Data.Payload.PoiReview(businessId: businessId))
+    //task = repo.getPoiReviews(payload: PoiModule.Data.Payload.PoiReview(businessId: businessId))
+    task = repo.getPoiDetail(payload: PoiModule.Data.Payload.PoiDetail(businessId: businessId))
       .subscribe(on: DispatchQueue.global(qos: .userInitiated))
       .eraseToAnyPublisher()
       .receive(on: DispatchQueue.main)

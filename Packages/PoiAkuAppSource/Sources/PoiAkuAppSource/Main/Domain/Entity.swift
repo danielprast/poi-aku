@@ -60,3 +60,28 @@ extension PoiModule.Data.Model {
     var response: PoiReviewResponseModel = .init()
   }
 }
+
+
+// MARK: - ⌘ Poi Detail Entity
+
+public typealias PoiDetailEntity = PoiModule.Data.Model.PoiDetail
+
+
+extension PoiModule.Data.Model {
+
+  public struct PoiDetail {
+    let id: String
+
+    public init(id: String) {
+      self.id = id
+    }
+
+    public init(response: PoiDetailResponseModel) {
+      self.id = response.businessID
+      self.response = response
+    }
+
+    var response: PoiDetailResponseModel = .init()
+  }
+
+}

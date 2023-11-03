@@ -11,14 +11,17 @@ public struct PoiRepositoryImpl {
   public let networkConnectionChecker: NetworkConnectionChecker
   public let poiPhotoApi: PoiPhotoRemoteDataSource
   public let poiReviewsApi: PoiReviewRemoteDataSource
+  public let poiDetailApi: PoiDetailRemoteDataSource
 
   public init(
     networkConnectionChecker: NetworkConnectionChecker,
     poiPhotoApi: PoiPhotoRemoteDataSource,
-    poiReviewsApi: PoiReviewRemoteDataSource
+    poiReviewsApi: PoiReviewRemoteDataSource,
+    poiDetailApi: PoiDetailRemoteDataSource
   ) {
     self.networkConnectionChecker = networkConnectionChecker
     self.poiPhotoApi = poiPhotoApi
     self.poiReviewsApi = poiReviewsApi
+    self.poiDetailApi = poiDetailApi
   }
 }

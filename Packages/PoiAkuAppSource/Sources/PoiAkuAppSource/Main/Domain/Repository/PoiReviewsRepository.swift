@@ -27,8 +27,8 @@ extension PoiRepositoryImpl: PoiReviewsRepository {
     let remoteTask: PoiReviewsRepositoryData = poiReviewsApi
       .fetchPoiReviews(params: payload.requestParams)
       .flatMap { response -> PoiReviewsRepositoryData in
-        let photos = response.data.map { PoiModule.Data.Model.PoiReview(response: $0) }
-        let entity = PoiReviewsEntity(reviews: photos)
+        let reviews = response.data.map { PoiModule.Data.Model.PoiReview(response: $0) }
+        let entity = PoiReviewsEntity(reviews: reviews)
         return Just(entity)
           .setFailureType(to: NError.self)
           .eraseToAnyPublisher()
