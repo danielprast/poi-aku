@@ -62,5 +62,21 @@ extension RemoteDataSourceImpl: SearchPoiNearbyRemoteDataSource {
 
 // MARK: - ⌘ POI Detail
 public protocol PoiDetailRemoteDataSource {
-  func fetchPoiDetail(params: [String: String]) -> AnyPublisher<PoiRootListModel<PoiSearchNearbyResponseModel>, NError>
+  func fetchPoiDetail(params: [String: String]) -> AnyPublisher<PoiRootListModel<PoiDetailResponseModel>, NError>
+}
+
+
+extension RemoteDataSourceImpl: PoiDetailRemoteDataSource {
+
+  public func fetchPoiDetail(params: [String : String]) -> AnyPublisher<PoiRootListModel<PoiDetailResponseModel>, NError> {
+    return networkService.getRequest(
+      of: PoiRootListModel<PoiDetailResponseModel>.self,
+      url: NetworkManager.makeUrl(
+        baseURL: AppConfig.baseURL,
+        path: Endpoints.businessDetails.path,
+        queryItems: params
+      )!,
+      headers: AppConfig.headers
+    )
+  }
 }

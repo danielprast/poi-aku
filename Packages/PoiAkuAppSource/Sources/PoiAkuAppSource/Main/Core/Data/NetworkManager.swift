@@ -186,6 +186,7 @@ public struct NetworkManager {
       }
       .decode(type: T.self, decoder: JSONDecoder())
       .mapError { error in
+        shout("parsing error", error)
         return self.mapError(error: error)
       }
       .eraseToAnyPublisher()

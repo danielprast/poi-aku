@@ -17,7 +17,7 @@ extension PoiModule.Data.Response {
     public let reviewDatetimeUTC: String
     public let reviewTimestamp: Int
     public let reviewLink: String
-    public let reviewPhotos: [String]?
+    public let reviewPhotos: [String]
     public let reviewLanguage: String
     public let likeCount: Int
     public let authorID: String
@@ -26,10 +26,10 @@ extension PoiModule.Data.Response {
     public let authorPhotoURL: String
     public let authorReviewCount: Int
     public let authorReviewsLink: String
-    public let authorLocalGuideLevel: Int?
-    public let hotelRatingBreakdown: HotelRatingBreakdown?
+    public let authorLocalGuideLevel: Int
+    public let hotelRatingBreakdown: HotelRatingBreakdown
     public let reviewForm: [String: String]
-    public let thorLocalGuideLevel: Int?
+    public let thorLocalGuideLevel: Int
 
     public enum CodingKeys: String, CodingKey {
       case reviewID = "review_id"
@@ -70,13 +70,33 @@ extension PoiModule.Data.Response {
       self.authorPhotoURL = try container.decodeIfPresent(String.self, forKey: PoiModule.Data.Response.ReviewsSample.CodingKeys.authorPhotoURL) ?? ""
       self.authorReviewCount = try container.decodeIfPresent(Int.self, forKey: PoiModule.Data.Response.ReviewsSample.CodingKeys.authorReviewCount) ?? 0
       self.authorReviewsLink = try container.decodeIfPresent(String.self, forKey: PoiModule.Data.Response.ReviewsSample.CodingKeys.authorReviewsLink) ?? ""
-      self.authorLocalGuideLevel = try container.decodeIfPresent(Int.self, forKey: PoiModule.Data.Response.ReviewsSample.CodingKeys.authorLocalGuideLevel)
-      self.hotelRatingBreakdown = try container.decodeIfPresent(PoiModule.Data.Response.HotelRatingBreakdown.self, forKey: PoiModule.Data.Response.ReviewsSample.CodingKeys.hotelRatingBreakdown)
+      self.authorLocalGuideLevel = try container.decodeIfPresent(Int.self, forKey: PoiModule.Data.Response.ReviewsSample.CodingKeys.authorLocalGuideLevel) ?? 0
+      self.hotelRatingBreakdown = try container.decodeIfPresent(PoiModule.Data.Response.HotelRatingBreakdown.self, forKey: PoiModule.Data.Response.ReviewsSample.CodingKeys.hotelRatingBreakdown) ?? .init()
       self.reviewForm = try container.decodeIfPresent([String : String].self, forKey: PoiModule.Data.Response.ReviewsSample.CodingKeys.reviewForm) ?? [:]
-      self.thorLocalGuideLevel = try container.decodeIfPresent(Int.self, forKey: PoiModule.Data.Response.ReviewsSample.CodingKeys.thorLocalGuideLevel)
+      self.thorLocalGuideLevel = try container.decodeIfPresent(Int.self, forKey: PoiModule.Data.Response.ReviewsSample.CodingKeys.thorLocalGuideLevel) ?? 0
     }
 
-    public init(reviewID: String, reviewText: String, rating: Int, reviewDatetimeUTC: String, reviewTimestamp: Int, reviewLink: String, reviewPhotos: [String]?, reviewLanguage: String, likeCount: Int, authorID: String, authorLink: String, authorName: String, authorPhotoURL: String, authorReviewCount: Int, authorReviewsLink: String, authorLocalGuideLevel: Int?, hotelRatingBreakdown: HotelRatingBreakdown?, reviewForm: [String : String], thorLocalGuideLevel: Int?) {
+    public init(
+      reviewID: String = "",
+      reviewText: String = "",
+      rating: Int = 0,
+      reviewDatetimeUTC: String = "",
+      reviewTimestamp: Int = 0,
+      reviewLink: String = "",
+      reviewPhotos: [String] = [],
+      reviewLanguage: String = "",
+      likeCount: Int = 0,
+      authorID: String = "",
+      authorLink: String = "",
+      authorName: String = "",
+      authorPhotoURL: String = "",
+      authorReviewCount: Int = 0,
+      authorReviewsLink: String = "",
+      authorLocalGuideLevel: Int = 0,
+      hotelRatingBreakdown: HotelRatingBreakdown = .init(),
+      reviewForm: [String : String] = [:],
+      thorLocalGuideLevel: Int = 0
+    ) {
       self.reviewID = reviewID
       self.reviewText = reviewText
       self.rating = rating
