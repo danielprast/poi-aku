@@ -9,7 +9,7 @@ import XCTest
 
 final class SearchInAreaPoiResponseModelTest: XCTestCase {
 
-  func testPerformanceExample() throws {
+  func test_parseResponseJson() throws {
     let jsonData = JsonResolver.loadJsonFromFile(with: "poi_search_in_area")
     let result = JsonResolver.decodeJson(
       from: jsonData,
