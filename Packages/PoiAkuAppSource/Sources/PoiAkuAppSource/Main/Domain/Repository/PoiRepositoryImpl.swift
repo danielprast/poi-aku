@@ -10,12 +10,15 @@ import Combine
 public struct PoiRepositoryImpl {
   public let networkConnectionChecker: NetworkConnectionChecker
   public let poiPhotoApi: PoiPhotoRemoteDataSource
+  public let poiReviewsApi: PoiReviewRemoteDataSource
 
   public init(
     networkConnectionChecker: NetworkConnectionChecker,
-    poiPhotoApi: PoiPhotoRemoteDataSource
+    poiPhotoApi: PoiPhotoRemoteDataSource,
+    poiReviewsApi: PoiReviewRemoteDataSource
   ) {
     self.networkConnectionChecker = networkConnectionChecker
     self.poiPhotoApi = poiPhotoApi
+    self.poiReviewsApi = poiReviewsApi
   }
 }

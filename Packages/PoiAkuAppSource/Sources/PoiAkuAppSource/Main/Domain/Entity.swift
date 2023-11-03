@@ -6,6 +6,8 @@
 import Foundation
 
 
+// MARK: - ⌘ Poi Photos Entity
+
 public typealias PoiPhotosEntity = PoiModule.Data.Model.PoiPhotos
 
 
@@ -28,5 +30,33 @@ extension PoiModule.Data.Model {
     }
 
     var response: PoiPhotoResponseModel = .init()
+  }
+}
+
+
+// MARK: - ⌘ Poi Reviews Entity
+
+public typealias PoiReviewsEntity = PoiModule.Data.Model.PoiReviews
+
+
+extension PoiModule.Data.Model {
+
+  public struct PoiReviews {
+    let reviews: [PoiReview]
+
+    public init(reviews: [PoiReview]) {
+      self.reviews = reviews
+    }
+  }
+
+  public struct PoiReview {
+    let id: String
+
+    public init(response: PoiReviewResponseModel) {
+      self.response = response
+      self.id = response.reviewID
+    }
+
+    var response: PoiReviewResponseModel = .init()
   }
 }

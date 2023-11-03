@@ -81,3 +81,21 @@ extension PoiModule.Data.Payload {
   }
 
 }
+
+
+// MARK: - ⌘ Poi Review
+extension PoiModule.Data.Payload {
+
+  public struct PoiReview: RequestPayload {
+    let businessId: String
+
+    public init(businessId: String) {
+      self.businessId = businessId
+    }
+
+    public var requestParams: [String : String] {
+      [ "business_id" : businessId ]
+    }
+  }
+
+}

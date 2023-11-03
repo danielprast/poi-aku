@@ -16,7 +16,7 @@ public protocol PoiPhotoRepository {
 }
 
 
-// MARK: ⌘ Poi Photo Repository
+// MARK: ⌘ Poi Photos Repository
 extension PoiRepositoryImpl: PoiPhotoRepository {
 
   public func getPoiPhotos(payload: PoiModule.Data.Payload.PoiPhoto) -> PoiPhotosRepositoryData {

@@ -32,17 +32,20 @@ public class MainViewModel: ObservableObject {
 
   public func testFetch() {
     let networkChecker = NetworkConnectionChecker_V1()
-    let remote = RemoteDataSourceImpl(networkService: NetworkManager())
+    let remoteApi = RemoteDataSourceImpl(networkService: NetworkManager())
     let repo = PoiRepositoryImpl(
       networkConnectionChecker: networkChecker,
-      poiPhotoApi: remote
+      poiPhotoApi: remoteApi,
+      poiReviewsApi: remoteApi
     )
+    let businessId = "0x89c259b5a9bd152b:0x31453e62a3be9f76"
     //let param = PoiModule.Data.Payload.SearchPoi(keyword: "plumbers", lat: 37.359428, lng: -121.925337, zoom: 13)
     //task = remote.fetchSearchPoiInArea(params: param.requestParams)
-    //let param = PoiModule.Data.Payload.PoiDetail(businessId: "0x89c259b5a9bd152b:0x31453e62a3be9f76")
+    //let param = PoiModule.Data.Payload.PoiDetail(businessId: businessId)
     //task = remote.fetchPoiDetail(params: param.requestParams)
     //task = remote.fetchPoiPhoto(params: param.requestParams)
-    task = repo.getPoiPhotos(payload: PoiModule.Data.Payload.PoiPhoto(businessId: "0x89c259b5a9bd152b:0x31453e62a3be9f76"))
+    //task = repo.getPoiPhotos(payload: PoiModule.Data.Payload.PoiPhoto(businessId: businessId))
+    task = repo.getPoiReviews(payload: PoiModule.Data.Payload.PoiReview(businessId: businessId))
       .subscribe(on: DispatchQueue.global(qos: .userInitiated))
       .eraseToAnyPublisher()
       .receive(on: DispatchQueue.main)
