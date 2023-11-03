@@ -4,3 +4,18 @@
 //
 
 import Foundation
+import Combine
+
+
+public protocol SearchPoiRemoteDataSource {
+  //func postSearchPoi(param: [String: Any])
+}
+
+
+public struct SearchPoiRemoteDataSourceImpl: SearchPoiRemoteDataSource {
+
+  public init() {}
+
+
+
+}
