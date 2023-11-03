@@ -202,7 +202,6 @@
           "author_review_count": 15,
           "author_reviews_link": "https://www.google.com/maps/contrib/107427986751669550700/reviews?hl=en-US",
           "author_local_guide_level": 4,
-          "service_quality": null,
           "hotel_rating_breakdown": {
             "Food": 4,
             "Service": 4,
@@ -216,7 +215,6 @@
           "review_datetime_utc": "2023-08-29T17:27:30.306Z",
           "review_timestamp": 1693330050,
           "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwbV9PRl9BRRAB!2m1!1s0x0:0x79144a94bee58347!3m1!1s2@1:CIHM0ogKEICAgIDpm_OF_AE%7CCgwIgtW4pwYQyL34kQE%7C?hl=en-US",
-          "review_photos": null,
           "review_language": "en",
           "like_count": 1,
           "author_id": "115509818576911554944",
@@ -225,8 +223,7 @@
           "author_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVU5iJuXryK6f0Xh5Yh-avB2dLCnc3fdAI6H6zE-HbU6Q=s120-c-rp-mo-br100",
           "author_review_count": 8,
           "author_reviews_link": "https://www.google.com/maps/contrib/115509818576911554944/reviews?hl=en-US",
-          "author_local_guide_level": null,
-          "service_quality": null,
+          "author_local_guide_level": -1,
           "hotel_rating_breakdown": {
             "Food": 5,
             "Service": 5,
@@ -240,7 +237,6 @@
           "review_datetime_utc": "2023-08-18T01:53:15.719Z",
           "review_timestamp": 1692323595,
           "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwM05HQkhBEAE!2m1!1s0x0:0x79144a94bee58347!3m1!1s2@1:CIHM0ogKEICAgIDp3NGBHA%7CCgwIi577pgYQqPX91gI%7C?hl=en-US",
-          "review_photos": null,
           "review_language": "en",
           "like_count": 0,
           "author_id": "108774141146587141374",
@@ -249,8 +245,7 @@
           "author_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKnrwn1ZJ5n9XX6yYoyOKPMS0Q6hXGb4NbpmeyOvL0B=s120-c-rp-mo-br100",
           "author_review_count": 4,
           "author_reviews_link": "https://www.google.com/maps/contrib/108774141146587141374/reviews?hl=en-US",
-          "author_local_guide_level": null,
-          "service_quality": null,
+          "author_local_guide_level": -1,
           "hotel_rating_breakdown": {
             "Food": 5,
             "Service": 5
@@ -280,8 +275,7 @@
           "author_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXU0X7htTIdquUVoe9HiNrMmBqxZk-b3Eau8gAR4cby1Uk=s120-c-rp-mo-ba4-br100",
           "author_review_count": 41,
           "author_reviews_link": "https://www.google.com/maps/contrib/115249821624811924154/reviews?hl=en-US",
-          "thor_local_guide_level": 6,
-
+          "thor_local_guide_level": 6
         },
         {
           "review_id": "ChdDSUhNMG9nS0VJQ0FnSURpLWRDQTRRRRAB",
@@ -301,8 +295,7 @@
           "author_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX1bdhUb5udTH45QkxazmoRLROfUVw2lZONt9fVr3LOkEY=s120-c-rp-mo-ba5-br100",
           "author_review_count": 511,
           "author_reviews_link": "https://www.google.com/maps/contrib/117637158206924112503/reviews?hl=en-US",
-          "thor_local_guide_level": 7,
-
+          "thor_local_guide_level": 7
         },
         {
           "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSNzRfQkF3EAE",
@@ -311,7 +304,6 @@
           "review_datetime_utc": "2023-04-14T00:31:25.333Z",
           "review_timestamp": 1681432285,
           "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSNzRfQkF3EAE!2m1!1s0x0:0x79144a94bee58347!3m1!1s2@1:CIHM0ogKEICAgICR74_BAw%7CCgwI3b3ioQYQkLf1ngE%7C?hl=en-US",
-          "review_photos": null,
           "review_language": "en",
           "like_count": 0,
           "author_id": "105949161333222009424",
@@ -347,8 +339,7 @@
           "author_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI4GAY-872PCn1ocnJhEMFeAXN01ShqP5Pra2flzhbz=s120-c-rp-mo-ba4-br100",
           "author_review_count": 65,
           "author_reviews_link": "https://www.google.com/maps/contrib/105406710853233833940/reviews?hl=en-US",
-          "thor_local_guide_level": 6,
-
+          "thor_local_guide_level": 6
         }
       ],
       "emails_and_contacts": {
@@ -356,14 +347,7 @@
         "phone_numbers": [],
         "facebook": "https://www.facebook.com/thepizzaboxsanjose",
         "instagram": "https://www.instagram.com/pizzaboxpizza",
-        "yelp": "https://www.yelp.com/biz/the-pizza-box-san-jose",
-        "tiktok": null,
-        "snapchat": null,
-        "twitter": null,
-        "linkedin": null,
-        "github": null,
-        "youtube": null,
-        "pinterest": null
+        "yelp": "https://www.yelp.com/biz/the-pizza-box-san-jose"
       }
     }
   ]
