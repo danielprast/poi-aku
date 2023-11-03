@@ -102,3 +102,25 @@ extension RemoteDataSourceImpl: PoiPhotoRemoteDataSource {
     )
   }
 }
+
+
+// MARK: - ⌘ POI Review
+public protocol PoiReviewRemoteDataSource {
+  func fetchPoiReviews(params: [String: String]) -> AnyPublisher<PoiRootListModel<PoiReviewResponseModel>, NError>
+}
+
+
+extension RemoteDataSourceImpl: PoiReviewRemoteDataSource {
+
+  public func fetchPoiReviews(params: [String : String]) -> AnyPublisher<PoiRootListModel<PoiReviewResponseModel>, NError> {
+    return networkService.getRequest(
+      of: PoiRootListModel<PoiReviewResponseModel>.self,
+      url: NetworkManager.makeUrl(
+        baseURL: AppConfig.baseURL,
+        path: Endpoints.businessReviews.path,
+        queryItems: params
+      )!,
+      headers: AppConfig.headers
+    )
+  }
+}
