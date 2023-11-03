@@ -20,14 +20,14 @@ public struct RemoteDataSourceImpl {
 
 // MARK: - ⌘ Search Poi In Area
 public protocol SearchPoiInAreaRemoteDataSource {
-  func fetchSearchPoiInArea(params: [String: String]) -> AnyPublisher<PoiRootListModel<PoiSearchInAreaResponseModel>, NError>
+  func fetchSearchPoiInArea(params: [String: String]) -> AnyPublisher<PoiRootListModel<PoiDetailResponseModel>, NError>
 }
 
 extension RemoteDataSourceImpl: SearchPoiInAreaRemoteDataSource {
 
-  public func fetchSearchPoiInArea(params: [String : String]) -> AnyPublisher<PoiRootListModel<PoiSearchInAreaResponseModel>, NError> {
+  public func fetchSearchPoiInArea(params: [String : String]) -> AnyPublisher<PoiRootListModel<PoiDetailResponseModel>, NError> {
     return networkService.getRequest(
-      of: PoiRootListModel<PoiSearchInAreaResponseModel>.self,
+      of: PoiRootListModel<PoiDetailResponseModel>.self,
       url: NetworkManager.makeUrl(
         baseURL: AppConfig.baseURL,
         path: Endpoints.searchInArea.path,
@@ -41,14 +41,14 @@ extension RemoteDataSourceImpl: SearchPoiInAreaRemoteDataSource {
 
 // MARK: - ⌘ Search Poi Nearby
 public protocol SearchPoiNearbyRemoteDataSource {
-  func fetchSearchPoiNearby(params: [String: String]) -> AnyPublisher<PoiRootListModel<PoiSearchNearbyResponseModel>, NError>
+  func fetchSearchPoiNearby(params: [String: String]) -> AnyPublisher<PoiRootListModel<PoiDetailResponseModel>, NError>
 }
 
 extension RemoteDataSourceImpl: SearchPoiNearbyRemoteDataSource {
 
-  public func fetchSearchPoiNearby(params: [String : String]) -> AnyPublisher<PoiRootListModel<PoiSearchNearbyResponseModel>, NError> {
+  public func fetchSearchPoiNearby(params: [String : String]) -> AnyPublisher<PoiRootListModel<PoiDetailResponseModel>, NError> {
     return networkService.getRequest(
-      of: PoiRootListModel<PoiSearchNearbyResponseModel>.self,
+      of: PoiRootListModel<PoiDetailResponseModel>.self,
       url: NetworkManager.makeUrl(
         baseURL: AppConfig.baseURL,
         path: Endpoints.searchNearby.path,
