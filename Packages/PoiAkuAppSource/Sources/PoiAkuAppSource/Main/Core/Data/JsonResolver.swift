@@ -17,6 +17,7 @@ public struct JsonResolver {
     do {
       return try JSONDecoder().decode(T.self, from: data)
     } catch {
+      shout("json decode error", error)
       return nil
     }
   }

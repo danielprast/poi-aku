@@ -12,7 +12,7 @@ import PoiAkuAppSource
 struct POI_AkuApp: App {
   var body: some Scene {
     WindowGroup {
-      MainView()
+      MainView(viewModel: MainViewModel())
     }
   }
 }
