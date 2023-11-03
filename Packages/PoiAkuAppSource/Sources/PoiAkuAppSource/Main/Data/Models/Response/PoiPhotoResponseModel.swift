@@ -45,15 +45,15 @@ extension PoiModule.Data.Response {
     }
 
     public init(
-      photoID: String,
-      photoURL: String,
-      photoURLLarge: String,
-      videoThumbnailURL: String,
-      latitude: Double,
-      longitude: Double,
-      type: String,
-      photoDatetimeUTC: String,
-      photoTimestamp: Int
+      photoID: String = "",
+      photoURL: String = "",
+      photoURLLarge: String = "",
+      videoThumbnailURL: String = "",
+      latitude: Double = 0.0,
+      longitude: Double = 0.0,
+      type: String = "",
+      photoDatetimeUTC: String = "",
+      photoTimestamp: Int = 0
     ) {
       self.photoID = photoID
       self.photoURL = photoURL
