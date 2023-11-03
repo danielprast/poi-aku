@@ -80,3 +80,25 @@ extension RemoteDataSourceImpl: PoiDetailRemoteDataSource {
     )
   }
 }
+
+
+// MARK: - ⌘ POI Photo
+public protocol PoiPhotoRemoteDataSource {
+  func fetchPoiPhoto(params: [String: String]) -> AnyPublisher<PoiRootListModel<PoiPhotoResponseModel>, NError>
+}
+
+
+extension RemoteDataSourceImpl: PoiPhotoRemoteDataSource {
+
+  public func fetchPoiPhoto(params: [String : String]) -> AnyPublisher<PoiRootListModel<PoiPhotoResponseModel>, NError> {
+    return networkService.getRequest(
+      of: PoiRootListModel<PoiPhotoResponseModel>.self,
+      url: NetworkManager.makeUrl(
+        baseURL: AppConfig.baseURL,
+        path: Endpoints.businessPhotos.path,
+        queryItems: params
+      )!,
+      headers: AppConfig.headers
+    )
+  }
+}
