@@ -26,8 +26,8 @@ extension PoiModule.Data.Payload {
       self.zoom = zoom
     }
 
-    public var requestParams: [String: Any] {
-      var params: [String: Any] = [:]
+    public var requestParams: [String: String] {
+      var params: [String: String] = [:]
       params["query"] = keyword
       params["lat"] = "\(lat)"
       params["lng"] = "\(lng)"
