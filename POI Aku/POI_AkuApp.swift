@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import PoiAkuAppSource
 
 @main
 struct POI_AkuApp: App {
   var body: some Scene {
     WindowGroup {
-      ContentView()
+      MainView()
     }
   }
 }
