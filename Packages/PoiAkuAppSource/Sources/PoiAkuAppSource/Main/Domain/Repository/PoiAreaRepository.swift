@@ -19,8 +19,8 @@ extension PoiRepositoryImpl: PoiAreaRepository {
       promise(.failure(.connectionProblem))
     }.eraseToAnyPublisher()
 
-    let remoteTask: PoiListRepositoryData = poiNearbyApi
-      .fetchSearchPoiNearby(params: payload.requestParams)
+    let remoteTask: PoiListRepositoryData = poiAreaApi
+      .fetchSearchPoiInArea(params: payload.requestParams)
       .flatMap { response -> PoiListRepositoryData in
         let models = response.data.map { PoiModule.Data.Model.PoiDetail(response: $0) }
         return Just(PoiListEntity(poiList: models))

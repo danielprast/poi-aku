@@ -31,16 +31,7 @@ public class MainViewModel: ObservableObject {
   public var task: AnyCancellable?
 
   public func testFetch() {
-    let networkChecker = NetworkConnectionChecker_V1()
-    let remoteApi = RemoteDataSourceImpl(networkService: NetworkManager())
-    let repo = PoiRepositoryImpl(
-      networkConnectionChecker: networkChecker,
-      poiPhotoApi: remoteApi,
-      poiReviewsApi: remoteApi,
-      poiDetailApi: remoteApi,
-      poiNearbyApi: remoteApi,
-      poiAreaApi: remoteApi
-    )
+    let repo = DIC.shared.resolve(type: PoiAreaRepository.self)!
     let businessId = "0x89c259b5a9bd152b:0x31453e62a3be9f76"
     let searchPayload = PoiModule.Data.Payload.SearchPoi(keyword: "plumbers", lat: 37.359428, lng: -121.925337, zoom: 13)
     //task = remote.fetchSearchPoiInArea(params: param.requestParams)
