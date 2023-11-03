@@ -18,7 +18,7 @@ public struct RemoteDataSourceImpl {
 }
 
 
-// MARK: ⌘ Search Poi In Area
+// MARK: - ⌘ Search Poi In Area
 public protocol SearchPoiInAreaRemoteDataSource {
   func fetchSearchPoiInArea(params: [String: String]) -> AnyPublisher<PoiRootListModel<PoiSearchInAreaResponseModel>, NError>
 }
@@ -39,7 +39,7 @@ extension RemoteDataSourceImpl: SearchPoiInAreaRemoteDataSource {
 }
 
 
-// MARK: ⌘ Search Poi Nearby
+// MARK: - ⌘ Search Poi Nearby
 public protocol SearchPoiNearbyRemoteDataSource {
   func fetchSearchPoiNearby(params: [String: String]) -> AnyPublisher<PoiRootListModel<PoiSearchNearbyResponseModel>, NError>
 }
@@ -57,4 +57,10 @@ extension RemoteDataSourceImpl: SearchPoiNearbyRemoteDataSource {
       headers: AppConfig.headers
     )
   }
+}
+
+
+// MARK: - ⌘ POI Detail
+public protocol PoiDetailRemoteDataSource {
+  func fetchPoiDetail(params: [String: String]) -> AnyPublisher<PoiRootListModel<PoiSearchNearbyResponseModel>, NError>
 }

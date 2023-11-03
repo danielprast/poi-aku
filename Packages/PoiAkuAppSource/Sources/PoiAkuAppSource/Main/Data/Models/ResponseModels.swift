@@ -8,6 +8,7 @@ import Foundation
 
 public typealias PoiSearchInAreaResponseModel = PoiModule.Data.Response.PoiSearchInArea
 public typealias PoiSearchNearbyResponseModel = PoiModule.Data.Response.PoiSearchNearby
+public typealias PoiDetailResponseModel = PoiModule.Data.Response.PoiDetail
 
 
 // MARK: ⌘ POI Search In Area
@@ -36,7 +37,7 @@ extension PoiModule.Data.Response {
     public let state: String
     public let country: String
 
-   public enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
       case businessID = "business_id"
       case googleID = "google_id"
       case placeID = "place_id"
@@ -200,7 +201,7 @@ extension PoiModule.Data.Response {
     public let state: String
     public let country: String
 
-   public enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
       case businessID = "business_id"
       case googleID = "google_id"
       case placeID = "place_id"
@@ -341,7 +342,7 @@ extension PoiModule.Data.Response {
 // MARK: ⌘ POI Details
 extension PoiModule.Data.Response {
 
-
+  public struct PoiDetail: Codable {}
 
 }
 

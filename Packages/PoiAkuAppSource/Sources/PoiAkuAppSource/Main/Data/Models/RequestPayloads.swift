@@ -6,9 +6,14 @@
 import Foundation
 
 
+public protocol RequestPayload {
+  var requestParams: [String: String] { get }
+}
+
+
 extension PoiModule.Data.Payload {
 
-  public struct SearchPoi {
+  public struct SearchPoi: RequestPayload {
     public let keyword: String
     public let lat: Double
     public let lng: Double
@@ -35,6 +40,23 @@ extension PoiModule.Data.Payload {
         params["zoom"] = "\(zoom)"
       }
       return params
+    }
+  }
+
+}
+
+
+extension PoiModule.Data.Payload {
+
+  public struct PoiDetail: RequestPayload {
+    let businessId: String
+
+    public init(businessId: String) {
+      self.businessId = businessId
+    }
+
+    public var requestParams: [String : String] {
+      [ "business_id" : businessId ]
     }
   }
 
