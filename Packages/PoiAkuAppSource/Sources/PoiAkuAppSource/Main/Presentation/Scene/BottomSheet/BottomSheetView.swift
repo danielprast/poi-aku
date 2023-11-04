@@ -6,18 +6,26 @@
 import SwiftUI
 
 
-public struct BottomSheetView: View {
+public struct BottomSheetView<Content> : View where Content : View {
 
-  @EnvironmentObject var poiViewModel: PoiViewModel
   @GestureState var gestureOffset: CGFloat = 0
   @State var offset: CGFloat = 0
   @State var lastOffset: CGFloat = 0
   @FocusState private var isFocused: Bool
+  @Binding var searchText: String
 
   let defaultSpacing: CGFloat = 100
   let bottomContentSpacing: CGFloat = 20.0
 
-  public init() {}
+  @ViewBuilder let content: Content
+
+  public init(
+    searchText: Binding<String>,
+    @ViewBuilder content: () -> Content
+  ) {
+    self._searchText = searchText
+    self.content = content()
+  }
 
   public var body: some View {
     GeometryReader { proxy -> AnyView in
@@ -37,7 +45,7 @@ public struct BottomSheetView: View {
       BlurView(style: .systemThinMaterialDark)
         .clipShape(CustomCorner(corners: [.topLeft,.topRight], radius: 30))
 
-      poiScreen(geo: geo)
+      sheetContent(geo: geo)
         .padding(.horizontal)
         .frame(maxHeight: .infinity, alignment: .top)
     }
@@ -78,7 +86,7 @@ public struct BottomSheetView: View {
   }
 
   @ViewBuilder
-  private func poiScreen(geo: GeometryProxy) -> some View {
+  private func sheetContent(geo: GeometryProxy) -> some View {
     let height = geo.frame(in: .global).height
     VStack {
       VStack {
@@ -88,7 +96,7 @@ public struct BottomSheetView: View {
 
         TextField(
           "Search",
-          text: $poiViewModel.searchText
+          text: $searchText
         )
         .focused($isFocused)
         .onChange(of: isFocused, perform: { focused in
@@ -113,84 +121,11 @@ public struct BottomSheetView: View {
         .vertical,
         showsIndicators: false,
         content: {
-          poiContent()
+          content
             .padding(.bottom)
             .padding(.bottom, calculateOffset(by: height))
         }
       )
-    }
-  }
-
-  @ViewBuilder
-  private func poiContent() -> some View {
-    VStack {
-      HStack {
-
-        Text("Favourites")
-          .fontWeight(.bold)
-          .foregroundColor(.white)
-
-        Spacer()
-
-        Button(action: {}, label: {
-          Text("See All")
-            .fontWeight(.bold)
-            .foregroundColor(.gray)
-        })
-      }
-      .padding(.top, 20)
-
-      Divider()
-        .background(Color.white)
-
-      ScrollView(.horizontal, showsIndicators: false, content: {
-
-        HStack(spacing: 15){
-
-          VStack(spacing: 8){
-
-            Button(action: {}, label: {
-              Image(systemName: "house.fill")
-                .font(.title)
-                .frame(width: 65, height: 65)
-                .background(BlurView(style: .dark))
-                .clipShape(Circle())
-            })
-
-            Text("Home")
-              .foregroundColor(.white)
-          }
-
-          VStack(spacing: 8){
-
-            Button(action: {}, label: {
-              Image(systemName: "briefcase.fill")
-                .font(.title)
-                .frame(width: 65, height: 65)
-                .background(BlurView(style: .dark))
-                .clipShape(Circle())
-            })
-
-            Text("Work")
-              .foregroundColor(.white)
-          }
-
-          VStack(spacing: 8){
-
-            Button(action: {}, label: {
-              Image(systemName: "plus")
-                .font(.title)
-                .frame(width: 65, height: 65)
-                .background(BlurView(style: .dark))
-                .clipShape(Circle())
-            })
-
-            Text("Add")
-              .foregroundColor(.white)
-          }
-        }
-      })
-      .padding(.top)
     }
   }
 
