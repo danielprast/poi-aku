@@ -62,6 +62,10 @@ public class AppDependencyContainer {
       return remoteDataSource as AnyObject
     }
 
+    dic.register(type: PoiAutoCompleteRemoteDataSource.self) { _ in
+      return remoteDataSource as AnyObject
+    }
+
     let repository = PoiRepositoryImpl(
       networkConnectionChecker: networkConnectionChecker,
       poiPhotoApi: remoteDataSource,
@@ -89,6 +93,10 @@ public class AppDependencyContainer {
     }
 
     dic.register(type: PoiAreaRepository.self) { _ in
+      return repository as AnyObject
+    }
+
+    dic.register(type: PoiAutocompleteRepository.self) { _ in
       return repository as AnyObject
     }
   }

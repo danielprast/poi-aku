@@ -37,9 +37,17 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
   @Published var mapView: MKMapView = .init()
   @Published var userLocation: CLLocation?
   @Published var searchText: String = ""
+  @Published var poListEntity: PoiListEntity? = nil
+  @Published var searchMode: Bool = false
   var inputTextTask: AnyCancellable?
   var searchNearbyTask: AnyCancellable?
   var searchInAreaTask: AnyCancellable?
+
+  // MARK: - ⌘ UI Event
+
+  public func submitTextSearch() {
+    searchMode = false
+  }
 
   // MARK: - ⌘ Use case
 
@@ -56,8 +64,9 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
       .eraseToAnyPublisher()
       .sink(receiveCompletion: { completion in
         shout("completion", completion)
-      }, receiveValue: { data in
+      }, receiveValue: { [weak self] data in
         shout("poi area data", data)
+        self?.poListEntity = data
       })
   }
 
@@ -84,6 +93,7 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
     if text.isEmpty {
       return
     }
+
     shout("fetch search api", searchText)
     searchPoiAtSpecificArea()
   }

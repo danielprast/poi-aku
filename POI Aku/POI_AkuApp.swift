@@ -24,3 +24,10 @@ struct POI_AkuApp: App {
     }
   }
 }
+
+
+struct MyPreviewProvider_Previews: PreviewProvider {
+  static var previews: some View {
+    AppDependencyContainer().makeRootView()
+  }
+}
