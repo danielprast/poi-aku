@@ -14,6 +14,9 @@ public struct BottomSheetView: View {
   @State var lastOffset: CGFloat = 0
   @FocusState private var isFocused: Bool
 
+  let defaultSpacing: CGFloat = 100
+  let bottomContentSpacing: CGFloat = 20.0
+
   public init() {}
 
   public var body: some View {
@@ -38,8 +41,8 @@ public struct BottomSheetView: View {
         .padding(.horizontal)
         .frame(maxHeight: .infinity, alignment: .top)
     }
-    .offset(y: height - 100)
-    .offset(y: -offset > 0 ? -offset <= (height - 100) ? offset : -(height - 100) : 0)
+    .offset(y: height - defaultSpacing)
+    .offset(y: -offset > 0 ? -offset <= (height - defaultSpacing) ? offset : -(height - defaultSpacing) : 0)
     .gesture(
       DragGesture()
         .updating(
@@ -51,11 +54,11 @@ public struct BottomSheetView: View {
         )
         .onEnded(
           { value in
-            let maxHeight = height - 100
+            let maxHeight = height - defaultSpacing
             withAnimation{
               // Logic COnditions For Moving States...
               // Up down or mid....
-              if -offset > 100 && -offset < maxHeight / 2 {
+              if -offset > defaultSpacing && -offset < maxHeight / 2 {
                 // Mid....
                 offset = -(maxHeight / 3)
               }
@@ -89,17 +92,13 @@ public struct BottomSheetView: View {
         )
         .focused($isFocused)
         .onChange(of: isFocused, perform: { focused in
-          let maxHeight = height - 100
-          shout("max height", maxHeight)
-          if focused {
-            shout("TF", "TF Focused")
-            withAnimation {
-              offset = -maxHeight
-            }
-            lastOffset = offset
-          } else {
+          if !focused {
             shout("TF", "TF Focus Removed")
+            return
           }
+          shout("TF", "TF Focused")
+          let maxHeight = height - defaultSpacing
+          animateBottomSheetToTargetHeight(size: maxHeight)
         })
         .padding(.vertical,10)
         .padding(.horizontal)
@@ -108,7 +107,7 @@ public struct BottomSheetView: View {
         .colorScheme(.dark)
         .padding(.top,10)
       }
-      .frame(height: 100)
+      .frame(height: defaultSpacing)
 
       ScrollView(
         .vertical,
@@ -116,7 +115,7 @@ public struct BottomSheetView: View {
         content: {
           poiContent()
             .padding(.bottom)
-            .padding(.bottom, offset == -((height - 100) / 3) ? ((height - 100) / 1.5) : 0)
+            .padding(.bottom, calculateOffset(by: height))
         }
       )
     }
@@ -124,12 +123,93 @@ public struct BottomSheetView: View {
 
   @ViewBuilder
   private func poiContent() -> some View {
-    ZStack {
-      Color.pink
+    VStack {
+      HStack {
+
+        Text("Favourites")
+          .fontWeight(.bold)
+          .foregroundColor(.white)
+
+        Spacer()
+
+        Button(action: {}, label: {
+          Text("See All")
+            .fontWeight(.bold)
+            .foregroundColor(.gray)
+        })
+      }
+      .padding(.top, 20)
+
+      Divider()
+        .background(Color.white)
+
+      ScrollView(.horizontal, showsIndicators: false, content: {
+
+        HStack(spacing: 15){
+
+          VStack(spacing: 8){
+
+            Button(action: {}, label: {
+              Image(systemName: "house.fill")
+                .font(.title)
+                .frame(width: 65, height: 65)
+                .background(BlurView(style: .dark))
+                .clipShape(Circle())
+            })
+
+            Text("Home")
+              .foregroundColor(.white)
+          }
+
+          VStack(spacing: 8){
+
+            Button(action: {}, label: {
+              Image(systemName: "briefcase.fill")
+                .font(.title)
+                .frame(width: 65, height: 65)
+                .background(BlurView(style: .dark))
+                .clipShape(Circle())
+            })
+
+            Text("Work")
+              .foregroundColor(.white)
+          }
+
+          VStack(spacing: 8){
+
+            Button(action: {}, label: {
+              Image(systemName: "plus")
+                .font(.title)
+                .frame(width: 65, height: 65)
+                .background(BlurView(style: .dark))
+                .clipShape(Circle())
+            })
+
+            Text("Add")
+              .foregroundColor(.white)
+          }
+        }
+      })
+      .padding(.top)
     }
   }
 
-  func onChange() {
+  private func animateBottomSheetToTargetHeight(size: CGFloat) {
+    withAnimation {
+      offset = -size
+    }
+    lastOffset = offset
+  }
+
+  private func calculateOffset(by height: CGFloat) -> CGFloat {
+    let conditionMet = -((height - defaultSpacing) / 3)
+    if offset == conditionMet {
+      return ((height - defaultSpacing) / 1.5)
+    }
+    return bottomContentSpacing
+  }
+
+  private func onChange() {
     if isFocused {
       isFocused.toggle()
     }
@@ -138,11 +218,8 @@ public struct BottomSheetView: View {
     }
   }
 
-  // Blur Radius For BG>..
-  func getBlurRadius() -> CGFloat {
-
-    let progress = -offset / (UIScreen.main.bounds.height - 100)
-
+  private func getBlurRadius() -> CGFloat {
+    let progress = -offset / (UIScreen.main.bounds.height - defaultSpacing)
     return progress * 30 <= 30 ? progress * 30 : 30
   }
 }
