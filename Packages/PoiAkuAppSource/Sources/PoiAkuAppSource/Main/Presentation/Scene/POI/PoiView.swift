@@ -8,29 +8,59 @@ import SwiftUI
 
 public struct PoiView: View {
 
-  @ObservedObject var viewModel: PoiViewModel
+  @StateObject var viewModel: PoiViewModel
+  @State var titleText: String = ""
 
   public init(viewModel: PoiViewModel) {
-    self.viewModel = viewModel
+    self._viewModel = StateObject(wrappedValue: viewModel)
   }
 
   public var body: some View {
-    PoiView.contentView()
+    ContentView(titleText: $titleText)
+      .background(
+        MapView()
+          .environmentObject(viewModel)
+          .edgesIgnoringSafeArea(.all)
+      )
+      .onAppear {
+        titleText = "Joss Gandoss"
+        viewModel.searchPoiAtSpecificArea()
+      }
+
   }
 
-  @ViewBuilder
-  public static func contentView() -> some View {
-    ZStack {
-      Color.teal
-      Text("POI View!")
-        .font(.largeTitle)
+  // MARK: - ⌘ Content View
+  struct ContentView: View {
+
+    @Binding var titleText: String
+
+    var body: some View {
+      ZStack {
+        spacerView
+        Text(titleText)
+          .font(.largeTitle)
+      }
+
     }
+
+    var spacerView: some View {
+      HStack {
+        Spacer()
+        VStack {
+          Spacer()
+        }
+      }
+    }
+
   }
+
 }
 
 
+// MARK: - ⌘ Preview
 struct PoiView_Previews: PreviewProvider {
   static var previews: some View {
-    PoiView.contentView()
+    //PoiView.contentView(titleText: "Joss Gandoss")
+    PoiView.ContentView(titleText: .constant("Halo Dulur"))
   }
 }

@@ -13,13 +13,24 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
 
   // MARK: - ⌘ Dependencies
   let coreLocation: CLLocationManager
+  let searchNearbyRepository: PoiNearbyRepository
+  let searchInAreaRepository: PoiAreaRepository
 
-  public override init() {
+  public init(
+    searchNearbyRepository: PoiNearbyRepository,
+    searchInAreaRepository: PoiAreaRepository
+  ) {
+    self.searchNearbyRepository = searchNearbyRepository
+    self.searchInAreaRepository = searchInAreaRepository
     coreLocation = .init()
     super.init()
-    coreLocation.delegate = self
-    mapView.delegate = self
-    handleSearchTextBehavior()
+    onInit()
+  }
+
+  deinit {
+    cancellable?.cancel()
+    searchNearbyTask?.cancel()
+    searchInAreaTask?.cancel()
   }
 
   // MARK: - ⌘ States
@@ -27,8 +38,36 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
   @Published var userLocation: CLLocation?
   @Published var searchText: String = ""
   var cancellable: AnyCancellable?
+  var searchNearbyTask: AnyCancellable?
+  var searchInAreaTask: AnyCancellable?
+
+  // MARK: - ⌘ Use case
+
+  public func searchNearbyPoi() {
+
+  }
+
+  public func searchPoiAtSpecificArea() {
+    let searchPayload = PoiModule.Data.Payload.SearchPoi(keyword: "plumbers", lat: 37.359428, lng: -121.925337, zoom: 13)
+    searchInAreaTask = searchInAreaRepository.getPoiInArea(payload: searchPayload)
+      .subscribe(on: DispatchQueue.global(qos: .userInitiated))
+      .eraseToAnyPublisher()
+      .receive(on: DispatchQueue.main)
+      .eraseToAnyPublisher()
+      .sink(receiveCompletion: { completion in
+        shout("completion", completion)
+      }, receiveValue: { data in
+        shout("poi area data", data)
+      })
+  }
 
   // MARK: - ⌘
+
+  fileprivate func onInit() {
+    coreLocation.delegate = self
+    mapView.delegate = self
+    handleSearchTextBehavior()
+  }
 
   fileprivate func handleSearchTextBehavior() {
     cancellable = $searchText
