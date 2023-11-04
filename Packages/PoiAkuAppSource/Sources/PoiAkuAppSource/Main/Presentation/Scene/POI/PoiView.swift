@@ -25,7 +25,6 @@ public struct PoiView: View {
         searchText: $viewModel.searchText,
         focusResponder: $focusResponder,
         onFocusedInputTextSearch: { isFocused in
-          shout("input text search focused", isFocused)
           if !isFocused {
             return
           }
@@ -95,7 +94,19 @@ public struct PoiView: View {
   private func poiContentsView() -> some View {
     VStack {
       ForEach(viewModel.displayPoiList, id: \.id) { item in
-        Text(item.response.name)
+        HStack {
+          VStack {
+            Text(item.response.name)
+          }
+          Spacer()
+        }
+        .padding(.vertical, 12)
+        .padding(.horizontal, 16)
+        .background(Color.white.opacity(0.25))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
+        .onTapGesture {
+          shout("item search", item.response.name)
+        }
       }
     }
   }

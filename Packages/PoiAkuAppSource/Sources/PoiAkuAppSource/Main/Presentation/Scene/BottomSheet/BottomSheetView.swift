@@ -46,7 +46,7 @@ public struct BottomSheetView<Content> : View where Content : View {
         return
       }
       isFocused = !responder
-      focusResponder = false
+      focusResponder = !responder
     }
     .onTapGesture {
       isFocused = false
