@@ -20,7 +20,7 @@ struct POI_AkuApp: App {
 
   var body: some Scene {
     WindowGroup {
-      MainView(viewModel: MainViewModel())
+      injectionContainer.makeRootView()
     }
   }
 }

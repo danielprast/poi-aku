@@ -8,9 +8,17 @@ import Foundation
 
 public class AppDependencyContainer {
 
-  let dic: DICProtocol = DIC.shared
+  let dic: DICProtocol
+  let sharedMainViewModel: MainViewModel
 
   public init() {
+    func makeMainViewModel() -> MainViewModel {
+      return MainViewModel()
+    }
+
+    dic = DIC.shared
+    sharedMainViewModel = makeMainViewModel()
+
     setupBaseDependencies()
     setupDataDependencies()
   }
@@ -30,7 +38,7 @@ public class AppDependencyContainer {
   fileprivate func setupDataDependencies() {
     let networkConnectionChecker = dic.resolve(type: NetworkConnectionChecker.self)!
     let networkManager = dic.resolve(type: NetworkManager.self)!
-    let realRemoteDataSource = RemoteDataSourceImpl(networkService: networkManager)
+    //let realRemoteDataSource = RemoteDataSourceImpl(networkService: networkManager)
     let fakeRemoteDataSource = FakeRemoteDataSource()
     let remoteDataSource = fakeRemoteDataSource // or realRemoteDataSource
 
@@ -82,6 +90,25 @@ public class AppDependencyContainer {
     dic.register(type: PoiAreaRepository.self) { _ in
       return repository as AnyObject
     }
+  }
+
+  public func makePoiViewModel() -> PoiViewModel {
+    return PoiViewModel()
+  }
+
+  public func makePoiView() -> PoiView {
+    return PoiView(viewModel: makePoiViewModel())
+  }
+
+  public func makeRootView() -> MainView {
+    let poiViewFactory = {
+      return self.makePoiView()
+    }
+
+    return MainView(
+      viewModel: sharedMainViewModel,
+      poiViewFactory: poiViewFactory
+    )
   }
   
 }
