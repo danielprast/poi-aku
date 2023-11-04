@@ -38,9 +38,9 @@ public class AppDependencyContainer {
   fileprivate func setupDataDependencies() {
     let networkConnectionChecker = dic.resolve(type: NetworkConnectionChecker.self)!
     let networkManager = dic.resolve(type: NetworkManager.self)!
-    //let realRemoteDataSource = RemoteDataSourceImpl(networkService: networkManager)
-    let fakeRemoteDataSource = FakeRemoteDataSource()
-    let remoteDataSource = fakeRemoteDataSource // or realRemoteDataSource
+    let realRemoteDataSource = RemoteDataSourceImpl(networkService: networkManager)
+    //let fakeRemoteDataSource = FakeRemoteDataSource()
+    let remoteDataSource = realRemoteDataSource // or fakeRemoteDataSource
 
     dic.register(type: PoiReviewRemoteDataSource.self) { _ in
       return remoteDataSource as AnyObject
@@ -59,6 +59,10 @@ public class AppDependencyContainer {
     }
 
     dic.register(type: SearchPoiInAreaRemoteDataSource.self) { _ in
+      return remoteDataSource as AnyObject
+    }
+
+    dic.register(type: PoiAutoCompleteRemoteDataSource.self) { _ in
       return remoteDataSource as AnyObject
     }
 
@@ -91,12 +95,17 @@ public class AppDependencyContainer {
     dic.register(type: PoiAreaRepository.self) { _ in
       return repository as AnyObject
     }
+
+    dic.register(type: PoiAutocompleteRepository.self) { _ in
+      return repository as AnyObject
+    }
   }
 
   public func makePoiViewModel() -> PoiViewModel {
     return PoiViewModel(
       searchNearbyRepository: dic.resolve(type: PoiNearbyRepository.self)!,
-      searchInAreaRepository: dic.resolve(type: PoiAreaRepository.self)!
+      searchInAreaRepository: dic.resolve(type: PoiAreaRepository.self)!,
+      poiAutocompleteRepository: dic.resolve(type: PoiAutocompleteRepository.self)!
     )
   }
 

@@ -10,6 +10,10 @@ public struct PoiView: View {
 
   @StateObject var viewModel: PoiViewModel
   @State var titleText: String = ""
+  @State var focusResponder: Bool = false
+  @State var showDetail: Bool = false
+
+  let textColor = Color.colorHex(.black).opacity(0.65)
 
   public init(viewModel: PoiViewModel) {
     self._viewModel = StateObject(wrappedValue: viewModel)
@@ -18,90 +22,106 @@ public struct PoiView: View {
   public var body: some View {
     ZStack {
       spacerView
-      BottomSheetView(searchText: $viewModel.searchText) {
-        poiContent()
-      }
+      BottomSheetView(
+        searchText: $viewModel.searchText,
+        focusResponder: $focusResponder,
+        onFocusedInputTextSearch: { isFocused in
+          if !isFocused {
+            return
+          }
+          viewModel.searchMode = isFocused
+        },
+        onSubmitInputTextSearch: {
+          viewModel.submitTextSearch()
+        },
+        content: {
+          poiSheetContent()
+        }
+      )
     }
     .background(
       MapView()
         .environmentObject(viewModel)
         .edgesIgnoringSafeArea(.all)
     )
+    .sheet(isPresented: $showDetail) {
+      ZStack {
+        Color.pink
+        Text("Detail")
+        VStack {
+          Button("Tutup", action: {
+            showDetail = false
+          })
+          Spacer()
+        }
+      }
+    }
     .onAppear {
       titleText = "Joss Gandoss"
+      viewModel.searchPoiAtSpecificArea()
     }
   }
 
   @ViewBuilder
-  private func poiContent() -> some View {
-    VStack {
-      HStack {
-
-        Text("Favourites")
-          .fontWeight(.bold)
-          .foregroundColor(.white)
-
-        Spacer()
-
-        Button(action: {}, label: {
-          Text("See All")
-            .fontWeight(.bold)
-            .foregroundColor(.gray)
-        })
+  private func poiSheetContent() -> some View {
+    if viewModel.searchMode {
+      autocompleteContentsView()
+    } else {
+      if viewModel.poListEntity == nil {
+        EmptyView()
+      } else {
+        poiContentsView()
       }
-      .padding(.top, 20)
+    }
+  }
 
-      Divider()
-        .background(Color.white)
-
-      ScrollView(.horizontal, showsIndicators: false, content: {
-
-        HStack(spacing: 15){
-
-          VStack(spacing: 8){
-
-            Button(action: {}, label: {
-              Image(systemName: "house.fill")
-                .font(.title)
-                .frame(width: 65, height: 65)
-                .background(BlurView(style: .dark))
-                .clipShape(Circle())
-            })
-
-            Text("Home")
-              .foregroundColor(.white)
-          }
-
-          VStack(spacing: 8){
-
-            Button(action: {}, label: {
-              Image(systemName: "briefcase.fill")
-                .font(.title)
-                .frame(width: 65, height: 65)
-                .background(BlurView(style: .dark))
-                .clipShape(Circle())
-            })
-
-            Text("Work")
-              .foregroundColor(.white)
-          }
-
-          VStack(spacing: 8){
-
-            Button(action: {}, label: {
-              Image(systemName: "plus")
-                .font(.title)
-                .frame(width: 65, height: 65)
-                .background(BlurView(style: .dark))
-                .clipShape(Circle())
-            })
-
-            Text("Add")
-              .foregroundColor(.white)
+  @ViewBuilder
+  private func autocompleteContentsView() -> some View {
+    if viewModel.autocompleteListEntity == nil {
+      EmptyView()
+    } else {
+      VStack(alignment: .leading) {
+        ForEach(viewModel.displayAutocompleteList, id: \.id) { item in
+          AutocompleteItemView(
+            model: AutocompleteItem(
+              id: item.id,
+              mainText: item.mainText,
+              secondaryText: item.secondaryText,
+              isNearby: item.isNearby
+            )
+          )
+          .padding(.vertical, 8)
+          .padding(.horizontal, 12)
+          .background(Color.white.opacity(0.25))
+          .clipShape(RoundedRectangle(cornerRadius: 12))
+          .onTapGesture {
+            focusResponder = true
+            viewModel.onTapAutoCompleteItem(item)
           }
         }
-      })
-      .padding(.top)
+      }
+    }
+  }
+
+  @ViewBuilder
+  private func poiContentsView() -> some View {
+    VStack {
+      ForEach(viewModel.displayPoiList, id: \.id) { item in
+        HStack {
+          VStack {
+            Text(item.response.name)
+          }
+          Spacer()
+        }
+        .padding(.vertical, 12)
+        .padding(.horizontal, 16)
+        .background(Color.white.opacity(0.25))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
+        .onTapGesture {
+          shout("item search", item.response.name)
+          showDetail = true
+        }
+      }
     }
   }
 

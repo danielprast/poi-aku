@@ -11,8 +11,11 @@ public struct BottomSheetView<Content> : View where Content : View {
   @GestureState var gestureOffset: CGFloat = 0
   @State var offset: CGFloat = 0
   @State var lastOffset: CGFloat = 0
-  @FocusState private var isFocused: Bool
+  @FocusState var isFocused: Bool
   @Binding var searchText: String
+  @Binding var focusResponder: Bool
+  let onFocusedInputTextSearch: (Bool) -> Void
+  let onSubmitInputTextSearch: () -> Void
 
   let defaultSpacing: CGFloat = 100
   let bottomContentSpacing: CGFloat = 20.0
@@ -21,9 +24,15 @@ public struct BottomSheetView<Content> : View where Content : View {
 
   public init(
     searchText: Binding<String>,
+    focusResponder: Binding<Bool>,
+    onFocusedInputTextSearch: @escaping (Bool) -> Void,
+    onSubmitInputTextSearch: @escaping () -> Void,
     @ViewBuilder content: () -> Content
   ) {
     self._searchText = searchText
+    self._focusResponder = focusResponder
+    self.onFocusedInputTextSearch = onFocusedInputTextSearch
+    self.onSubmitInputTextSearch = onSubmitInputTextSearch
     self.content = content()
   }
 
@@ -32,6 +41,13 @@ public struct BottomSheetView<Content> : View where Content : View {
       return AnyView(anyViewContent(geo: proxy))
     }
     .ignoresSafeArea(.all, edges: .bottom)
+    .onChange(of: focusResponder) { responder in
+      if !responder {
+        return
+      }
+      isFocused = !responder
+      focusResponder = !responder
+    }
     .onTapGesture {
       isFocused = false
     }
@@ -42,7 +58,7 @@ public struct BottomSheetView<Content> : View where Content : View {
     let height = geo.frame(in: .global).height
 
     ZStack {
-      BlurView(style: .systemThinMaterialDark)
+      BlurView(style: .systemThinMaterialLight)
         .clipShape(CustomCorner(corners: [.topLeft,.topRight], radius: 30))
 
       sheetContent(geo: geo)
@@ -64,21 +80,16 @@ public struct BottomSheetView<Content> : View where Content : View {
           { value in
             let maxHeight = height - defaultSpacing
             withAnimation{
-              // Logic COnditions For Moving States...
               // Up down or mid....
               if -offset > defaultSpacing && -offset < maxHeight / 2 {
-                // Mid....
-                offset = -(maxHeight / 3)
-              }
-              else if -offset > maxHeight / 2{
+                offset = -(maxHeight / 3) // Mid...
+              } else if -offset > maxHeight / 2{
                 offset = -maxHeight
-              }
-              else{
+              } else{
                 offset = 0
               }
             }
             // Storing Last Offset..
-            // So that the gesture can contiue from the last position...
             lastOffset = offset
           }
         )
@@ -91,7 +102,7 @@ public struct BottomSheetView<Content> : View where Content : View {
     VStack {
       VStack {
         Capsule()
-          .fill(Color.white)
+          .fill(Color.black.opacity(0.3))
           .frame(width: 60, height: 4)
 
         TextField(
@@ -99,7 +110,12 @@ public struct BottomSheetView<Content> : View where Content : View {
           text: $searchText
         )
         .focused($isFocused)
+        .submitLabel(.search)
+        .onSubmit {
+          onSubmitInputTextSearch()
+        }
         .onChange(of: isFocused, perform: { focused in
+          onFocusedInputTextSearch(focused)
           if !focused {
             shout("TF", "TF Focus Removed")
             return
@@ -110,9 +126,9 @@ public struct BottomSheetView<Content> : View where Content : View {
         })
         .padding(.vertical,10)
         .padding(.horizontal)
-        .background(BlurView(style: .dark))
+        .background(BlurView(style: .extraLight))
         .cornerRadius(10)
-        .colorScheme(.dark)
+        .colorScheme(.light)
         .padding(.top,10)
       }
       .frame(height: defaultSpacing)

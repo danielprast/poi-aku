@@ -55,19 +55,39 @@ extension PoiModule.Data.Payload {
     public let keyword: String
     public let lat: Double?
     public let lng: Double?
+    public let region: String?
+    public let language: String?
 
-    public init(keyword: String, lat: Double? = nil, lng: Double? = nil) {
+    public init(
+      keyword: String,
+      lat: Double? = nil,
+      lng: Double? = nil,
+      region: String? = "id",
+      language: String? = "id"
+    ) {
       self.keyword = keyword
       self.lat = lat
       self.lng = lng
+      self.region = region
+      self.language = language
     }
 
     public var requestParams: [String : String] {
       var params: [String: String] = [:]
       params["query"] = keyword
+
+      if let region = self.region {
+        params["region"] = region
+      }
+
+      if let language = self.language {
+        params["language"] = language
+      }
+
       if let lat = lat, let lng = lng {
         params["coordinates"] = "\(lat),\(lng)"
       }
+
       return params
     }
   }
