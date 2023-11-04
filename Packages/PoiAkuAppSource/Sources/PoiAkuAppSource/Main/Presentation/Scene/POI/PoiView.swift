@@ -79,6 +79,9 @@ public struct PoiView: View {
             )
           )
           .padding(.vertical, 8)
+          .padding(.horizontal, 12)
+          .background(Color.white.opacity(0.25))
+          .clipShape(RoundedRectangle(cornerRadius: 12))
           .onTapGesture {
             focusResponder = true
             viewModel.onTapAutoCompleteItem(item)
@@ -161,6 +164,8 @@ public struct AutocompleteItemView: View {
             .foregroundColor(.black.opacity(0.65))
         }
       }
+
+      Spacer()
     }
   }
 
