@@ -68,7 +68,8 @@ public class AppDependencyContainer {
       poiReviewsApi: remoteDataSource,
       poiDetailApi: remoteDataSource,
       poiNearbyApi: remoteDataSource,
-      poiAreaApi: remoteDataSource
+      poiAreaApi: remoteDataSource,
+      poiAutocompleteApi: remoteDataSource
     )
 
     dic.register(type: PoiReviewsRepository.self) { _ in

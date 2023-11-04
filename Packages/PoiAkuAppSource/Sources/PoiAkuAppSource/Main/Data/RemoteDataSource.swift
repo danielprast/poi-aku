@@ -124,3 +124,26 @@ extension RemoteDataSourceImpl: PoiReviewRemoteDataSource {
     )
   }
 }
+
+
+// MARK: - ⌘ POI Autocomplete
+public protocol PoiAutoCompleteRemoteDataSource {
+  func fetchPoiAutoComplete(params: [String: String]) -> AnyPublisher<PoiRootListModel<PoiAutocompleteItemResponseModel>, NError>
+}
+
+
+extension RemoteDataSourceImpl: PoiAutoCompleteRemoteDataSource {
+
+  public func fetchPoiAutoComplete(params: [String: String]) -> AnyPublisher<PoiRootListModel<PoiAutocompleteItemResponseModel>, NError> {
+    return networkService.getRequest(
+      of: PoiRootListModel<PoiAutocompleteItemResponseModel>.self,
+      url: NetworkManager.makeUrl(
+        baseURL: AppConfig.baseURL,
+        path: Endpoints.autocomplete.path,
+        queryItems: params
+      )!,
+      headers: AppConfig.headers
+    )
+  }
+}
+

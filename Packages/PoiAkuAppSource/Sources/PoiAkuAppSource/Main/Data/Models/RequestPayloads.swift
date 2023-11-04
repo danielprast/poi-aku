@@ -47,6 +47,34 @@ extension PoiModule.Data.Payload {
 }
 
 
+// MARK: - ⌘ Poi Autocomplete
+public typealias PoiAutoCompletePayload = PoiModule.Data.Payload.AutoComplete
+extension PoiModule.Data.Payload {
+
+  public struct AutoComplete: RequestPayload {
+    public let keyword: String
+    public let lat: Double?
+    public let lng: Double?
+
+    public init(keyword: String, lat: Double? = nil, lng: Double? = nil) {
+      self.keyword = keyword
+      self.lat = lat
+      self.lng = lng
+    }
+
+    public var requestParams: [String : String] {
+      var params: [String: String] = [:]
+      params["query"] = keyword
+      if let lat = lat, let lng = lng {
+        params["coordinates"] = "\(lat),\(lng)"
+      }
+      return params
+    }
+  }
+
+}
+
+
 // MARK: - ⌘ Poi Detail
 extension PoiModule.Data.Payload {
 

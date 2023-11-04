@@ -12,6 +12,7 @@ public enum Endpoints {
   case businessDetails
   case businessReviews
   case businessPhotos
+  case autocomplete
 
   var path: String {
     switch self {
@@ -25,6 +26,8 @@ public enum Endpoints {
       return "business-reviews"
     case .businessPhotos:
       return "business-photos"
+    case .autocomplete:
+      return "autocomplete"
     }
   }
 }

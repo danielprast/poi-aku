@@ -103,3 +103,22 @@ extension FakeRemoteDataSource: SearchPoiInAreaRemoteDataSource {
   }
 
 }
+
+
+extension FakeRemoteDataSource: PoiAutoCompleteRemoteDataSource {
+
+  public func fetchPoiAutoComplete(params: [String: String]) -> AnyPublisher<PoiRootListModel<PoiAutocompleteItemResponseModel>, NError> {
+    return Future<PoiRootListModel<PoiAutocompleteItemResponseModel>, NError> { promise in
+      let jsonData = JsonResolver.loadJsonFromFile(with: "poi_autocomplete")
+      guard
+        let response = JsonResolver.decodeJson(from: jsonData, outputType: PoiRootListModel<PoiAutocompleteItemResponseModel>.self)
+      else {
+        promise(.failure(NError.parsingError))
+        return
+      }
+      promise(.success(response))
+    }
+    .eraseToAnyPublisher()
+  }
+
+}
