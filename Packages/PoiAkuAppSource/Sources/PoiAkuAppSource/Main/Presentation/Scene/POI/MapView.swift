@@ -32,11 +32,3 @@ struct MapViewHelper: UIViewRepresentable {
   }
   func updateUIView(_ uiView: MKMapView, context: Context) {}
 }
-
-
-
-//struct MapView_Previews: PreviewProvider {
-//  static var previews: some View {
-//    MapView()
-//  }
-//}
