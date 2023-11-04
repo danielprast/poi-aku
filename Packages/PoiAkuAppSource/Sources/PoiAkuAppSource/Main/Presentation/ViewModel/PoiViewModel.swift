@@ -70,7 +70,7 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
     searchText = item.mainText
     resetDisplayPoiList()
     submitTextSearch()
-    if isNearby {
+    if item.isNearby {
       searchNearbyPoi()
       return
     }
@@ -100,7 +100,19 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
   }
 
   public func searchNearbyPoi() {
-
+    let searchPayload = PoiModule.Data.Payload.SearchPoi(keyword: searchText, lat: 37.359428, lng: -121.925337, zoom: 13)
+    searchNearbyTask = searchNearbyRepository.getPoiNearby(payload: searchPayload)
+      .subscribe(on: DispatchQueue.global(qos: .userInitiated))
+      .eraseToAnyPublisher()
+      .receive(on: DispatchQueue.main)
+      .eraseToAnyPublisher()
+      .sink(receiveCompletion: { completion in
+        shout("completion", completion)
+      }, receiveValue: { [weak self] data in
+        shout("poi area data", data)
+        self?.poListEntity = data
+        self?.displayPoiList = data.poiList
+      })
   }
 
   public func searchPoiAtSpecificArea() {
