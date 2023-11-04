@@ -100,7 +100,10 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
   }
 
   public func searchNearbyPoi() {
-    let searchPayload = PoiModule.Data.Payload.SearchPoi(keyword: searchText, lat: 37.359428, lng: -121.925337, zoom: 13)
+    let coordinates = userLocation?.coordinate
+    let latValue = coordinates?.latitude ?? 0.0
+    let lngValue = coordinates?.longitude ?? 0.0
+    let searchPayload = PoiModule.Data.Payload.SearchPoi(keyword: searchText, lat: latValue, lng: lngValue, zoom: 13)
     searchNearbyTask = searchNearbyRepository.getPoiNearby(payload: searchPayload)
       .subscribe(on: DispatchQueue.global(qos: .userInitiated))
       .eraseToAnyPublisher()
@@ -116,7 +119,10 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
   }
 
   public func searchPoiAtSpecificArea() {
-    let searchPayload = PoiModule.Data.Payload.SearchPoi(keyword: searchText, lat: 37.359428, lng: -121.925337, zoom: 13)
+    let coordinates = userLocation?.coordinate
+    let latValue = coordinates?.latitude ?? 0.0
+    let lngValue = coordinates?.longitude ?? 0.0
+    let searchPayload = PoiModule.Data.Payload.SearchPoi(keyword: searchText, lat: latValue, lng: lngValue, zoom: 13)
     searchInAreaTask = searchInAreaRepository.getPoiInArea(payload: searchPayload)
       .subscribe(on: DispatchQueue.global(qos: .userInitiated))
       .eraseToAnyPublisher()
