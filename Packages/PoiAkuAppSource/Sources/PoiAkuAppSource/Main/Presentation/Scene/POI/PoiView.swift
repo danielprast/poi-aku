@@ -10,7 +10,7 @@ public struct PoiView: View {
 
   @StateObject var viewModel: PoiViewModel
   @State var titleText: String = ""
-  @FocusState var isFocused: Bool
+  @State var focusResponder: Bool = false
 
   let textColor = Color.colorHex(.black).opacity(0.65)
 
@@ -23,6 +23,7 @@ public struct PoiView: View {
       spacerView
       BottomSheetView(
         searchText: $viewModel.searchText,
+        focusResponder: $focusResponder,
         onFocusedInputTextSearch: { isFocused in
           shout("input text search focused", isFocused)
           if !isFocused {
@@ -78,6 +79,7 @@ public struct PoiView: View {
             )
           )
           .onTapGesture {
+            focusResponder = true
             viewModel.onTapAutoCompleteItem(item)
           }
         }
@@ -160,6 +162,16 @@ public struct AutocompleteItemView: View {
       }
     }
   }
+
+  private var spacerView: some View {
+    HStack {
+      Spacer()
+      VStack {
+        Spacer()
+      }
+    }
+  }
+
 }
 
 

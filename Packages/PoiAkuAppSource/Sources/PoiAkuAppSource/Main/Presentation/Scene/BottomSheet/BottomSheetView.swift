@@ -13,6 +13,7 @@ public struct BottomSheetView<Content> : View where Content : View {
   @State var lastOffset: CGFloat = 0
   @FocusState var isFocused: Bool
   @Binding var searchText: String
+  @Binding var focusResponder: Bool
   let onFocusedInputTextSearch: (Bool) -> Void
   let onSubmitInputTextSearch: () -> Void
 
@@ -23,11 +24,13 @@ public struct BottomSheetView<Content> : View where Content : View {
 
   public init(
     searchText: Binding<String>,
+    focusResponder: Binding<Bool>,
     onFocusedInputTextSearch: @escaping (Bool) -> Void,
     onSubmitInputTextSearch: @escaping () -> Void,
     @ViewBuilder content: () -> Content
   ) {
     self._searchText = searchText
+    self._focusResponder = focusResponder
     self.onFocusedInputTextSearch = onFocusedInputTextSearch
     self.onSubmitInputTextSearch = onSubmitInputTextSearch
     self.content = content()
@@ -38,6 +41,13 @@ public struct BottomSheetView<Content> : View where Content : View {
       return AnyView(anyViewContent(geo: proxy))
     }
     .ignoresSafeArea(.all, edges: .bottom)
+    .onChange(of: focusResponder) { responder in
+      if !responder {
+        return
+      }
+      isFocused = !responder
+      focusResponder = false
+    }
     .onTapGesture {
       isFocused = false
     }
@@ -70,21 +80,16 @@ public struct BottomSheetView<Content> : View where Content : View {
           { value in
             let maxHeight = height - defaultSpacing
             withAnimation{
-              // Logic COnditions For Moving States...
               // Up down or mid....
               if -offset > defaultSpacing && -offset < maxHeight / 2 {
-                // Mid....
-                offset = -(maxHeight / 3)
-              }
-              else if -offset > maxHeight / 2{
+                offset = -(maxHeight / 3) // Mid...
+              } else if -offset > maxHeight / 2{
                 offset = -maxHeight
-              }
-              else{
+              } else{
                 offset = 0
               }
             }
             // Storing Last Offset..
-            // So that the gesture can contiue from the last position...
             lastOffset = offset
           }
         )
