@@ -136,15 +136,24 @@ extension PoiModule.Data.Model {
   }
 
   public struct PoiAutocompleteItem {
+    let id: String
     let mainText: String
+    let secondaryText: String
+    let isNearby: Bool
 
-    public init(text: String) {
+    public init(id: String = UUID().uuidString, text: String, secondaryText: String = "", isNearby: Bool = false) {
+      self.id = id
       self.mainText = text
+      self.secondaryText = secondaryText
+      self.isNearby = isNearby
     }
 
     public init(response: PoiAutocompleteItemResponseModel) {
       self.itemResponse = response
       self.mainText = response.mainText
+      self.secondaryText = response.secondaryText
+      self.id = UUID().uuidString
+      self.isNearby = false
     }
 
     var itemResponse: PoiAutocompleteItemResponseModel = .init()

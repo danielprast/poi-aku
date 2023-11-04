@@ -50,20 +50,6 @@ public struct PoiView: View {
   }
 
   @ViewBuilder
-  private func autocompleteContentsView() -> some View {
-    Text("autocompleteContentsView")
-  }
-
-  @ViewBuilder
-  private func poiContentsView() -> some View {
-    VStack {
-      ForEach(viewModel.poListEntity!.poiList, id: \.id) { item in
-        Text(item.response.name)
-      }
-    }
-  }
-
-  @ViewBuilder
   private func poiSheetContent() -> some View {
     if viewModel.searchMode {
       autocompleteContentsView()
@@ -72,6 +58,38 @@ public struct PoiView: View {
         EmptyView()
       } else {
         poiContentsView()
+      }
+    }
+  }
+
+  @ViewBuilder
+  private func autocompleteContentsView() -> some View {
+    if viewModel.autocompleteListEntity == nil {
+      EmptyView()
+    } else {
+      VStack(alignment: .leading) {
+        ForEach(viewModel.displayAutocompleteList, id: \.id) { item in
+          AutocompleteItemView(
+            model: AutocompleteItem(
+              id: item.id,
+              mainText: item.mainText,
+              secondaryText: item.secondaryText,
+              isNearby: item.isNearby
+            )
+          )
+          .onTapGesture {
+            viewModel.onTapAutoCompleteItem(item)
+          }
+        }
+      }
+    }
+  }
+
+  @ViewBuilder
+  private func poiContentsView() -> some View {
+    VStack {
+      ForEach(viewModel.displayPoiList, id: \.id) { item in
+        Text(item.response.name)
       }
     }
   }
@@ -90,15 +108,17 @@ public struct PoiView: View {
 
 public struct AutocompleteItem {
 
-  public init(id: String = UUID().uuidString, mainText: String, secondaryText: String) {
+  public init(id: String = UUID().uuidString, mainText: String, secondaryText: String, isNearby: Bool) {
     self.id = id
     self.mainText = mainText
     self.secondaryText = secondaryText
+    self.isNearby = isNearby
   }
 
   let id: String
   let mainText: String
   let secondaryText: String
+  let isNearby: Bool
 }
 
 
@@ -110,6 +130,10 @@ public struct AutocompleteItemView: View {
     self.model = model
   }
 
+  var iconColor: Color {
+    model.isNearby ? Color.orange : Color.gray
+  }
+
   public var body: some View {
     HStack(spacing: 16) {
       Image(systemName: "magnifyingglass")
@@ -117,18 +141,22 @@ public struct AutocompleteItemView: View {
         .scaledToFit()
         .padding(9)
         .frame(width: 32, height: 32)
-        .background(Color.orange.opacity(0.55))
-      .clipShape(Circle())
+        .background(iconColor.opacity(0.55))
+        .clipShape(Circle())
+
       VStack(alignment: .leading, spacing: 4) {
         Text(model.mainText)
           .font(.headline)
           .lineLimit(1)
           .truncationMode(.tail)
-        Text(model.secondaryText)
-          .font(.subheadline)
-          .lineLimit(1)
-          .truncationMode(.tail)
-          .foregroundColor(.black.opacity(0.65))
+
+        if !model.secondaryText.isEmpty {
+          Text(model.secondaryText)
+            .font(.subheadline)
+            .lineLimit(1)
+            .truncationMode(.tail)
+            .foregroundColor(.black.opacity(0.65))
+        }
       }
     }
   }
@@ -142,11 +170,12 @@ struct AutocompleteItemView_Previews: PreviewProvider {
       AutocompleteItemView(
         model: AutocompleteItem(
           mainText: "train".capitalized,
-          secondaryText: "near Sunnyvale Municipal Tennis Center, South Mathilda Avenue, Sunnyvale, CA"
+          secondaryText: "near Sunnyvale Municipal Tennis Center, South Mathilda Avenue, Sunnyvale, CA",
+          isNearby: false
         )
       )
-        .padding(.horizontal, 20)
-        .padding(.vertical, 10)
+      .padding(.horizontal, 20)
+      .padding(.vertical, 10)
     }
     .previewLayout(.sizeThatFits)
   }

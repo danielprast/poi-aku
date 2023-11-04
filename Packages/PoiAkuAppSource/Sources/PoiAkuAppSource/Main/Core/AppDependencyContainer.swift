@@ -104,7 +104,8 @@ public class AppDependencyContainer {
   public func makePoiViewModel() -> PoiViewModel {
     return PoiViewModel(
       searchNearbyRepository: dic.resolve(type: PoiNearbyRepository.self)!,
-      searchInAreaRepository: dic.resolve(type: PoiAreaRepository.self)!
+      searchInAreaRepository: dic.resolve(type: PoiAreaRepository.self)!,
+      poiAutocompleteRepository: dic.resolve(type: PoiAutocompleteRepository.self)!
     )
   }
 

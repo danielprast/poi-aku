@@ -15,13 +15,16 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
   let coreLocation: CLLocationManager
   let searchNearbyRepository: PoiNearbyRepository
   let searchInAreaRepository: PoiAreaRepository
+  let poiAutocompleteRepository: PoiAutocompleteRepository
 
   public init(
     searchNearbyRepository: PoiNearbyRepository,
-    searchInAreaRepository: PoiAreaRepository
+    searchInAreaRepository: PoiAreaRepository,
+    poiAutocompleteRepository: PoiAutocompleteRepository
   ) {
     self.searchNearbyRepository = searchNearbyRepository
     self.searchInAreaRepository = searchInAreaRepository
+    self.poiAutocompleteRepository = poiAutocompleteRepository
     coreLocation = .init()
     super.init()
     onInit()
@@ -31,6 +34,7 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
     inputTextTask?.cancel()
     searchNearbyTask?.cancel()
     searchInAreaTask?.cancel()
+    getAutocompletesTask?.cancel()
   }
 
   // MARK: - ⌘ States
@@ -38,10 +42,23 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
   @Published var userLocation: CLLocation?
   @Published var searchText: String = ""
   @Published var poListEntity: PoiListEntity? = nil
+  @Published var autocompleteListEntity: PoiAutocompleteListEntity? = nil
+  @Published var displayPoiList: [PoiDetailEntity] = []
+  @Published var displayAutocompleteList: [PoiAutocompleteItemEntity] = []
   @Published var searchMode: Bool = false
+  @Published var isNearby: Bool = false
   var inputTextTask: AnyCancellable?
   var searchNearbyTask: AnyCancellable?
   var searchInAreaTask: AnyCancellable?
+  var getAutocompletesTask: AnyCancellable?
+
+  public func resetDisplayPoiList() {
+    displayPoiList.removeAll()
+  }
+
+  public func resetDisplayAutocompleteList() {
+    displayAutocompleteList.removeAll()
+  }
 
   // MARK: - ⌘ UI Event
 
@@ -49,7 +66,38 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
     searchMode = false
   }
 
+  public func onTapAutoCompleteItem(_ item: PoiAutocompleteItemEntity) {
+    searchText = item.mainText
+    resetDisplayPoiList()
+    submitTextSearch()
+    if isNearby {
+      searchNearbyPoi()
+      return
+    }
+    searchPoiAtSpecificArea()
+  }
+
   // MARK: - ⌘ Use case
+
+  public func getAutocompletes() {
+    let payload = PoiAutoCompletePayload(keyword: searchText)
+    getAutocompletesTask = poiAutocompleteRepository.getPoiAutocomplete(payload: payload)
+      .subscribe(on: DispatchQueue.global(qos: .userInitiated))
+      .eraseToAnyPublisher()
+      .receive(on: DispatchQueue.main)
+      .eraseToAnyPublisher()
+      .sink { completion in
+        switch completion {
+        case .finished:
+          break
+        case .failure(let error):
+          shout("failed to get autocompletes", error)
+          break
+        }
+      } receiveValue: { [weak self] autocompletes in
+        self?.handleReceived(autocompletes: autocompletes)
+      }
+  }
 
   public func searchNearbyPoi() {
 
@@ -67,6 +115,7 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
       }, receiveValue: { [weak self] data in
         shout("poi area data", data)
         self?.poListEntity = data
+        self?.displayPoiList = data.poiList
       })
   }
 
@@ -89,13 +138,20 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
       )
   }
 
+  fileprivate func handleReceived(autocompletes: PoiAutocompleteListEntity) {
+    autocompleteListEntity = autocompletes
+    resetDisplayAutocompleteList()
+    displayAutocompleteList.append(PoiAutocompleteItemEntity(text: searchText, secondaryText: "Search nearby", isNearby: true))
+    displayAutocompleteList.append(contentsOf: autocompletes.autoCompletes)
+  }
+
   fileprivate func handleReceived(text: String) {
     if text.isEmpty {
       return
     }
 
     shout("fetch search api", searchText)
-    searchPoiAtSpecificArea()
+    getAutocompletes()
   }
 
   // MARK: - ⌘ Map View Delegate
