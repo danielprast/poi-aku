@@ -14,6 +14,7 @@ public struct PoiRepositoryImpl {
   public let poiDetailApi: PoiDetailRemoteDataSource
   public let poiNearbyApi: SearchPoiNearbyRemoteDataSource
   public let poiAreaApi: SearchPoiInAreaRemoteDataSource
+  public let poiAutocompleteApi: PoiAutoCompleteRemoteDataSource
 
   public init(
     networkConnectionChecker: NetworkConnectionChecker,
@@ -21,7 +22,8 @@ public struct PoiRepositoryImpl {
     poiReviewsApi: PoiReviewRemoteDataSource,
     poiDetailApi: PoiDetailRemoteDataSource,
     poiNearbyApi: SearchPoiNearbyRemoteDataSource,
-    poiAreaApi: SearchPoiInAreaRemoteDataSource
+    poiAreaApi: SearchPoiInAreaRemoteDataSource,
+    poiAutocompleteApi: PoiAutoCompleteRemoteDataSource
   ) {
     self.networkConnectionChecker = networkConnectionChecker
     self.poiPhotoApi = poiPhotoApi
@@ -29,5 +31,6 @@ public struct PoiRepositoryImpl {
     self.poiDetailApi = poiDetailApi
     self.poiNearbyApi = poiNearbyApi
     self.poiAreaApi = poiAreaApi
+    self.poiAutocompleteApi = poiAutocompleteApi
   }
 }

@@ -48,6 +48,7 @@ extension PoiModule.Data.Payload {
 
 
 // MARK: - ⌘ Poi Autocomplete
+public typealias PoiAutoCompletePayload = PoiModule.Data.Payload.AutoComplete
 extension PoiModule.Data.Payload {
 
   public struct AutoComplete: RequestPayload {
