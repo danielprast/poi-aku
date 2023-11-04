@@ -78,6 +78,7 @@ public struct PoiView: View {
               isNearby: item.isNearby
             )
           )
+          .padding(.vertical, 8)
           .onTapGesture {
             focusResponder = true
             viewModel.onTapAutoCompleteItem(item)
