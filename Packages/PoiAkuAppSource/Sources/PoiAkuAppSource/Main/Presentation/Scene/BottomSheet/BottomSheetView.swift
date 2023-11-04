@@ -12,6 +12,7 @@ public struct BottomSheetView: View {
   @GestureState var gestureOffset: CGFloat = 0
   @State var offset: CGFloat = 0
   @State var lastOffset: CGFloat = 0
+  @FocusState private var isFocused: Bool
 
   public init() {}
 
@@ -20,6 +21,9 @@ public struct BottomSheetView: View {
       return AnyView(anyViewContent(geo: proxy))
     }
     .ignoresSafeArea(.all, edges: .bottom)
+    .onTapGesture {
+      isFocused = false
+    }
   }
 
   @ViewBuilder
@@ -51,7 +55,7 @@ public struct BottomSheetView: View {
             withAnimation{
               // Logic COnditions For Moving States...
               // Up down or mid....
-              if -offset > 100 && -offset < maxHeight / 2{
+              if -offset > 100 && -offset < maxHeight / 2 {
                 // Mid....
                 offset = -(maxHeight / 3)
               }
@@ -79,13 +83,30 @@ public struct BottomSheetView: View {
           .fill(Color.white)
           .frame(width: 60, height: 4)
 
-        TextField("Search", text: $poiViewModel.searchText)
-          .padding(.vertical,10)
-          .padding(.horizontal)
-          .background(BlurView(style: .dark))
-          .cornerRadius(10)
-          .colorScheme(.dark)
-          .padding(.top,10)
+        TextField(
+          "Search",
+          text: $poiViewModel.searchText
+        )
+        .focused($isFocused)
+        .onChange(of: isFocused, perform: { focused in
+          let maxHeight = height - 100
+          shout("max height", maxHeight)
+          if focused {
+            shout("TF", "TF Focused")
+            withAnimation {
+              offset = -maxHeight
+            }
+            lastOffset = offset
+          } else {
+            shout("TF", "TF Focus Removed")
+          }
+        })
+        .padding(.vertical,10)
+        .padding(.horizontal)
+        .background(BlurView(style: .dark))
+        .cornerRadius(10)
+        .colorScheme(.dark)
+        .padding(.top,10)
       }
       .frame(height: 100)
 
@@ -95,7 +116,7 @@ public struct BottomSheetView: View {
         content: {
           poiContent()
             .padding(.bottom)
-            .padding(.bottom,offset == -((height - 100) / 3) ? ((height - 100) / 1.5) : 0)
+            .padding(.bottom, offset == -((height - 100) / 3) ? ((height - 100) / 1.5) : 0)
         }
       )
     }
@@ -103,10 +124,15 @@ public struct BottomSheetView: View {
 
   @ViewBuilder
   private func poiContent() -> some View {
-
+    ZStack {
+      Color.pink
+    }
   }
 
   func onChange() {
+    if isFocused {
+      isFocused.toggle()
+    }
     DispatchQueue.main.async {
       self.offset = gestureOffset + lastOffset
     }
