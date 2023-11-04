@@ -70,6 +70,7 @@ extension FakeRemoteDataSource: PoiDetailRemoteDataSource {
 extension FakeRemoteDataSource: SearchPoiNearbyRemoteDataSource {
 
   public func fetchSearchPoiNearby(params: [String : String]) -> AnyPublisher<PoiModule.Data.Response.JArray<PoiDetailResponseModel>, NError> {
+    shout("Search Poi Nearby Params", params)
     return Future<PoiModule.Data.Response.JArray<PoiDetailResponseModel>, NError> { promise in
       let jsonData = JsonResolver.loadJsonFromFile(with: "poi_search_nearby")
       guard
@@ -89,6 +90,7 @@ extension FakeRemoteDataSource: SearchPoiNearbyRemoteDataSource {
 extension FakeRemoteDataSource: SearchPoiInAreaRemoteDataSource {
 
   public func fetchSearchPoiInArea(params: [String : String]) -> AnyPublisher<PoiModule.Data.Response.JArray<PoiDetailResponseModel>, NError> {
+    shout("Search Poi In Area Params", params)
     return Future<PoiModule.Data.Response.JArray<PoiDetailResponseModel>, NError> { promise in
       let jsonData = JsonResolver.loadJsonFromFile(with: "poi_search_in_area")
       guard
