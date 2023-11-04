@@ -28,7 +28,7 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
   }
 
   deinit {
-    cancellable?.cancel()
+    inputTextTask?.cancel()
     searchNearbyTask?.cancel()
     searchInAreaTask?.cancel()
   }
@@ -37,7 +37,7 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
   @Published var mapView: MKMapView = .init()
   @Published var userLocation: CLLocation?
   @Published var searchText: String = ""
-  var cancellable: AnyCancellable?
+  var inputTextTask: AnyCancellable?
   var searchNearbyTask: AnyCancellable?
   var searchInAreaTask: AnyCancellable?
 
@@ -48,7 +48,7 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
   }
 
   public func searchPoiAtSpecificArea() {
-    let searchPayload = PoiModule.Data.Payload.SearchPoi(keyword: "plumbers", lat: 37.359428, lng: -121.925337, zoom: 13)
+    let searchPayload = PoiModule.Data.Payload.SearchPoi(keyword: searchText, lat: 37.359428, lng: -121.925337, zoom: 13)
     searchInAreaTask = searchInAreaRepository.getPoiInArea(payload: searchPayload)
       .subscribe(on: DispatchQueue.global(qos: .userInitiated))
       .eraseToAnyPublisher()
@@ -70,7 +70,7 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
   }
 
   fileprivate func handleSearchTextBehavior() {
-    cancellable = $searchText
+    inputTextTask = $searchText
       .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
       .removeDuplicates()
       .sink(
@@ -84,8 +84,8 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
     if text.isEmpty {
       return
     }
-    // fetch search poi
     shout("fetch search api", searchText)
+    searchPoiAtSpecificArea()
   }
 
   // MARK: - ⌘ Map View Delegate
