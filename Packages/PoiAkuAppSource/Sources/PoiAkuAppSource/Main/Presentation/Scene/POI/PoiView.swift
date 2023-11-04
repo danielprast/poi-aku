@@ -16,51 +16,28 @@ public struct PoiView: View {
   }
 
   public var body: some View {
-    ContentView(titleText: $titleText)
-      .background(
-        MapView()
-          .environmentObject(viewModel)
-          .edgesIgnoringSafeArea(.all)
-      )
-      .onAppear {
-        titleText = "Joss Gandoss"
-        viewModel.searchPoiAtSpecificArea()
-      }
-
+    ZStack {
+      spacerView
+      BottomSheetView()
+        .environmentObject(viewModel)
+    }
+    .background(
+      MapView()
+        .environmentObject(viewModel)
+        .edgesIgnoringSafeArea(.all)
+    )
+    .onAppear {
+      titleText = "Joss Gandoss"
+    }
   }
 
-  // MARK: - ⌘ Content View
-  struct ContentView: View {
-
-    @Binding var titleText: String
-
-    var body: some View {
-      ZStack {
-        spacerView
-        Text(titleText)
-          .font(.largeTitle)
-      }
-
-    }
-
-    var spacerView: some View {
-      HStack {
+  private var spacerView: some View {
+    HStack {
+      Spacer()
+      VStack {
         Spacer()
-        VStack {
-          Spacer()
-        }
       }
     }
-
   }
 
-}
-
-
-// MARK: - ⌘ Preview
-struct PoiView_Previews: PreviewProvider {
-  static var previews: some View {
-    //PoiView.contentView(titleText: "Joss Gandoss")
-    PoiView.ContentView(titleText: .constant("Halo Dulur"))
-  }
 }

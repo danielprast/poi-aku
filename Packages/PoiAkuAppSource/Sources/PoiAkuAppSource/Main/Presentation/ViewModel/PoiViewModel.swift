@@ -74,13 +74,18 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
       .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
       .removeDuplicates()
       .sink(
-        receiveValue: { value in
-          if value != ""{
-            // fetch search poi
-            shout("fetch search api", "JOSS!!")
-          }
+        receiveValue: { [weak self] value in
+          self?.handleReceived(text: value)
         }
       )
+  }
+
+  fileprivate func handleReceived(text: String) {
+    if text.isEmpty {
+      return
+    }
+    // fetch search poi
+    shout("fetch search api", searchText)
   }
 
   // MARK: - ⌘ Map View Delegate
