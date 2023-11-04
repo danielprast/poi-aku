@@ -116,3 +116,38 @@ extension PoiModule.Data.Model {
   }
 
 }
+
+
+
+// MARK: - ⌘ Poi Autocomplete List Entity
+
+public typealias PoiAutocompleteListEntity = PoiModule.Data.Model.PoiAutocompleteList
+public typealias PoiAutocompleteItemEntity = PoiModule.Data.Model.PoiAutocompleteItem
+
+
+extension PoiModule.Data.Model {
+
+  public struct PoiAutocompleteList {
+    let autoCompletes: [PoiAutocompleteItem]
+
+    public init(autoCompletes: [PoiAutocompleteItem]) {
+      self.autoCompletes = autoCompletes
+    }
+  }
+
+  public struct PoiAutocompleteItem {
+    let mainText: String
+
+    public init(text: String) {
+      self.mainText = text
+    }
+
+    public init(response: PoiAutocompleteItemResponseModel) {
+      self.itemResponse = response
+      self.mainText = response.mainText
+    }
+
+    var itemResponse: PoiAutocompleteItemResponseModel = .init()
+  }
+
+}
