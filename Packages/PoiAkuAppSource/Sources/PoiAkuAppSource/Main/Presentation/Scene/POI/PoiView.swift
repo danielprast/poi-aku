@@ -11,6 +11,7 @@ public struct PoiView: View {
   @StateObject var viewModel: PoiViewModel
   @State var titleText: String = ""
   @State var focusResponder: Bool = false
+  @State var showDetail: Bool = false
 
   let textColor = Color.colorHex(.black).opacity(0.65)
 
@@ -43,6 +44,18 @@ public struct PoiView: View {
         .environmentObject(viewModel)
         .edgesIgnoringSafeArea(.all)
     )
+    .sheet(isPresented: $showDetail) {
+      ZStack {
+        Color.pink
+        Text("Detail")
+        VStack {
+          Button("Tutup", action: {
+            showDetail = false
+          })
+          Spacer()
+        }
+      }
+    }
     .onAppear {
       titleText = "Joss Gandoss"
       viewModel.searchPoiAtSpecificArea()
@@ -106,6 +119,7 @@ public struct PoiView: View {
         .clipShape(RoundedRectangle(cornerRadius: 12))
         .onTapGesture {
           shout("item search", item.response.name)
+          showDetail = true
         }
       }
     }

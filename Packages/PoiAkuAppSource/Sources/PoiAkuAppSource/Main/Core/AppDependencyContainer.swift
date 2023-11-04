@@ -38,9 +38,9 @@ public class AppDependencyContainer {
   fileprivate func setupDataDependencies() {
     let networkConnectionChecker = dic.resolve(type: NetworkConnectionChecker.self)!
     let networkManager = dic.resolve(type: NetworkManager.self)!
-    //let realRemoteDataSource = RemoteDataSourceImpl(networkService: networkManager)
-    let fakeRemoteDataSource = FakeRemoteDataSource()
-    let remoteDataSource = fakeRemoteDataSource // or realRemoteDataSource
+    let realRemoteDataSource = RemoteDataSourceImpl(networkService: networkManager)
+    //let fakeRemoteDataSource = FakeRemoteDataSource()
+    let remoteDataSource = realRemoteDataSource // or fakeRemoteDataSource
 
     dic.register(type: PoiReviewRemoteDataSource.self) { _ in
       return remoteDataSource as AnyObject
