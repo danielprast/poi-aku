@@ -7,5 +7,5 @@ import Foundation
 
 
 public func shout(_ title: String, _ message: Any) {
-  print("⚡️ \(title) : \(message)")
+  print("🚀 \(title) : \(message)")
 }
