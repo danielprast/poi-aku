@@ -1,0 +1,354 @@
+{
+  "status": "OK",
+  "request_id": "b5932296-de32-4da7-ab59-45266e22d8b5",
+  "parameters": {
+    "business_id": "0x808fcd16e319c885:0x79144a94bee58347",
+    "language": "en",
+    "region": "us",
+    "coordinates": "37.09024,-95.712891",
+    "extract_emails_and_contacts": true,
+    "extract_share_link": false
+  },
+  "data": [
+    {
+      "business_id": "0x808fcd16e319c885:0x79144a94bee58347",
+      "google_id": "0x808fcd16e319c885:0x79144a94bee58347",
+      "place_id": "ChIJhcgZ4xbNj4ARR4PlvpRKFHk",
+      "google_mid": "/g/1tgdnszb",
+      "phone_number": "+14082729333",
+      "name": "The Pizza Box",
+      "latitude": 37.3565621,
+      "longitude": -121.8408934,
+      "full_address": "The Pizza Box, 148 S Jackson Ave, San Jose, CA 95116",
+      "review_count": 567,
+      "rating": 4.6,
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "Friday": [
+          "11 AM–9 PM"
+        ],
+        "Saturday": [
+          "11 AM–9 PM"
+        ],
+        "Sunday": [
+          "11 AM–9 PM"
+        ],
+        "Monday": [
+          "11 AM–9 PM"
+        ],
+        "Tuesday": [
+          "11 AM–9 PM"
+        ],
+        "Wednesday": [
+          "11 AM–9 PM"
+        ],
+        "Thursday": [
+          "11 AM–9 PM"
+        ]
+      },
+      "website": "http://thepizzaboxsanjose.com",
+      "verified": true,
+      "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x808fcd16e319c885:0x79144a94bee58347",
+      "cid": "8724680380841820999",
+      "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJhcgZ4xbNj4ARR4PlvpRKFHk&authuser=0&hl=en&gl=US",
+      "owner_id": "105835070318147441447",
+      "owner_link": "https://maps.google.com/maps/contrib/105835070318147441447",
+      "owner_name": "The Pizza Box",
+      "business_status": "OPEN",
+      "type": "Pizza restaurant",
+      "subtypes": [
+        "Pizza restaurant"
+      ],
+      "photos_sample": [
+        {
+          "photo_id": "AF1QipMwd5EdqiUGtHYU4AKJUoc6-8726BSwtx6YgDXJ",
+          "photo_url": "https://lh5.googleusercontent.com/p/AF1QipMwd5EdqiUGtHYU4AKJUoc6-8726BSwtx6YgDXJ",
+          "photo_url_large": "https://lh5.googleusercontent.com/p/AF1QipMwd5EdqiUGtHYU4AKJUoc6-8726BSwtx6YgDXJ=w300-h400-k-no",
+          "video_thumbnail_url": "",
+          "latitude": 37.3564813,
+          "longitude": -121.8410468,
+          "type": "photo",
+          "photo_datetime_utc": "2015-03-08T00:00:00.000Z",
+          "photo_timestamp": 1425772800
+        }
+      ],
+      "global_plus_code": "849W9545+JJ",
+      "compound_plus_code": "9545+JJ San Jose, California",
+      "reviews_per_rating": {
+        "1": 17,
+        "2": 4,
+        "3": 32,
+        "4": 71,
+        "5": 443
+      },
+      "photo_count": 115,
+      "about": {
+        "summary": "Unfussy, nondescript strip-mall pizzeria firing up personal pizzas & massive pies for groups.",
+        "details": {
+          "Service options": {
+            "Takeout": true,
+            "Dine-in": true
+          },
+          "Highlights": {
+            "Fast service": true
+          },
+          "Popular for": {
+            "Lunch": true,
+            "Dinner": true,
+            "Solo dining": true
+          },
+          "Accessibility": {
+            "Wheelchair accessible entrance": true,
+            "Wheelchair accessible parking lot": true,
+            "Wheelchair accessible restroom": true,
+            "Wheelchair accessible seating": true
+          },
+          "Offerings": {
+            "Alcohol": true,
+            "Beer": true,
+            "Comfort food": true,
+            "Quick bite": true,
+            "Small plates": true
+          },
+          "Dining options": {
+            "Lunch": true,
+            "Dinner": true,
+            "Seating": true
+          },
+          "Amenities": {
+            "Restroom": true
+          },
+          "Atmosphere": {
+            "Casual": true,
+            "Cozy": true,
+            "Historic": true,
+            "Trendy": true
+          },
+          "Crowd": {
+            "College students": true,
+            "Groups": true,
+            "Tourists": true
+          },
+          "Planning": {
+            "Accepts reservations": false
+          },
+          "Payments": {
+            "Credit cards": true,
+            "Debit cards": true,
+            "NFC mobile payments": true
+          },
+          "Children": {
+            "Good for kids": true,
+            "High chairs": true
+          }
+        }
+      },
+      "address": "148 S Jackson Ave, San Jose, CA 95116",
+      "price_level": "$",
+      "district": "Alum Rock",
+      "street_address": "148 S Jackson Ave",
+      "city": "San Jose",
+      "zipcode": "95116",
+      "state": "California",
+      "country": "US",
+      "reviews_sample": [
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4M2Eyd2NnEAE",
+          "review_text": "We purchased the 'combo' King Kong 24\" pizza with 25 square pieces for $51 on a credit card after all tax and fees. The pizza was fresh and delicious. The service was great, provided by the family who owns the restaurant. While we were eating in the restaurant, the owner made a VERY kind gesture to a couple that were buying a pizza for a school function. The Pizza Box is worth a visit. Definitely a lot of shareable food for the money!",
+          "rating": 5,
+          "review_datetime_utc": "2023-05-24T01:56:33.100Z",
+          "review_timestamp": 1684893393,
+          "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4M2Eyd2NnEAE!2m1!1s0x0:0x79144a94bee58347!3m1!1s2@1:CIHM0ogKEICAgICx3a2wcg%7CCgsI0d21owYQ-OyPMA%7C?hl=en-US",
+          "review_photos": [
+            "https://lh5.googleusercontent.com/p/AF1QipPO77rrp0081Cw4tQUZD67B-Ps2SVms7I89F5ws",
+            "https://lh5.googleusercontent.com/p/AF1QipNL5IhUhHY8_70McwnqGDmOSmdjApQB0ctlgPrD"
+          ],
+          "review_language": "en",
+          "like_count": 0,
+          "author_id": "101357089882070703342",
+          "author_link": "https://www.google.com/maps/contrib/101357089882070703342?hl=en-US",
+          "author_name": "Thom Hiatt",
+          "author_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXv2gGPVuUGVYtjLwX1U4fc0ROZkSShA9aQbqejyO8JHHHt=s120-c-rp-mo-ba6-br100",
+          "author_review_count": 427,
+          "author_reviews_link": "https://www.google.com/maps/contrib/101357089882070703342/reviews?hl=en-US",
+          "author_local_guide_level": 8,
+          "hotel_rating_breakdown": {
+            "Food": 5,
+            "Service": 5,
+            "Atmosphere": 2
+          },
+          "review_form": {
+            "Did you dine in, take out, or get delivery?": "Dine in",
+            "What did you get?": "Dinner",
+            "How much did you spend per person?": "$1–10"
+          }
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKdHFIUVFREAE",
+          "review_text": "Big slices. A little more cooked then I have had at the other pizza box.  Still pretty good.  One day I have to order the Uncle Sam size!",
+          "rating": 4,
+          "review_datetime_utc": "2023-06-26T22:12:56.375Z",
+          "review_timestamp": 1687817576,
+          "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKdHFIUVFREAE!2m1!1s0x0:0x79144a94bee58347!3m1!1s2@1:CIHM0ogKEICAgICJtqHQQQ%7CCgwI6JropAYQ-KqTswE%7C?hl=en-US",
+          "review_photos": [
+            "https://lh5.googleusercontent.com/p/AF1QipNU2JqxA10SiNRANTP4FWoaZZKtRFkYlFGYaGJx"
+          ],
+          "review_language": "en",
+          "like_count": 0,
+          "author_id": "107427986751669550700",
+          "author_link": "https://www.google.com/maps/contrib/107427986751669550700?hl=en-US",
+          "author_name": "Kevin Schroeder",
+          "author_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX5iUWtyPR7gJeeih_D-hP09nGivOFOwxRcr3eIi0XhqFGH=s120-c-rp-mo-ba2-br100",
+          "author_review_count": 15,
+          "author_reviews_link": "https://www.google.com/maps/contrib/107427986751669550700/reviews?hl=en-US",
+          "author_local_guide_level": 4,
+          "hotel_rating_breakdown": {
+            "Food": 4,
+            "Service": 4,
+            "Atmosphere": 4
+          }
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwbV9PRl9BRRAB",
+          "review_text": "I went by the other day and the staff was very friendly, the pizza was delicious, and the single slices are huge! The owners (I suppose) treat you like family",
+          "rating": 5,
+          "review_datetime_utc": "2023-08-29T17:27:30.306Z",
+          "review_timestamp": 1693330050,
+          "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwbV9PRl9BRRAB!2m1!1s0x0:0x79144a94bee58347!3m1!1s2@1:CIHM0ogKEICAgIDpm_OF_AE%7CCgwIgtW4pwYQyL34kQE%7C?hl=en-US",
+          "review_language": "en",
+          "like_count": 1,
+          "author_id": "115509818576911554944",
+          "author_link": "https://www.google.com/maps/contrib/115509818576911554944?hl=en-US",
+          "author_name": "Western Impressions",
+          "author_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVU5iJuXryK6f0Xh5Yh-avB2dLCnc3fdAI6H6zE-HbU6Q=s120-c-rp-mo-br100",
+          "author_review_count": 8,
+          "author_reviews_link": "https://www.google.com/maps/contrib/115509818576911554944/reviews?hl=en-US",
+          "author_local_guide_level": -1,
+          "hotel_rating_breakdown": {
+            "Food": 5,
+            "Service": 5,
+            "Atmosphere": 5
+          }
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwM05HQkhBEAE",
+          "review_text": "Great tasting pizza always consistent amazing price can’t beat it.  Super large with a 2 liter for 40 bucks place is packed during football season",
+          "rating": 5,
+          "review_datetime_utc": "2023-08-18T01:53:15.719Z",
+          "review_timestamp": 1692323595,
+          "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwM05HQkhBEAE!2m1!1s0x0:0x79144a94bee58347!3m1!1s2@1:CIHM0ogKEICAgIDp3NGBHA%7CCgwIi577pgYQqPX91gI%7C?hl=en-US",
+          "review_language": "en",
+          "like_count": 0,
+          "author_id": "108774141146587141374",
+          "author_link": "https://www.google.com/maps/contrib/108774141146587141374?hl=en-US",
+          "author_name": "Arron/ B",
+          "author_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKnrwn1ZJ5n9XX6yYoyOKPMS0Q6hXGb4NbpmeyOvL0B=s120-c-rp-mo-br100",
+          "author_review_count": 4,
+          "author_reviews_link": "https://www.google.com/maps/contrib/108774141146587141374/reviews?hl=en-US",
+          "author_local_guide_level": -1,
+          "hotel_rating_breakdown": {
+            "Food": 5,
+            "Service": 5
+          },
+          "review_form": {
+            "Did you dine in, take out, or get delivery?": "Take out",
+            "What did you get?": "Lunch",
+            "How much did you spend per person?": "$30–50",
+            "Which dishes do you recommend?": "Pizza Box"
+          }
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLOWV1NkVREAE",
+          "review_text": "Went this area ad-hoc for a medical visit. Was searching for something to eat. Stumbled upon this place after seeing it in the top restaurants nearby. The place is low key and not so fancy from outside. I order a combination veggie topping slice of pizza for 6$. It is really worth the price. The pizza was well baked and tasted nice. The only con was that they are a cash only place. Luckily, I had a 5$ bill with me. Would definitely go, If I get a chance.",
+          "rating": 5,
+          "review_datetime_utc": "2021-04-14T01:05:38.828Z",
+          "review_timestamp": 1618362338,
+          "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLOWV1NkVREAE!2m1!1s0x0:0x79144a94bee58347!3m1!1s2@1:CIHM0ogKEICAgICK9eu6EQ%7CCgwI4v_YgwYQyOHvigM%7C?hl=en-US",
+          "review_photos": [
+            "https://lh5.googleusercontent.com/p/AF1QipOCNLjAiEVsSreHiKX4maA_bZndVCVBvRgggYD-"
+          ],
+          "review_language": "en",
+          "like_count": 4,
+          "author_id": "115249821624811924154",
+          "author_link": "https://www.google.com/maps/contrib/115249821624811924154?hl=en-US",
+          "author_name": "Aswin Prasad",
+          "author_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXU0X7htTIdquUVoe9HiNrMmBqxZk-b3Eau8gAR4cby1Uk=s120-c-rp-mo-ba4-br100",
+          "author_review_count": 41,
+          "author_reviews_link": "https://www.google.com/maps/contrib/115249821624811924154/reviews?hl=en-US",
+          "thor_local_guide_level": 6
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURpLWRDQTRRRRAB",
+          "review_text": "I'm glad I trusted the reviews! I called a few minutes before they closed and was cheerfully attended to. That staff was kind and helpful. Furthermore, this might very well be the best pizza my brother and I have ever had! We're just passing through from SoCal but have been blown away by how good this pizza is. We had it for dinner and are considering getting it again for lunch tomorrow before we hit the road. The crust, ingredients, service, everything is on point! 👍🏼😊",
+          "rating": 5,
+          "review_datetime_utc": "2020-12-09T05:05:36.237Z",
+          "review_timestamp": 1607490336,
+          "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURpLWRDQTRRRRAB!2m1!1s0x0:0x79144a94bee58347!3m1!1s2@1:CIHM0ogKEICAgIDi-dCA4QE%7CCgsIoLbB_gUQkJu1cQ%7C?hl=en-US",
+          "review_photos": [
+            "https://lh5.googleusercontent.com/p/AF1QipPOsOtjGJnCJZ4lCL-5SCbRBA7HVcCDW-IRaH_0"
+          ],
+          "review_language": "en",
+          "like_count": 3,
+          "author_id": "117637158206924112503",
+          "author_link": "https://www.google.com/maps/contrib/117637158206924112503?hl=en-US",
+          "author_name": "Jose Sanchez",
+          "author_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX1bdhUb5udTH45QkxazmoRLROfUVw2lZONt9fVr3LOkEY=s120-c-rp-mo-ba5-br100",
+          "author_review_count": 511,
+          "author_reviews_link": "https://www.google.com/maps/contrib/117637158206924112503/reviews?hl=en-US",
+          "thor_local_guide_level": 7
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSNzRfQkF3EAE",
+          "review_text": "At first I was hesitant. I needed food on the way home so I ordered drone what looked highly rated but in pictures looked like it was a little off the beaten path.\n\nWas GREAT. I mean, a mom and pop shop where the lady running it puts love in the pizza as a free topping, AND doesn’t charge you $50 for a large pizza.\n\nGoing again for the second day in a row.",
+          "rating": 5,
+          "review_datetime_utc": "2023-04-14T00:31:25.333Z",
+          "review_timestamp": 1681432285,
+          "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSNzRfQkF3EAE!2m1!1s0x0:0x79144a94bee58347!3m1!1s2@1:CIHM0ogKEICAgICR74_BAw%7CCgwI3b3ioQYQkLf1ngE%7C?hl=en-US",
+          "review_language": "en",
+          "like_count": 0,
+          "author_id": "105949161333222009424",
+          "author_link": "https://www.google.com/maps/contrib/105949161333222009424?hl=en-US",
+          "author_name": "max terry",
+          "author_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU54P5y5v0JmbAZ-FHT6WW-y5ANYq2avGiwem30QbqO79o=s120-c-rp-mo-ba3-br100",
+          "author_review_count": 24,
+          "author_reviews_link": "https://www.google.com/maps/contrib/105949161333222009424/reviews?hl=en-US",
+          "author_local_guide_level": 5,
+          "review_form": {
+            "Did you dine in, take out, or get delivery?": "Take out",
+            "What did you get?": "Dinner",
+            "How much did you spend per person?": "$10–20",
+            "Which dishes do you recommend?": "Pizza Box",
+            "Can you say more about any of these topics?": "Vegetarian options"
+          }
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnbk1MZDdRRRAB",
+          "review_text": "Good pizza great price huge pizzas all the way down to by the slice. The Uncle Sam is the biggest and for 37$ for a one topping pizza is a deal. Been coming here for years great little family owned business the recognize you and welcome you back every time. Highly recommend this place.",
+          "rating": 5,
+          "review_datetime_utc": "2021-09-11T16:45:02.491Z",
+          "review_timestamp": 1631378702,
+          "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnbk1MZDdRRRAB!2m1!1s0x0:0x79144a94bee58347!3m1!1s2@1:CIHM0ogKEICAgIDgnMLd7QE%7CCgwIjrrziQYQqPLL6gE%7C?hl=en-US",
+          "review_photos": [
+            "https://lh5.googleusercontent.com/p/AF1QipO1fKxTrGhYQnwfJhzW8pEzRe9Hu-pRclblc75l"
+          ],
+          "review_language": "en",
+          "like_count": 2,
+          "author_id": "105406710853233833940",
+          "author_link": "https://www.google.com/maps/contrib/105406710853233833940?hl=en-US",
+          "author_name": "Damaria Green",
+          "author_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI4GAY-872PCn1ocnJhEMFeAXN01ShqP5Pra2flzhbz=s120-c-rp-mo-ba4-br100",
+          "author_review_count": 65,
+          "author_reviews_link": "https://www.google.com/maps/contrib/105406710853233833940/reviews?hl=en-US",
+          "thor_local_guide_level": 6
+        }
+      ],
+      "emails_and_contacts": {
+        "emails": [],
+        "phone_numbers": [],
+        "facebook": "https://www.facebook.com/thepizzaboxsanjose",
+        "instagram": "https://www.instagram.com/pizzaboxpizza",
+        "yelp": "https://www.yelp.com/biz/the-pizza-box-san-jose"
+      }
+    }
+  ]
+}

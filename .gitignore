@@ -1,4 +1,8 @@
 .DS_Store
+
+# Project source credential
+Packages/PoiAkuAppSource/Sources/PoiAkuAppSource/Resources/Credential/
+
 # Created by https://www.toptal.com/developers/gitignore/api/swift,cocoapods,xcode
 # Edit at https://www.toptal.com/developers/gitignore?templates=swift,cocoapods,xcode
 

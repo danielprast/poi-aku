@@ -14,6 +14,7 @@
 		2005D9312AF49730007C1A56 /* POI_AkuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005D9302AF49730007C1A56 /* POI_AkuTests.swift */; };
 		2005D93B2AF49730007C1A56 /* POI_AkuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005D93A2AF49730007C1A56 /* POI_AkuUITests.swift */; };
 		2005D93D2AF49730007C1A56 /* POI_AkuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005D93C2AF49730007C1A56 /* POI_AkuUITestsLaunchTests.swift */; };
+		20F0E49B2AF49FF600236E9F /* PoiAkuAppSource in Frameworks */ = {isa = PBXBuildFile; productRef = 20F0E49A2AF49FF600236E9F /* PoiAkuAppSource */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		2005D9362AF49730007C1A56 /* POI AkuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "POI AkuUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2005D93A2AF49730007C1A56 /* POI_AkuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POI_AkuUITests.swift; sourceTree = "<group>"; };
 		2005D93C2AF49730007C1A56 /* POI_AkuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POI_AkuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		20F0E4992AF49FED00236E9F /* PoiAkuAppSource */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PoiAkuAppSource; path = Packages/PoiAkuAppSource; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F0E49B2AF49FF600236E9F /* PoiAkuAppSource in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +77,12 @@
 		2005D9132AF4972F007C1A56 = {
 			isa = PBXGroup;
 			children = (
+				20F0E4992AF49FED00236E9F /* PoiAkuAppSource */,
 				2005D91E2AF4972F007C1A56 /* POI Aku */,
 				2005D92F2AF49730007C1A56 /* POI AkuTests */,
 				2005D9392AF49730007C1A56 /* POI AkuUITests */,
 				2005D91D2AF4972F007C1A56 /* Products */,
+				20516E1C2AF4998E00DAAF73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +132,13 @@
 			path = "POI AkuUITests";
 			sourceTree = "<group>";
 		};
+		20516E1C2AF4998E00DAAF73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +155,9 @@
 			dependencies = (
 			);
 			name = "POI Aku";
+			packageProductDependencies = (
+				20F0E49A2AF49FF600236E9F /* PoiAkuAppSource */,
+			);
 			productName = "POI Aku";
 			productReference = 2005D91C2AF4972F007C1A56 /* POI Aku.app */;
 			productType = "com.apple.product-type.application";
@@ -345,7 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -419,16 +434,18 @@
 				DEVELOPMENT_ASSET_PATHS = "\"POI Aku/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.danielprast.POI-Aku";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -447,16 +464,18 @@
 				DEVELOPMENT_ASSET_PATHS = "\"POI Aku/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.danielprast.POI-Aku";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -577,6 +596,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		20F0E49A2AF49FF600236E9F /* PoiAkuAppSource */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PoiAkuAppSource;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2005D9142AF4972F007C1A56 /* Project object */;
 }

@@ -1,0 +1,111 @@
+{
+  "status": "OK",
+  "request_id": "ea651df0-9f46-46fd-8ff3-f4f5c3cfebc4",
+  "data": [
+    {
+      "type": "query",
+      "google_id": null,
+      "description": "train near sunnyvale, ca",
+      "main_text": "train",
+      "main_text_highlights": [
+        {
+          "offset": 0,
+          "length": 5
+        }
+      ],
+      "secondary_text": "near Sunnyvale, CA",
+      "secondary_text_highlights": [
+        {
+          "offset": 5,
+          "length": 13
+        }
+      ],
+      "latitude": 37.368829999999996,
+      "longitude": -122.0363496,
+      "country": "US"
+    },
+    {
+      "type": "query",
+      "google_id": null,
+      "description": "train sunnyvale to san francisco",
+      "main_text": "train sunnyvale to san francisco",
+      "main_text_highlights": [
+        {
+          "offset": 0,
+          "length": 14
+        }
+      ],
+      "secondary_text": null,
+      "secondary_text_highlights": null,
+      "latitude": null,
+      "longitude": null,
+      "country": null
+    },
+    {
+      "type": "query",
+      "google_id": null,
+      "description": "train near sunnyvale municipal tennis center, south mathilda avenue, sunnyvale, ca",
+      "main_text": "train",
+      "main_text_highlights": [
+        {
+          "offset": 0,
+          "length": 5
+        }
+      ],
+      "secondary_text": "near Sunnyvale Municipal Tennis Center, South Mathilda Avenue, Sunnyvale, CA",
+      "secondary_text_highlights": [
+        {
+          "offset": 5,
+          "length": 13
+        }
+      ],
+      "latitude": 37.3659647,
+      "longitude": -122.037718,
+      "country": "US"
+    },
+    {
+      "type": "query",
+      "google_id": null,
+      "description": "train near sunnyvale heritage park museum, east remington drive, sunnyvale, ca",
+      "main_text": "train",
+      "main_text_highlights": [
+        {
+          "offset": 0,
+          "length": 5
+        }
+      ],
+      "secondary_text": "near Sunnyvale Heritage Park Museum, East Remington Drive, Sunnyvale, CA",
+      "secondary_text_highlights": [
+        {
+          "offset": 5,
+          "length": 13
+        }
+      ],
+      "latitude": 37.356472,
+      "longitude": -122.02551469999999,
+      "country": "US"
+    },
+    {
+      "type": "query",
+      "google_id": null,
+      "description": "train near sunnyvale, west evelyn avenue, sunnyvale, ca",
+      "main_text": "train",
+      "main_text_highlights": [
+        {
+          "offset": 0,
+          "length": 5
+        }
+      ],
+      "secondary_text": "near Sunnyvale, West Evelyn Avenue, Sunnyvale, CA",
+      "secondary_text_highlights": [
+        {
+          "offset": 5,
+          "length": 13
+        }
+      ],
+      "latitude": 37.3784297,
+      "longitude": -122.03078,
+      "country": "US"
+    }
+  ]
+}
