@@ -45,7 +45,9 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
   @Published var mapView: MKMapView = .init()
   @Published var userLocation: CLLocation?
   @Published var searchText: String = ""
+  @Published var errorTask: NError? = nil
   @Published var poListEntity: PoiListEntity? = nil
+  @Published var poiDetailEntity: PoiDetailEntity? = nil
   @Published var autocompleteListEntity: PoiAutocompleteListEntity? = nil
   @Published var displayPoiList: [PoiDetailEntity] = []
   @Published var displayAutocompleteList: [PoiAutocompleteItemEntity] = []
@@ -91,22 +93,25 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
 
   // MARK: - ⌘ Use case
   public func getPoiDetail() {
+    getPoiDetailTask?.cancel()
     let payload = PoiModule.Data.Payload.PoiDetail(businessId: self.bussinessId)
     getPoiDetailTask = poiDetailRepository.getPoiDetail(payload: payload)
       .subscribe(on: DispatchQueue.global(qos: .userInitiated))
       .eraseToAnyPublisher()
       .receive(on: DispatchQueue.main)
       .eraseToAnyPublisher()
-      .sink { completion in
+      .sink { [weak self] completion in
         switch completion {
         case .finished:
           break
         case .failure(let error):
-          shout("failed to get autocompletes", error)
+          shout("failed to get data", error)
+          self?.errorTask = error
           break
         }
       } receiveValue: { [weak self] poiDetail in
         shout("poi detail data", poiDetail)
+        self?.handleReceived(poiDetail: poiDetail)
       }
   }
 
@@ -185,6 +190,10 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
           self?.handleReceived(text: value)
         }
       )
+  }
+
+  fileprivate func handleReceived(poiDetail entity: PoiDetailEntity) {
+    self.poiDetailEntity = entity
   }
 
   fileprivate func handleReceived(autocompletes: PoiAutocompleteListEntity) {
