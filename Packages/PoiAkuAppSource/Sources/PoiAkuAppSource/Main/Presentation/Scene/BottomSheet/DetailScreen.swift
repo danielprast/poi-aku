@@ -14,33 +14,57 @@ public struct DetailScreen: View {
   public init() {}
 
   public var body: some View {
-    mainBody
-      .onAppear {
+    PoiDetailContentView(
+      onCloseAction: {
+        poiViewModel.resetBussinessId()
+        dismissable.callAsFunction()
+      }
+    )
+    .onAppear {
         poiViewModel.getPoiDetail()
       }
   }
 
-  public var mainBody: some View {
-    ZStack {
-      Color.clear
-      Text("Detail Screen")
-      VStack {
-        Button("Tutup", action: {
-          poiViewModel.resetBussinessId()
-          dismissable.callAsFunction()
-        })
-//        ScrollView(.horizontal, showsIndicators: false) {
-//          LazyHStack(alignment: .firstTextBaseline, spacing: 16) {
-//            ForEach(home.items, id: \.id) { item in
-//              createRowView(from: home, item: item)
-//            }
-//          }
-//          .padding(.horizontal, 24)
-//          .padding(.bottom, 24)
-//        }
+  // MARK: - ⌘ Content View
+  struct PoiDetailContentView: View {
 
-        Spacer()
+    let onCloseAction: () -> Void
+
+    var body: some View {
+      ZStack {
+        Color.colorHex(.white)
+        Text("Detail Screen")
+        VStack {
+          HStack {
+
+            Spacer()
+          }
+          Button("Tutup", action: {
+            onCloseAction()
+
+          })
+//          ScrollView(.horizontal, showsIndicators: false) {
+//            LazyHStack(alignment: .firstTextBaseline, spacing: 16) {
+//              ForEach(home.items, id: \.id) { item in
+//
+//              }
+//            }
+//            .padding(.horizontal, 24)
+//            .padding(.bottom, 24)
+//          }
+
+          Spacer()
+        }
       }
     }
+  }
+}
+
+
+struct PoiDetailScreen_Previews: PreviewProvider {
+  static var previews: some View {
+    DetailScreen.PoiDetailContentView(
+      onCloseAction: {}
+    )
   }
 }
