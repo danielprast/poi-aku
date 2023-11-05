@@ -8,9 +8,21 @@ import SwiftUI
 
 public struct DetailScreen: View {
 
+  @EnvironmentObject var poiViewModel: PoiViewModel
+  @Environment(\.dismiss) private var dismissable
+
   public init() {}
 
   public var body: some View {
-    Text("Detail Screen")
+    ZStack {
+      Color.pink
+      Text("Detail Screen")
+      VStack {
+        Button("Tutup", action: {
+          dismissable.callAsFunction()
+        })
+        Spacer()
+      }
+    }
   }
 }

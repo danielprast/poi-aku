@@ -45,16 +45,8 @@ public struct PoiView: View {
         .edgesIgnoringSafeArea(.all)
     )
     .sheet(isPresented: $showDetail) {
-      ZStack {
-        Color.pink
-        Text("Detail")
-        VStack {
-          Button("Tutup", action: {
-            showDetail = false
-          })
-          Spacer()
-        }
-      }
+      DetailScreen()
+        .environmentObject(viewModel)
     }
     .onAppear {
       titleText = "Joss Gandoss"
