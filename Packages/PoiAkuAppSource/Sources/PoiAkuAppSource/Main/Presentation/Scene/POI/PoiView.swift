@@ -111,7 +111,8 @@ public struct PoiView: View {
         .clipShape(RoundedRectangle(cornerRadius: 12))
         .onTapGesture {
           shout("item search", item.response.name)
-          showDetail = true
+          viewModel.bussinessId = item.id
+           showDetail = true
         }
       }
     }

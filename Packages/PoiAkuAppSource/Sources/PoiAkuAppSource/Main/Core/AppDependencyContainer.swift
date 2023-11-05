@@ -105,7 +105,8 @@ public class AppDependencyContainer {
     return PoiViewModel(
       searchNearbyRepository: dic.resolve(type: PoiNearbyRepository.self)!,
       searchInAreaRepository: dic.resolve(type: PoiAreaRepository.self)!,
-      poiAutocompleteRepository: dic.resolve(type: PoiAutocompleteRepository.self)!
+      poiAutocompleteRepository: dic.resolve(type: PoiAutocompleteRepository.self)!,
+      poiDetailRepository: dic.resolve(type: PoiDetailRepository.self)!
     )
   }
 
