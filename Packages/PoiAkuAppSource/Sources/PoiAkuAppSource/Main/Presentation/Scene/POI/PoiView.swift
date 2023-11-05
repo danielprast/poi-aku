@@ -45,16 +45,8 @@ public struct PoiView: View {
         .edgesIgnoringSafeArea(.all)
     )
     .sheet(isPresented: $showDetail) {
-      ZStack {
-        Color.pink
-        Text("Detail")
-        VStack {
-          Button("Tutup", action: {
-            showDetail = false
-          })
-          Spacer()
-        }
-      }
+      DetailScreen()
+        .environmentObject(viewModel)
     }
     .onAppear {
       titleText = "Joss Gandoss"
@@ -119,7 +111,8 @@ public struct PoiView: View {
         .clipShape(RoundedRectangle(cornerRadius: 12))
         .onTapGesture {
           shout("item search", item.response.name)
-          showDetail = true
+          viewModel.bussinessId = item.id
+           showDetail = true
         }
       }
     }

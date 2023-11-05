@@ -16,15 +16,18 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
   let searchNearbyRepository: PoiNearbyRepository
   let searchInAreaRepository: PoiAreaRepository
   let poiAutocompleteRepository: PoiAutocompleteRepository
+  let poiDetailRepository: PoiDetailRepository
 
   public init(
     searchNearbyRepository: PoiNearbyRepository,
     searchInAreaRepository: PoiAreaRepository,
-    poiAutocompleteRepository: PoiAutocompleteRepository
+    poiAutocompleteRepository: PoiAutocompleteRepository,
+    poiDetailRepository: PoiDetailRepository
   ) {
     self.searchNearbyRepository = searchNearbyRepository
     self.searchInAreaRepository = searchInAreaRepository
     self.poiAutocompleteRepository = poiAutocompleteRepository
+    self.poiDetailRepository = poiDetailRepository
     coreLocation = .init()
     super.init()
     onInit()
@@ -35,22 +38,29 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
     searchNearbyTask?.cancel()
     searchInAreaTask?.cancel()
     getAutocompletesTask?.cancel()
+    getPoiDetailTask?.cancel()
   }
 
   // MARK: - ⌘ States
   @Published var mapView: MKMapView = .init()
   @Published var userLocation: CLLocation?
   @Published var searchText: String = ""
+  @Published var errorTask: NError? = nil
   @Published var poListEntity: PoiListEntity? = nil
+  @Published var poiDetailEntity: PoiDetailEntity? = nil
   @Published var autocompleteListEntity: PoiAutocompleteListEntity? = nil
   @Published var displayPoiList: [PoiDetailEntity] = []
   @Published var displayAutocompleteList: [PoiAutocompleteItemEntity] = []
   @Published var searchMode: Bool = false
   @Published var isNearby: Bool = false
+
   var inputTextTask: AnyCancellable?
   var searchNearbyTask: AnyCancellable?
   var searchInAreaTask: AnyCancellable?
   var getAutocompletesTask: AnyCancellable?
+  var getPoiDetailTask: AnyCancellable?
+
+  var bussinessId = ""
 
   public func resetDisplayPoiList() {
     displayPoiList.removeAll()
@@ -58,6 +68,10 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
 
   public func resetDisplayAutocompleteList() {
     displayAutocompleteList.removeAll()
+  }
+
+  public func resetBussinessId() {
+    bussinessId = ""
   }
 
   // MARK: - ⌘ UI Event
@@ -78,6 +92,28 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
   }
 
   // MARK: - ⌘ Use case
+  public func getPoiDetail() {
+    getPoiDetailTask?.cancel()
+    let payload = PoiModule.Data.Payload.PoiDetail(businessId: self.bussinessId)
+    getPoiDetailTask = poiDetailRepository.getPoiDetail(payload: payload)
+      .subscribe(on: DispatchQueue.global(qos: .userInitiated))
+      .eraseToAnyPublisher()
+      .receive(on: DispatchQueue.main)
+      .eraseToAnyPublisher()
+      .sink { [weak self] completion in
+        switch completion {
+        case .finished:
+          break
+        case .failure(let error):
+          shout("failed to get data", error)
+          self?.errorTask = error
+          break
+        }
+      } receiveValue: { [weak self] poiDetail in
+        shout("poi detail data", poiDetail)
+        self?.handleReceived(poiDetail: poiDetail)
+      }
+  }
 
   public func getAutocompletes() {
     let payload = PoiAutoCompletePayload(keyword: searchText)
@@ -154,6 +190,10 @@ public class PoiViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
           self?.handleReceived(text: value)
         }
       )
+  }
+
+  fileprivate func handleReceived(poiDetail entity: PoiDetailEntity) {
+    self.poiDetailEntity = entity
   }
 
   fileprivate func handleReceived(autocompletes: PoiAutocompleteListEntity) {
